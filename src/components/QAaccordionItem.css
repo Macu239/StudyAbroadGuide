@@ -1,0 +1,36 @@
+.accordion {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: flex;     
+    align-items: center;      
+    justify-content: center; 
+    flex-direction: column;
+  
+}
+
+.accordionTitle {
+  color: #ffffff;
+  background-color: #565656;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  width: 875px;
+  height: 70px;
+}
+
+.arrow{
+    margin-left: 80px;
+}
+.QAaccordionContent{
+    margin-top: 20px;
+    width: 805px;
+    max-height: 530px;
+    background-color: #D9D9D9;
+    padding: 1.5rem;
+    color: #000;
+    white-space: pre-line;
+    line-height: 2rem;
+}

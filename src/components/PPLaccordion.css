@@ -1,0 +1,71 @@
+.accordion {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: flex;     
+    align-items: center;      
+    justify-content: center; 
+    flex-direction: column;
+  
+}
+
+#PPLaccordion{
+    width:  var(--PPLaccordionWidth);
+}
+
+.accordionTitle {
+  color: #ffffff;
+  background-color: #565656;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  width:100%;
+  min-width: 875px;
+  aspect-ratio: 12.5;
+}
+
+.accordionTitle:hover {
+    background-color: #434343;
+    cursor: pointer;
+}
+
+.arrow{
+    margin-left: none;
+}
+.accordionContent{
+    font-family: 'raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 805px;
+    max-height: 530px;
+    background-color: #D9D9D9;
+    padding: 1.5rem;
+    color: #000;
+    white-space: pre-line;
+}
+
+.personalPic{
+    width: 200px;
+    height: 235px;
+     background-color:#ffffff;
+    border-radius: 10px;
+}
+
+.accordionText{
+    margin-left: 20px;
+    max-width: 520px;
+
+}
+
+.accordionText span {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.accordionText h2 {
+    line-height: 1.5;
+}

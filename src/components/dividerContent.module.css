@@ -1,0 +1,40 @@
+.sectionWrapper {
+  width: 100%; 
+}
+
+.topicbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.dividerContentTitle {
+  white-space: nowrap;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.dividerContentDivider {
+  flex-grow: 1;
+  height: 1.2px;
+  background-color: #171717;
+  opacity: 0.4;
+}
+
+.dividerContentText{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.dividerContentText ul{
+    padding-left: 1rem;
+    list-style-type: numeric;
+}
+
+.dividerContentText li ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
+}

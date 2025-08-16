@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: underline;
+    color: inherit;
+    font-weight: 600;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li ul{
+    padding-left: 1rem;
+}
+
+main{
+    font-family: 'Raleway', sans-serif;
+}

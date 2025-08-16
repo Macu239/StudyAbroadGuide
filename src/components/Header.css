@@ -1,0 +1,73 @@
+body{
+    line-height: 1.6;
+}
+
+.title_bar{
+    background-color: #171717;
+    display: flex;             
+    align-items: center;       
+    gap: 16px;
+    padding-bottom: 0px;
+    height: 64px;
+    grid-area: header;  
+    color: white;               
+}
+#Pagename{
+    font-family: Libre Baskerville;
+    font-weight: bold;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.Schools{   
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.button{
+    font-weight:bold;
+    font-family: Libre Baskerville;
+    background:none;
+    border: none;
+    color: inherit;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    gap: 10px;
+}
+.dropdown{
+    position: relative ;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    text-align: left;
+    width: max-content;
+    z-index: 10;
+}
+.dropdown-link{
+    padding: 10px 16px;
+    min-width: 80px;
+    display: block;
+    font-family: Libre Baskerville;
+    font-weight:normal;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.dropdown-link:hover {
+    background-color: black;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

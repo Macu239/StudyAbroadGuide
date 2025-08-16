@@ -1,0 +1,48 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: var(--carousel-height);
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slides a {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  flex-shrink: 0;
+}
+
+.slide {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fff;
+}
