@@ -6,7 +6,7 @@ export default function COCApp() {
   return (
     <div className='UsVisaContainer'>
       <div class="usVisaHero">
-        <img src="/canadaFlagBanner.jpg" alt="Hero Image" className='Background'/>
+        <img src="/canadaFlagBanner.jpg" alt="Hero Image" className='Background' loading="lazy"/>
         <div class="gradient-overlay"></div>
         <h1>加拿大學生簽證(Study permit)申請準備</h1>
       </div>

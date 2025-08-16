@@ -16,6 +16,7 @@ export default function UMC() {
             alt="COC Logo"
             className="hero-logo"
             id="UMCLogo"
+            loading="lazy"
           />
         </div>
       </section>
