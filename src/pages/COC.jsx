@@ -44,9 +44,6 @@ export default function COC() {
             COC 校區位於加州 Santa
             Clarita——全美十大最宜居城市之一，距離洛杉磯國際機場（LAX）約 1.5
             小時車程。當地居民以學生與退休族群為主，治安良好，生活環境安靜安全，極適合專注學習。
-            
-            "專門Online classes: Regiester timing，寫出申請時間、選課時間/
-            學業部分從哪裡開始選課，去哪裡看怎麼找Couselor"
           </p>
           <div className="divider" />
 
