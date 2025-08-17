@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SchoolMainPage.css";
+import { Blur, BackToTopBotton } from "../components";
 
 export default function UMC() {
   return (
@@ -11,7 +12,7 @@ export default function UMC() {
             <h2 className="hero-title">UMC</h2>
             <p className="hero-subtitle">加拿大UMC高中 - 多倫多</p>
           </div>
-          <img
+          <Blur
             src="UMC/UMC logo.png"
             alt="COC Logo"
             className="hero-logo"
@@ -22,7 +23,12 @@ export default function UMC() {
       </section>
       <main className="main-content">
         <div className="content-section">
-          <img src="/UMC/UMC.jpg" alt="UMC Campus" className="main-image" />
+          <Blur
+            src="/UMC/UMC.jpg"
+            alt="UMC Campus"
+            className="main-image"
+            loading="lazy"
+          />
           <p className="description-text">
             UMC 高中為學生頒發安大略省教育局認可的學分，並提供大學預修課程及 AP
             課程， 以因應不同興趣與潛能的學生需求。惠文高中與 UMC 高中簽署了 2+1
@@ -120,6 +126,7 @@ export default function UMC() {
                   src="/COC/img_application_1.png"
                   alt="Application Process"
                   className="resource-image"
+                  loading="lazy"
                 />
                 <h3 className="resource-title">申請過程</h3>
               </Link>
@@ -131,6 +138,7 @@ export default function UMC() {
                   src="/UMC/CanadaStudy.png"
                   alt="Canada Study"
                   className="resource-image"
+                  loading="lazy"
                 />
                 <h3 className="resource-title">學業、升學相關</h3>
               </Link>
@@ -142,6 +150,7 @@ export default function UMC() {
                   src="/COC/img_image_10.png"
                   alt="Visa Information"
                   className="resource-image"
+                  loading="lazy"
                 />
                 <h3 className="resource-title">加拿大學生簽證</h3>
               </Link>
@@ -154,6 +163,7 @@ export default function UMC() {
                   src="/UMC/CanadaLife.jpg"
                   alt="Canada Life"
                   className="resource-image"
+                  loading="lazy"
                 />
                 <h3 className="resource-title">生活</h3>
               </Link>
@@ -164,6 +174,7 @@ export default function UMC() {
                   src="/COC/img_img_5504_1.png"
                   alt="Find Seniors"
                   className="resource-image"
+                  loading="lazy"
                 />
                 <h3 className="resource-title">找學長姐</h3>
               </Link>
@@ -174,6 +185,7 @@ export default function UMC() {
                   src="/COC/img_image_12.png"
                   alt="Q&A"
                   className="resource-image"
+                  loading="lazy"
                 />
                 <h3 className="resource-title">Common Q&amp;A</h3>
               </Link>
@@ -181,6 +193,7 @@ export default function UMC() {
           </div>
         </div>
       </section>
+      <BackToTopBotton />
     </div>
   );
 }

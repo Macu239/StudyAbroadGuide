@@ -34,3 +34,8 @@
     white-space: pre-line;
     line-height: 2rem;
 }
+
+.QAaccordionContent ul{
+    padding:1rem;
+    list-style-type: disc;
+}

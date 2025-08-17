@@ -46,7 +46,7 @@ export default function CocLife() {
             <div className="cocLifeTopic" ref={socialLifeRef}>
               <h2>社交生活</h2>
             </div>
-            <div className="cocLifeDivider"></div>
+            <div className="CaLifeDivider"></div>
             <h4>
               在北美，Small Talk是日常生活中很重要的一部分，
               特別是在學校、宿舍、社交場合甚至超市。它是一種沒有目的性、隨興的對話方式，
@@ -72,7 +72,7 @@ export default function CocLife() {
             <div className="cocLifeTopic" ref={telephoneRef}>
               <h2>電信公司/手機</h2>
             </div>
-            <div className="cocLifeDivider"></div>
+            <div className="CaLifeDivider"></div>
             <h4>
               傳統電信公司有
               <a href="https://www.rogers.com/" target="_Blank">
@@ -107,7 +107,7 @@ export default function CocLife() {
             <div className="cocLifeTopic" ref={bankRef}>
               <h2>銀行/簽帳卡/信用卡 - Debit and Credit card</h2>
             </div>
-            <div className="cocLifeDivider"></div>
+            <div className="CaLifeDivider"></div>
             <h4>
               在加拿大，常見的大型銀行包括
               <a href="https://www.rbcroyalbank.com/bank-accounts/youth-student-banking/advantage-banking-students.html">
@@ -126,8 +126,8 @@ export default function CocLife() {
               辦理業務方便、信譽良好，對於國際學生來說也較容易開戶，各家銀行的福利也不同，
               例如CIBC有較多的現金回饋。
               <br />
-              在北美，銀行帳戶主要分為 Checking/Chequing  Account（支票帳戶） 和 Savings
-              Account（活存帳戶） 兩種。 Checking/Chequing  Account
+              在北美，銀行帳戶主要分為 Checking/Chequing Account（支票帳戶） 和
+              Savings Account（活存帳戶） 兩種。 Checking/Chequing Account
               是日常使用的主要帳戶，通常會搭配一張 Debit
               Card（簽帳卡），可用來刷卡、提領現金、轉帳或繳費等。
               <strong>
@@ -142,7 +142,7 @@ export default function CocLife() {
             <div className="cocLifeTopic" ref={housingRef}>
               <h2>住宿/房子</h2>
             </div>
-            <div className="cocLifeDivider"></div>
+            <div className="CaLifeDivider"></div>
             <h4>
               <ul>
                 <li>
@@ -165,8 +165,11 @@ export default function CocLife() {
                     <li>
                       Red Deer
                       <ul>
-                        <li>學校有合作的Homestay</li>
-                        <li>提供早晚兩餐</li>
+                        <li>學校有合作的Homestay - 約1200/月</li>
+                        <li>
+                          含水電網路、三餐
+                          （如果自己有想吃的也可以去超市購買自己料理，其費用另外計算）
+                        </li>
                         <li>更好適應加拿大生活</li>
                       </ul>
                     </li>
@@ -176,7 +179,14 @@ export default function CocLife() {
                   治安
                   <ul>
                     <li>多倫多</li>
-                    <li>亞伯達</li>
+                    <li>
+                      亞伯達
+                      <ul>
+                        <li>
+                          基本上很安全，但晚上不建議在downtown逗留，成群結伴活動最優。
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -187,7 +197,7 @@ export default function CocLife() {
             <div className="cocLifeTopic" ref={transportationRef}>
               <h2>交通</h2>
             </div>
-            <div className="cocLifeDivider" />
+            <div className="CaLifeDivider" />
 
             <div id="UMCTransportation">
               <h3>多倫多 - UMC</h3>
@@ -298,53 +308,126 @@ export default function CocLife() {
                 </div>
               </div>
             </div>
+            <div className="CaLifeDivider" id="TransDivider"></div>
+            <div id="UMCTransportation">
+              <h3>亞伯達 - RedDeer</h3>
+              <div className="CALifeTransportationCards">
+                <div className="CALifeResourceCard">
+                  <img
+                    src="/CALife/TaxiApp.jpg"
+                    alt="Taxi Apps"
+                    className="CALifeResourceImage"
+                  />
+
+                  <div className="CALifeResourceCardtext">
+                    <h3 className="CALifeResourceTitle">Uber/Hopp/Lyft</h3>
+                    <h4>
+                      <en>Uber</en>單價偏高但品質也比較好
+                      <br />
+                      <en>lyft</en>和<en>Hopp</en>比較便宜但司機品質參差不齊
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="CALifeResourceCard">
+                  <img
+                    src="/CALife/VIA.jpg"
+                    alt="Toronto Transportation"
+                    className="CALifeResourceImage"
+                  />
+
+                  <div className="CALifeResourceCardtext">
+                    <h3 className="CALifeResourceTitle">
+                      <a href="https://www.viarail.ca/en" target="_Blank">
+                        VIA Rail
+                      </a>
+                    </h3>
+                    <h4>
+                      <en>VIA Rail</en>{" "}
+                      是加拿大的國家客運鐵路系統，提供多倫多與其他省份大城市之間的長途交通服務。
+                      從多倫多出發，可搭乘列車前往溫哥華、卡加利、愛德蒙頓、魁北克市等地，適合跨省移動或長距離旅行。
+                    </h4>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
           {/*Weather*/}
           <div className="cocLifeText">
             <div className="cocLifeTopic" ref={weatherRef}>
               <h2>天氣/衣物</h2>
             </div>
-            <div className="cocLifeDivider"></div>
+            <div className="CaLifeDivider"></div>
             <h4>
               <ul>
                 <li>
-                  夏天 - 約 6 月至 9 月
-                  <ul>
-                    <li>氣溫溫暖至炎熱，約20°C 至 30°C，偶爾超過30°C</li>
-                    <li>炎熱潮濕，晴朗天多，有時會有雷陣雨或短暫暴雨。</li>
-                  </ul>
-                </li>
-                <li>
-                  秋天 -約 9 月至 11 月
+                  <strong>UMC</strong>
                   <ul>
                     <li>
-                      氣溫漸涼，白天約 10–20°C，晚間漸冷，適合穿長袖和薄外套。
+                      夏天 - 約 6 月至 9 月
+                      <ul>
+                        <li>氣溫溫暖至炎熱，約20°C 至 30°C，偶爾超過30°C</li>
+                        <li>炎熱潮濕，晴朗天多，有時會有雷陣雨或短暫暴雨。</li>
+                      </ul>
+                    </li>
+                    <li>
+                      秋天 -約 9 月至 11 月
+                      <ul>
+                        <li>
+                          氣溫漸涼，白天約
+                          10–20°C，晚間漸冷，適合穿長袖和薄外套。
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      冬天 - 11 月至 2 月
+                      <ul>
+                        <li>
+                          日夜溫差大，白天約 -10–0°C，夜晚氣溫常低於
+                          0°C，冬季會有積雪
+                        </li>
+                        <li>建議穿發熱衣、厚外套、帽T、羽絨服和圍巾保暖。</li>
+                      </ul>
+                    </li>
+                    <li>
+                      春天 - 3 月至 5 月
+                      <ul>
+                        <li>
+                          氣溫漸暖，約 5–15°C，早晚較涼，適合穿薄外套和長褲。
+                        </li>
+                        <li>最舒服的時候</li>
+                      </ul>
+                    </li>
+                    <li>
+                      General Advice
+                      <ul>
+                        <li>短袖短褲（夏天）</li>
+                        <li>薄外套、長褲（春天、秋天）</li>
+                        <li>發熱衣、長袖、帽T、大羽絨衣、圍巾、毛帽（冬天）</li>
+                      </ul>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  冬天 - 11 月至 2 月
+                  <strong>RedDeer</strong>
                   <ul>
+                    <li>8月底-10月中：入秋 天氣涼涼 但不會到冷</li>
                     <li>
-                      日夜溫差大，白天約 -10–0°C，夜晚氣溫常低於
-                      0°C，冬季會有積雪
+                      10月底-11月初：開始下雪 （會持續下雪寒冷到隔天4月底）
                     </li>
-                    <li>建議穿發熱衣、厚外套、帽T、羽絨服和圍巾保暖。</li>
-                  </ul>
-                </li>
-                <li>
-                  春天 - 3 月至 5 月
-                  <ul>
-                    <li>氣溫漸暖，約 5–15°C，早晚較涼，適合穿薄外套和長褲。</li>
-                    <li>最舒服的時候</li>
-                  </ul>
-                </li>
-                <li>
-                  General Advice
-                  <ul>
-                    <li>短袖短褲（夏天）</li>
-                    <li>薄外套、長褲（春天、秋天）</li>
-                    <li>發熱衣、長袖、帽T、大羽絨衣、圍巾、毛帽（冬天）</li>
+                    <li>
+                      12月底-1月初：冬天最冷的時期，最低溫度零下40度
+                      <ul>
+                        <li>
+                          去那裡購買禦寒衣物（發熱衣、零下30度左右保暖大衣、靴子）
+                        </li>
+                        <li>
+                          sportchek, bower mall, 或校外教學時把握機會去Edmonton
+                          Mall 購買，寄宿家庭帶你去購買
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -355,7 +438,7 @@ export default function CocLife() {
             <div className="cocLifeTopic" ref={shoppingRef}>
               <h2>購物/超市</h2>
             </div>
-            <div className="cocLifeDivider" />
+            <div className="CaLifeDivider" />
 
             <div className="cocLifeShoppingCardsWrapper">
               {/*Target*/}
@@ -409,10 +492,9 @@ export default function CocLife() {
             <div className="cocLifeTopic" ref={restaurantRef}>
               <h2>餐廳/飲食</h2>
             </div>
-            <div className="cocLifeDivider"></div>
+            <div className="CaLifeDivider"></div>
             <h4>多倫多食物便宜各種種類多由尤其還有唐人街</h4>
           </div>
-          
         </div>
       </div>
       <BackToTopBotton titleRef={cocLifeRef} />

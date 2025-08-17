@@ -6,20 +6,21 @@ export const cocQuestions = [
         大部分都買的到，帶那些有固定使用的牌子，一落地就會需要的e.g.
         保養品、洗面乳、乳液。
         <br />
-        <strong>延長線一定要帶</strong>，Ikea買的到的都不用帶，個人藥品、找藥局開旅遊藥(退燒、抗過敏、消炎止痛，綜合感冒藥)<br/>不用帶棉被= =<br/>
+        <strong>延長線一定要帶</strong>
+        ，Ikea買的到的都不用帶，個人藥品、找藥局開旅遊藥(退燒、抗過敏、消炎止痛，綜合感冒藥)
+        <br />
+        不用帶棉被= =<br />
         Plus:旅行用沐浴乳、洗髮乳just in case
       </span>
     ),
   },
-   {
+  {
     title: "現金應該帶多少?",
-    content:
-      "",
+    content: "假如你已經成年建議帶大約",
   },
   {
     title: "要先辦台灣的信用卡/爸媽副卡嗎",
-    content:
-      "",
+    content: "Jeremy:推，建議在出國前辦爸媽的副卡。美國大部分地方都可以刷卡，比帶現金更方便也更安全，記得確認信用卡是否收取國外手續費，出國前也要通知銀行，避免刷卡被凍結。",
   },
   {
     title: "COC需要托福／雅思成績嗎？",
@@ -50,8 +51,7 @@ export const cocQuestions = [
   },
   {
     title: "",
-    content:
-      "",
+    content: "",
   },
 ];
 
@@ -60,9 +60,31 @@ export const umcQuestions = [
 ];
 
 export const redDeerQuestions = [
-  { title: "What is UMC?", content: "University of Manitoba College..." },
-  { title: "Tuition fee for UMC?", content: "The tuition depends on..." },
-  { title: "Tuition fee for UMC?", content: "The tuition depends on..." },
+  {
+    title: "RedDeer 申請大學管道？",
+    content: (
+      <ul>
+        <li>
+          請代辦公司（代辦人員會協助處理繳交申請文件 學生可以專心唸書考試）
+        </li>
+        <li>自己送出申請（要非常注意文件繳教日期，沒人幫忙審查文件</li>
+      </ul>
+    ),
+  },
+  {
+    title: "RedDeer上課與考試方式？",
+    content: (
+      <ul>
+        <li>大部分老師不會管上課秩序，需自律</li>
+        <li>有些作業自由練習</li>
+        <li>自己排申請大學需要和自己喜歡的課</li>
+        <li>上課時間一堂90分鐘中午有一小時休息時間，一天最多四堂課</li>
+        <li>沒有排課的時間可自由運用</li>
+        <li>課堂小考或作業分數為課堂成績佔總成績70%</li>
+        <li>學期末Diploma佔30%</li>
+      </ul>
+    ),
+  },
 ];
 
 export const usQuestions = [

@@ -45,15 +45,15 @@ export default function RedDeer() {
             </h2>
             <div className="COCpeopleSuitsGrind">
               <div className="peopleSuitsBox" id="RD">
-                對航太工程領域有興趣，並計畫轉學至 UC 系統相關科系的學生
+                願意去嘗試參與各式活動的人
               </div>
 
               <div className="peopleSuitsBox" id="RD1">
-                堅定目標是赴美留學，非美國不去的學生
+                大學有意願繼續留在國外（加拿大或是其他國家）就讀的人
               </div>
 
               <div className="peopleSuitsBox" id="RD">
-                有明確 UC 轉學目標的學生（如 UC Berkeley、UCLA 、UCSD等）
+                可以適應長時間嚴寒溫度的人
               </div>
             </div>
 
@@ -67,11 +67,7 @@ export default function RedDeer() {
               </div>
 
               <div className="peopleSuitsBox" id="RD1">
-                想要 Second Chance 的學生：
-                <br />
-                高中 GPA 不夠漂亮，但仍渴望去美國留學
-                <br />
-                大學新生申請未錄取理想學校，希望透過轉學重新出發
+                喜歡多元文化/跟大自然相處的學生
               </div>
             </div>
           </div>
@@ -82,35 +78,20 @@ export default function RedDeer() {
               <div className="ProsConsText" id="RD">
                 <div className="pros-cons-title">Pros:</div>
                 <ul className="pros-cons-list">
-                  <li>學費實惠，對國際學生較具負擔能力</li>
-                  <li>無需 SAT/ACT 或入學測驗，申請門檻低</li>
-                  <li>教授親切、教學認真，課後也樂於協助</li>
-                  <li>提供完善的轉學機會，可轉入UC/CSU等名校</li>
-                  <li>小班制教學，師生互動良好</li>
-                  <li>校園安全、生活環境單純，適合專心讀書</li>
-                  <li>
-                    設有專業國際學生支援辦公室，提供生活、學業與簽證等多方面的專業協助
-                  </li>
-                  <li>提供免費完整的課業輔導與轉學諮詢資源</li>
+                  <li>體驗真正的加拿大高中生活</li>
+                  <li>融入寄宿家庭（有機會遇見來自不同國家的家庭</li>
+                  <li>獲得優異的在校成績有助於申請世界頂尖大學</li>
+                  <li>體驗當地娛樂生活（滑雪、溜冰、冰上曲棍球）</li>
+                  <li>有很大機率可以看到極光</li>
                 </ul>
               </div>
               <div className="ProsConsText" id="RD1">
                 <div className="pros-cons-title">Cons:</div>
                 <ul className="pros-cons-list">
-                  <li>
-                    <strong>For specific major:</strong>
-                    <ul>
-                      <li>缺乏實用或進階內容，學習深度與挑戰性偏少</li>
-                      <li>一定要再自學</li>
-                    </ul>
-                  </li>
-                  <li>部分熱門科系轉學門檻較高</li>
-                  <li>社團/活動比4年制大學少</li>
-                  <li>校園與周邊娛樂選擇有限</li>
-                  <li>交通不便，生活幾乎必須有車</li>
-                  <li>校園文化與活動相對簡約，較少宿舍生活與社團參與的機會</li>
-                  <li>轉學後勢必需要搬家與重新適應環境</li>
-                  <li>難以找到學長姐提供經驗分享，轉學資源相對有限</li>
+                  <li>氣候嚴寒，冬天很長，日照也短。</li>
+                  <li>寄宿家庭的好壞取決於運氣</li>
+                  <li>不像大城市有百貨公司，只有小商場，也沒有亞洲超市。 只有小商場 也沒有亞洲超市</li>
+                  <li>交通不方便 (只有公車，半小時一班)</li>
                 </ul>
               </div>
             </div>

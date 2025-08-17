@@ -7,3 +7,4 @@ export {default as BackToTopBotton} from './BackToTopBotton';
 export {default as ScrollToTop} from './ScrollToTop';
 export {default as ImageCarousel} from './ImageCarousel';
 export {default as SeniorsForms} from './SeniorsForms';
+export {default as Blur} from './BlurImage';
