@@ -1,6 +1,6 @@
 import './Mainpage.css';
 import { Link } from 'react-router-dom';
-import ImageCarousel from '../components/ImageCarousel'
+import {ImageCarousel,Blur} from '../components'
 import {MainPageImgs} from '../components/CarouselImages'
 
 export default function MainPage() {
@@ -26,7 +26,7 @@ export default function MainPage() {
             <Link to="/COC" className="school_page_link">
               <h3>College of the Canyons</h3>
               <h4>美國加州峽谷社區大學</h4>
-              <img
+              <Blur
                 src="/Mainpage/COC(Canyon-Country-Campus).jpg"
                 alt="COC"
                 className="school_pic"
@@ -38,7 +38,7 @@ export default function MainPage() {
             <Link to="/UMC" className="school_page_link">
               <h3>UMC HighSchool</h3>
               <h4>加拿大UMC</h4>
-              <img
+              <Blur
                 src="/Mainpage/UMC.jpg"
                 alt="UMC"
                 className="school_pic"
@@ -50,7 +50,7 @@ export default function MainPage() {
             <Link to="/RedDeer" className="school_page_link">
               <h3>Red Deer Catholic Regional School</h3>
               <h4>加拿大紅鹿</h4>
-              <img
+              <Blur
                 src="/Mainpage/Reddeer.jpg"
                 alt="Reddeer"
                 className="school_pic"

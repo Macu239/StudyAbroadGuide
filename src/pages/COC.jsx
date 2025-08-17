@@ -1,5 +1,6 @@
 import "./SchoolMainPage.css";
 import { Link } from "react-router-dom";
+import { Blur } from "../components";
 
 export default function COC() {
   return (
@@ -10,7 +11,7 @@ export default function COC() {
             <h2 className="hero-title">College of the Canyons</h2>
             <p className="hero-subtitle">美國加州峽谷社區大學</p>
           </div>
-          <img
+          <Blur
             src="/COC/img_coc_logo.png"
             alt="COC Logo"
             className="hero-logo"
@@ -19,7 +20,7 @@ export default function COC() {
       </section>
       <main className="main-content">
         <div className="content-section">
-          <img
+          <Blur
             src="/COC/img_coc_main_image.png"
             alt="College of the Canyons Campus"
             className="main-image"

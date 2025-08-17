@@ -1,5 +1,6 @@
 import "./SchoolMainPage.css";
 import { Link } from "react-router-dom";
+import {Blur} from "../components"
 
 export default function RedDeer() {
   return (
@@ -10,7 +11,7 @@ export default function RedDeer() {
             <h2 className="hero-title">Red Deer Catholic International</h2>
             <p className="hero-subtitle">加拿大紅鹿國際高中</p>
           </div>
-          <img
+          <Blur
             src="/RedDeer/RedDeerLogo.png"
             alt="RedDeer Logo"
             className="hero-logo"
@@ -19,7 +20,7 @@ export default function RedDeer() {
       </section>
       <main className="main-content">
         <div className="content-section">
-          <img
+          <Blur
             src="/RedDeer/RedDeerHero.png"
             alt="RedDeer Campus"
             className="main-image"
