@@ -159,7 +159,7 @@ export default function COC() {
                   alt="Visa Information"
                   className="resource-image"
                 />
-                <h3 className="resource-title">簽證怎搞</h3>
+                <h3 className="resource-title">美國學生簽證</h3>
               </Link>
             </div>
           </div>

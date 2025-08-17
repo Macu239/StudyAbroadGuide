@@ -76,11 +76,10 @@ export const UMCApplication = [
       <ul>
         <li>雅思6.5</li>
         <li>課業不能被當</li>
-        <li>要做線上英文測試，確認lvl</li>
+        <li>要做線上英文測試，確認英文能力</li>
         <li>上ESL</li>
         <li>國三高一高二英文成績單</li>
       </ul>
-      
     ),
   },
   {
@@ -107,7 +106,8 @@ export const RDApplication = [
     title: "申請RedDeer需要準備哪些文件呢?",
     content: (
       <ul>
-        <li>雙聯
+        <li>
+          雙聯
           <ul>
             <li>高一一門英文課</li>
             <li>高二一門英文課</li>
@@ -245,6 +245,15 @@ export const canadaVisaApplication = [
     title: "申請加拿大學生簽證需要準備哪些文件呢",
     content: (
       <ul>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1B-nVlZuEMJbukUSMIOXGewWRafGKg6W-/view?usp=sharing"
+            target="_Blank"
+          >
+            申請資訊清單
+          </a>
+          from Daniel
+        </li>
         <li>護照</li>
         <li>
           線上填寫

@@ -30,6 +30,12 @@ export default function RedDeer() {
             House、Innisfail和 Olds。
             該校有國際學生服務計畫，招收來自各國的學生。加拿大公立教育局非常歡迎惠文高中學生
             能同時修習亞伯達線上課程及直接前往對方學校就讀。
+            <a
+              href="https://drive.google.com/file/d/1TvaTNzE6uu7yx97LlvmTxKpBzP-vYQru/view"
+              target="_Blank"
+            >
+              詳細資訊
+            </a>
           </p>
           <div className="divider" />
 
@@ -111,9 +117,7 @@ export default function RedDeer() {
           </div>
           <div className="divider" />
           <h2 className="section-title">預先線上課程/雙聯學制</h2>
-          <div className="RDOnlineClasses">
-            高一二要同時上線上英文課程...
-          </div>
+          <div className="RDOnlineClasses">高一二要同時上線上英文課程...</div>
         </div>
         <div className="divider" />
       </main>
@@ -151,7 +155,7 @@ export default function RedDeer() {
                   alt="Visa Information"
                   className="resource-image"
                 />
-                <h3 className="resource-title">簽證怎搞</h3>
+                <h3 className="resource-title">加拿大學生簽證</h3>
               </Link>
             </div>
           </div>

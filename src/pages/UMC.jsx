@@ -24,19 +24,25 @@ export default function UMC() {
         <div className="content-section">
           <img src="/UMC/UMC.jpg" alt="UMC Campus" className="main-image" />
           <p className="description-text">
-            UMC高中授予學生安大略省教育局學分，並提供大學預修課程和前AP課程，
-            以幫助不同性向及潛能的學生。惠文高中與UMC高中簽署2+1合作計畫，高中第三年便可以前往UMC高中學習，
-            取得安大略省中學文憑，是進入加拿大頂尖大學的入學保證。
-
-            "OSSD安大略省的學位"
-
+            UMC 高中為學生頒發安大略省教育局認可的學分，並提供大學預修課程及 AP
+            課程， 以因應不同興趣與潛能的學生需求。惠文高中與 UMC 高中簽署了 2+1
+            合作計畫，學生在高中第三年即可前往 UMC 高中學習，
+            取得安大略省中學文憑（OSSD），為申請加拿大頂尖大學提供入學保障。
+            <a
+              href="https://drive.google.com/file/d/1GUIfLDYSjxZmSF1rBrgKnb9idRGQiiLG/view"
+              target="_Blank"
+            >
+              詳細資訊
+            </a>
           </p>
           <div className="divider" />
 
           <div className="peopleSuitsWrapper">
             <h2 className="section-title">誰適合UMC/加拿大</h2>
             <div className="COCpeopleSuitsGrind">
-              <div className="peopleSuitsBox" id="UMC">可以跟自己獨處的學生</div>
+              <div className="peopleSuitsBox" id="UMC">
+                可以跟自己獨處的學生
+              </div>
 
               <div className="peopleSuitsBox" id="UMC">
                 對加拿大升學有想法 / 想在加拿大工作上大學的學生
@@ -56,12 +62,14 @@ export default function UMC() {
                 個性獨立、具有自我學習動力與時間管理能力的學生
               </div>
 
-              <div className="peopleSuitsBox" id="UMC">喜歡發表意見、討論的學生</div>
+              <div className="peopleSuitsBox" id="UMC">
+                喜歡發表意見、討論的學生
+              </div>
             </div>
           </div>
           <div className="divider" />
           <h2 className="section-title">Pros and Cons</h2>
-          
+
           <div className="pros-cons-row">
             <div className="ProsConsText" id="UMC">
               <div className="pros-cons-title">Pros:</div>
@@ -98,7 +106,6 @@ export default function UMC() {
               </ul>
             </div>
           </div>
-          
         </div>
         <div className="divider" />
       </main>
@@ -136,7 +143,7 @@ export default function UMC() {
                   alt="Visa Information"
                   className="resource-image"
                 />
-                <h3 className="resource-title">簽證怎搞</h3>
+                <h3 className="resource-title">加拿大學生簽證</h3>
               </Link>
             </div>
           </div>

@@ -160,12 +160,13 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 2.5rem;
 }
 
 .cocAcademicExtraSourceCard{
   width: 20%;
   border-radius: 20px;
-  padding: 20px;
+  padding: 1.2rem;
   border: #8C8A8A 1px solid;
   transition: transform 0.3s ease;
 }

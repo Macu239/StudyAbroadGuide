@@ -486,6 +486,18 @@ export default function CocAcademicc() {
 
           <div className="cocAcademicExtraSourceCard">
             <a
+              href="https://www.universityofcalifornia.edu/about-us/information-center/transfers-major"
+              target="_blank"
+            >
+              <h3>Transfer By Major</h3>
+              <h4>
+                這可以查詢各個學校各科系的錄取率，先了解GPA範圍及競爭程度
+              </h4>
+            </a>
+          </div>
+
+          <div className="cocAcademicExtraSourceCard">
+            <a
               href="https://docs.google.com/document/d/18QPr42JezI-18sMr85luRzfqXIPGpn-c/edit?usp=sharing&ouid=114718329374651375831&rtpof=true&sd=true"
               target="_blank"
             >
