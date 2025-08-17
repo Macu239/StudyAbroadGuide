@@ -2,7 +2,7 @@ export {default as Header} from './Header';
 export {default as Footer} from './Footer';
 export {default as AccordionItem} from './QAaccordionItem';
 export{default as PPLaccordionItem} from './PPLaccordion'
-export {default as dividerContent} from './dividerContent';
+export {default as DividerContent} from './dividerContent';
 export {default as BackToTopBotton} from './BackToTopBotton';
 export {default as ScrollToTop} from './ScrollToTop';
 export {default as ImageCarousel} from './ImageCarousel';

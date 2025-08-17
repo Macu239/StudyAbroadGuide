@@ -1,7 +1,13 @@
 import "./BlurImage.css";
 import { useState } from "react";
 
-export default function BlurImage({ src, alt, className = "",id="", loading="" }) {
+export default function BlurImage({
+  src,
+  alt,
+  className = "",
+  id = "",
+  loading = "",
+}) {
   const [loaded, setLoaded] = useState(false);
 
   return (
