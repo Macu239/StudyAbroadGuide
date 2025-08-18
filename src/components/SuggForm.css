@@ -1,0 +1,68 @@
+.SuggestionForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: var(--formWidth);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: var(--formColor);
+  border-radius: 8px;
+  align-self: flex-end;
+  margin: 2% 7.5% 0 0; /* top right bottom left */
+}
+
+.SuggestionForm h3 {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.SuggestionForm textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.SuggestionForm input,
+.SuggestionForm select,
+.SuggestionForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #00000070;
+  color: #fff;
+  outline: none;
+  background: inherit;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.SuggestionForm input:focus,
+.SuggestionForm textarea:focus {
+  background-color: inherit;
+  border-bottom: 2px solid #fff;
+}
+
+.SuggestionForm select {
+  border: 1px solid #00000070;
+}
+
+.SuggestionForm input[type="submit"] {
+  width: 50%;
+  border: none;
+  align-self: center;
+  border-radius: 8px;
+  background-color: #ffffff26;
+  color: #fff;
+}
+
+.SuggestionForm input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 10px #ecf7ff66;
+}
+
+.SuggestionForm input[type="submit"]:active{
+    transform: scale(0.98);
+}
