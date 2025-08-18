@@ -320,8 +320,9 @@ export default function CocLife() {
                   />
 
                   <div className="CALifeResourceCardtext">
-                    <h3 className="CALifeResourceTitle">Uber/Hopp/Lyft</h3>
+                    <h3 className="CALifeResourceTitle">Uber/Hopp/Lyft/寄宿家庭</h3>
                     <h4>
+                      *不同寄宿家庭，規定不一，但可以詢問寄宿家庭接送<br/>
                       <en>Uber</en>單價偏高但品質也比較好
                       <br />
                       <en>lyft</en>和<en>Hopp</en>比較便宜但司機品質參差不齊
@@ -331,21 +332,20 @@ export default function CocLife() {
 
                 <div className="CALifeResourceCard">
                   <img
-                    src="/CALife/VIA.jpg"
-                    alt="Toronto Transportation"
+                    src="/CALife/RedDeerBus.jpg"
+                    alt="Red Deer Bus"
                     className="CALifeResourceImage"
                   />
 
                   <div className="CALifeResourceCardtext">
                     <h3 className="CALifeResourceTitle">
-                      <a href="https://www.viarail.ca/en" target="_Blank">
-                        VIA Rail
+                      <a href="https://www.reddeer.ca/city-services/transit/" target="_Blank">
+                        紅鹿公車
                       </a>
                     </h3>
                     <h4>
-                      <en>VIA Rail</en>{" "}
-                      是加拿大的國家客運鐵路系統，提供多倫多與其他省份大城市之間的長途交通服務。
-                      從多倫多出發，可搭乘列車前往溫哥華、卡加利、愛德蒙頓、魁北克市等地，適合跨省移動或長距離旅行。
+                      Red Deer City Transit 是紅鹿市的公共巴士系統，提供市區內各社區、學校與主要設施之間的交通服務。<br/>
+                      <strong>*半小時一班</strong>
                     </h4>
                   </div>
                 </div>
@@ -441,41 +441,38 @@ export default function CocLife() {
             <div className="CaLifeDivider" />
 
             <div className="cocLifeShoppingCardsWrapper">
-              {/*Target*/}
-              <div className="cocLifeShoppingCards">
+              {/*A-Mart*/}
+              <div className="CaLifeShoppingCards">
                 <img
-                  src="/USLife/Target.png"
-                  alt="Target"
-                  className="cocLifeShoppingTag"
+                  src="/CALife/Amart.jpg"
+                  alt="A-mart"
+                  className="CaLifeShoppingTag"
                 />
 
                 <div className="cocLifeShoppingText">
-                  <h3>Target</h3>
-                  生活用品、衣物、食品等大型購物中心，價格比較便宜，沐浴用品還有大份量的零食很划算
+                  <h3>A-Mart</h3>
+                 韓國超市 A-mart 有韓國食品與生活用品，店內可找到新鮮食材、調味品、零食與飲料，也有熟食和日常用品。
                 </div>
               </div>
-              {/*TraderJoes*/}
-              <div className="cocLifeShoppingCards">
+              {/*TnT*/}
+              <div className="CaLifeShoppingCards">
                 <img
-                  src="/USLife/TraderJoes.png"
-                  alt="TraderJoes"
-                  className="cocLifeShoppingTag"
+                  src="/CALife/Tnt.jpg"
+                  alt="TnT Mart/大統華"
+                  className="CaLifeShoppingTag"
                 />
 
                 <div className="cocLifeShoppingText">
                   <h3>Trader Joe's</h3>
-                  知名的有機食品超市，提供各種健康食品、零食和飲料，
-                  以其獨特的產品和友善的服務聞名。有些品項價格相對較高，但品質優良。
-                  <br />
-                  很多冷凍食品很好吃，還有賣好吃便宜的歐式麵包/French Loaf
+                  大統華 (T&T Supermarket) 是加拿大最大的亞洲超市，紅鹿附近只有calgary/ edmonton有開，多倫多在UofT附近和Downtown各有一間
                 </div>
               </div>
-              {/*Wee*/}
-              <div className="cocLifeShoppingCards">
+              {/*Weee*/}
+              <div className="CaLifeShoppingCards">
                 <img
                   src="/USLife/Weee.jpg"
                   alt="Target"
-                  className="cocLifeShoppingTag"
+                  className="CaLifeShoppingTag"
                 />
 
                 <div className="cocLifeShoppingText">
@@ -485,6 +482,22 @@ export default function CocLife() {
                   只要在網站上下單，Wee會將商品送到你家門口，非常方便。
                 </div>
               </div>
+              {/*Walmart */}
+              <div className="CaLifeShoppingCards">
+                <img
+                  src="/CALife/WalmartCA.jpg"
+                  alt="WalmartCA"
+                  className="CaLifeShoppingTag"
+                />
+
+                <div className="cocLifeShoppingText">
+                  <h3>Walmart</h3>
+                  Walmart 是北美其中最大規模的量販超市，
+                  價位的部分相較其他超市偏低、不管是買醬料、蔬果、零食、民生用品、都非常划算。 
+                  超市內也設有亞洲部門，基本的華人食品也都找得到
+                </div>
+              </div>
+              
             </div>
           </div>
           {/*Foods*/}
