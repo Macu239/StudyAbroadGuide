@@ -85,6 +85,10 @@ export const redDeerQuestions = [
       </ul>
     ),
   },
+    {
+    title: "RedDeer 需要托福/雅思成績嗎？",
+    content:"需要，取得6.0含或以上的成績，否則需要填寫免責聲明"
+  },
 ];
 
 export const usQuestions = [

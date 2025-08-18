@@ -91,7 +91,7 @@ export default function RedDeer() {
                 <ul className="pros-cons-list">
                   <li>氣候嚴寒，冬天很長，日照也短。</li>
                   <li>寄宿家庭的好壞取決於運氣</li>
-                  <li>不像大城市有百貨公司，只有小商場，也沒有亞洲超市。 只有小商場 也沒有亞洲超市</li>
+                  <li>不像大城市有百貨公司，只有小商場，也沒有亞洲超市。</li>
                   <li>交通不方便 (只有公車，半小時一班)</li>
                 </ul>
               </div>

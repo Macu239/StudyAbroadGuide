@@ -160,14 +160,18 @@ en {
   gap: 20px;
 }
 
-.cocLifeShoppingCards {
+.CaLifeShoppingCards {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 
-.cocLifeShoppingTag {
+.CaLifeShoppingTag {
+  aspect-ratio: 2;
+  object-fit: cover;
   width: 20%;
   height: auto;
   border-radius: 8px;
