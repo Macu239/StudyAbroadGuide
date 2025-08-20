@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   overflow: hidden;
-  width: var(--carousel-height);
+  width: var(--carousel-width);
   margin: auto;
   aspect-ratio: 16/9;
 }
@@ -34,7 +34,7 @@
 .dot {
   cursor: pointer;
   height: 12px;
-  width: 12px;
+  aspect-ratio: 1;
   margin: 0 6px;
   background-color: #bbb;
   display: inline-block;
@@ -44,4 +44,19 @@
 
 .dot.active {
   background-color: #fff;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .dot{
+    height: 6px;
+    margin: 0 2%;
+  }
+
+  .dots{
+    bottom: 5px;
+  }
+
+  .carousel{
+    width: 100%;
+  }
 }

@@ -28,20 +28,20 @@ main {
 
 @media (min-width: 380px) and (max-width: 590px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
 
   h3 {
-    font-size: 1.05rem;
+    font-size: 1.05rem !important;
   }
   h4 {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
   }
 }

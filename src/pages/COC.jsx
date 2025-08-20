@@ -8,7 +8,7 @@ export default function COC() {
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-text">
-            <h2 className="hero-title">College of the Canyons</h2>
+            <h1>College of the Canyons</h1>
             <p className="hero-subtitle">美國加州峽谷社區大學</p>
           </div>
           <Blur
@@ -47,9 +47,8 @@ export default function COC() {
             小時車程。當地居民以學生與退休族群為主，治安良好，生活環境安靜安全，極適合專注學習。
           </p>
           <div className="divider" />
-
+          <h2 className="section-title">誰適合College of the Canyons</h2>
           <div className="peopleSuitsWrapper">
-            <h2 className="section-title">誰適合College of the Canyons</h2>
             <div className="COCpeopleSuitsGrind">
               <div className="peopleSuitsBox" id="COC">
                 對航太工程領域有興趣，並計畫轉學至 UC 系統相關科系的學生

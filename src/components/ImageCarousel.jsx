@@ -32,7 +32,7 @@ export default function ImageCarousel({ width = "300px", Slides }) {
   return (
     <div 
       className="carousel"
-      style={{ "--carousel-height": width }}
+      style={{ "--carousel-width": width }}
     >
       <div
         className="slides"

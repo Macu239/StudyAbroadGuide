@@ -10,7 +10,6 @@
   z-index: 0;
 }
 
-
 .mainPageContent {
   display: flex;
   align-items: center;
@@ -69,4 +68,26 @@
 .school_pic {
   width: 100%;
   aspect-ratio: 1.67;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  
+  .schoolBoxes {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .mainIntro{
+    width: 100%;
+    flex-direction: column-reverse;
+    
+  }
+
+  #introText{
+    width: 100%;
+  }
 }
