@@ -4,7 +4,7 @@ import "./ImageCarousel.css";
 
 
 
-export default function ImageCarousel({ height = "300px", Slides }) {
+export default function ImageCarousel({ width = "300px", Slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideInterval = useRef(null);
 
@@ -32,7 +32,7 @@ export default function ImageCarousel({ height = "300px", Slides }) {
   return (
     <div 
       className="carousel"
-      style={{ "--carousel-height": height }}
+      style={{ "--carousel-height": width }}
     >
       <div
         className="slides"

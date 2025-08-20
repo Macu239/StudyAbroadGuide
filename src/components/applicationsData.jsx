@@ -266,12 +266,7 @@ export const canadaVisaApplication = [
   },
   {
     order: "三",
-    title: "申請加拿大學生簽證步驟",
-    content: <></>,
-  },
-  {
-    order: "四",
     title: "加拿大學生簽證注意事項/ 相關文件",
-    content: <></>,
+    content: "詳細資訊務必向 Daniel 確認，並依照指示準時提交資料，才能確保出國行程與簽證順利。",
   },
 ];

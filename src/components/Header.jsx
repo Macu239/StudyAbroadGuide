@@ -5,11 +5,14 @@ import "./Header.css";
 export default function Header() {
   return (
     <div className="title_bar">
-      <Link to="/">
-        <img className="logo" src="/globeLogo.svg" alt="Logo" />
-      </Link>
+      <div className="websiteHeader">
+        <Link to="/" id="logoLink">
+          <img className="logo" src="/globeLogo.svg" alt="Logo" />
+        </Link>
 
-      <h1 id="Pagename">傑洛米好鬆餅</h1>
+        <h1 id="Pagename">傑洛米好鬆餅</h1>
+      </div>
+
       <div className="Schools">
         <div className="dropdown">
           {/*COC*/}
@@ -126,7 +129,7 @@ export default function Header() {
                 Frequently Asked Questions
               </Link>
               <Link to="/AboutUs" className="dropdown-link">
-                關於我們
+                關於我們、意見箱
               </Link>
             </div>
           </button>

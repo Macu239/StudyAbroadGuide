@@ -66,7 +66,7 @@ export const RedDeer = [
       link:"https://www.instagram.com/raph._.shu?utm_source=ig_web_button_share_sheet&igsh=dnJkNm42MDk2Z2Y2",
       email:"chenhosu@gmail.com",
       linkText: "Instagram",
-      infos:"紅鹿的第一個聯繫人脈，22屆國際班",
+      infos:"紅鹿的第一個聯繫人脈，22屆國際班...",
     },
     {
       personalPic: "",

@@ -6,24 +6,40 @@ body {
   background-color: #171717;
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding-bottom: 0px;
-  height: 64px;
-  grid-area: header;
+  gap: 1rem;
+  padding: 0.4rem;
   color: white;
+  width: 100%;
 }
+
+.websiteHeader {
+  width: 17%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #Pagename {
+  width: 75%;
   font-family: Libre Baskerville;
   font-weight: bold;
 }
 
+#logoLink {
+  width: 20%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
-  height: 50px;
-  width: 50px;
-  margin-left: 10px;
+  width: 100%;
+  margin: auto 0;
+  aspect-ratio: 1;
 }
 .Schools {
-  width: 40%;
+  width: 75%;
   margin-right: auto;
   display: flex;
   flex-direction: row;
@@ -74,4 +90,42 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Small phones (0 - 380px) */
+@media (min-width: 380px) and (max-width: 590px) {
+  .title_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .websiteHeader {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #logoLink {
+    width: 12%;
+  }
+
+  .Schools {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 5px 8px;
+  }
+
+  .dropdown {
+    max-width: 100%;
+
+    .dropdown-link {
+      font-size: 1rem;
+    }
+  }
 }

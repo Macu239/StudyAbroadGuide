@@ -1,27 +1,47 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    line-height: 1.6;
+body {
+  line-height: 1.6;
 }
 
-a{
-    text-decoration: underline;
-    color: inherit;
-    font-weight: 600;
+a {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 600;
 }
 
-a:hover{
-    text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 
-li ul{
-    padding-left: 1rem;
+li ul {
+  padding-left: 1rem;
 }
 
-main{
-    font-family: 'Raleway', sans-serif;
+main {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
 }
