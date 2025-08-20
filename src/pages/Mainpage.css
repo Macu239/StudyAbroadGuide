@@ -1,80 +1,77 @@
-.mainPageWrapper{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.mainPageWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.photo{
-
-    display: block;
-    margin: 10px auto;    
-    z-index: 0;  
+.photo {
+  display: block;
+  margin: 10px auto;
+  z-index: 0;
 }
 
-.logo{
-    height: 50px;
-    width: 50px;
-    margin-left: 10px;
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
 }
 
-.mainPageContent{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    grid-area: main;
-    width: 85%;
+.mainPageContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: main;
+  width: 85%;
 }
 
-.mainIntro{
-    width: 100%;
-    align-self: center;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    gap: 40px;
+.mainIntro {
+  width: 100%;
+  align-self: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 40px;
 }
 
-#introText{
-    font-family: 'Libre Baskerville';
-    width: 45%;
-
+#introText {
+  font-family: "Libre Baskerville";
+  width: 45%;
 }
 
 .mainPagedivider {
-    width: 110%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-top: 3px solid #8C8A8A;
+  width: 110%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 3px solid #8c8a8a;
 }
-.schoolBoxes{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row  ;
-    justify-content: space-between; 
-    font-family: 'Libre Baskerville';
-    margin-bottom: 2.5rem;
+.schoolBoxes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Libre Baskerville";
+  margin-bottom: 2.5rem;
 }
-.box{
-    width: 30%;
-    display: flex;                
-    flex-direction: column;          
-    align-items: center;          
-    text-align: center; 
+.box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.box h3,h4{
-    margin-bottom: 2%;
+.box h3,
+.box h4 {
+  margin-bottom: 2%;
 }
 
 .school_page_link {
-    text-decoration: none;        
-    color: black;               
+  text-decoration: none;
+  color: black;
 }
 
-.school_pic{
-    width: 100%;
-    aspect-ratio: 1.67;
-    
+.school_pic {
+  width: 100%;
+  aspect-ratio: 1.67;
 }

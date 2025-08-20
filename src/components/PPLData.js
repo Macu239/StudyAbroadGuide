@@ -6,6 +6,7 @@ export const CollegeOfTheCanyons = [
         currentSchool:"COC -> UCSD",
         infos:"The One who built this website",
         link:"https://www.linkedin.com/in/jeremy-s-750718287/",
+        email:"Jeremy02012005@gmail.com",
         linkText: "Linkedin",
     },
     {
@@ -56,6 +57,16 @@ export const RedDeer = [
       infos:"20屆...",
       link:"",
       linkText: "Linkedin",
+    },
+    {
+      personalPic: "./Seniors/RaphaelChenho.jpg",
+      name: "Raphael Chenho",
+      major: "物理化學系",
+      currentSchool:"RedDeer -> 麥克馬斯特大學",
+      link:"https://www.instagram.com/raph._.shu?utm_source=ig_web_button_share_sheet&igsh=dnJkNm42MDk2Z2Y2",
+      email:"chenhosu@gmail.com",
+      linkText: "Instagram",
+      infos:"紅鹿的第一個聯繫人脈，22屆國際班",
     },
     {
       personalPic: "",

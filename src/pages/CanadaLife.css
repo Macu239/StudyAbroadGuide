@@ -185,7 +185,7 @@ en {
   color: #000000;
 }
 
-.cocLifeEntertainmentsection {
+.CaLifeFoodsection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -197,19 +197,19 @@ en {
   padding: 10px 20px 20px 20px;
 }
 
-.cocLifeEntertainmentsection h3 {
+.CaLifeEntertainmentsection h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
-.cocLifeEntertainmentCardsWrapper {
+.CaLifeEntertainmentCardsWrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.cocLifeEntertainmentCard {
+.CaLifeEntertainmentCard {
   font-weight: 500;
   width: 19%;
   background-color: #b7e6f3;
@@ -218,12 +218,12 @@ en {
   transition: transform 0.3s ease;
 }
 
-.cocLifeEntertainmentCard:hover {
+.CaLifeEntertainmentCard:hover {
   transform: scale(1.5);
   cursor: default;
 }
 
-.cocLifeEntertainmentImage {
+.CaLifeEntertainmentImage {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -232,7 +232,7 @@ en {
   object-fit: cover;
 }
 
-.cocLifeEntertainmentCard a {
+.CaLifeEntertainmentCard a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,21 +242,21 @@ en {
   gap: 10px;
 }
 
-.cocLifeEntertainmentOtherCity {
+.CaLifeEntertainmentOtherCity {
   width: 32%;
   padding: 4px;
 }
 
-.cocLifeEntertainmentOtherCity:hover {
+.CaLifeEntertainmentOtherCity:hover {
   transform: scale(2.5);
 }
 
-.cocLifeEntertainmentTitle {
+.CaLifeEntertainmentTitle {
   font-size: 0.75rem;
   font-weight: 600;
 }
 
-.cocLifeEntertainmentSpotsWrapper {
+.CaLifeEntertainmentSpotsWrapper {
   width: 100%;
   height: auto;
   display: flex;
@@ -267,7 +267,7 @@ en {
   padding: 4px;
 }
 
-.cocLifeEntertainmentSpot {
+.CaLifeEntertainmentSpot {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,10 +277,11 @@ en {
   border-radius: 8px;
 }
 
-.cocLifeEntertainmentSpot h4 {
+.CaLifeEntertainmentSpot h4 {
   margin-top: 5%;
   font-weight: 500;
   font-size: 0.5rem;
   line-height: 1.5;
   color: #000000;
 }
+

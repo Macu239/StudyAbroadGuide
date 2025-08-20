@@ -67,7 +67,7 @@ export const UMCApplication = [
     order: "一",
     title: "申請UMC從哪裡開始呢？",
     content:
-      "在申請UMC之前，建議先找 Daniel 談談，了解整體流程與準備事項。之後可以前往",
+      "在申請UMC之前，建議先找 Daniel 談談，了解整體流程與準備事項。",
   },
   {
     order: "二",
@@ -78,19 +78,14 @@ export const UMCApplication = [
         <li>課業不能被當</li>
         <li>要做線上英文測試，確認英文能力</li>
         <li>上ESL</li>
-        <li>國三高一高二英文成績單</li>
+        <li><strong>國三</strong>高一高二英文成績單</li>
       </ul>
     ),
   },
   {
     order: "三",
-    title: "申請UMC時間/Deadline",
-    content: <></>,
-  },
-  {
-    order: "四",
     title: "申請UMC注意事項",
-    content: "IDK for Now, I will definitely update this section later.",
+    content: "雅思至少要是6.0，然後需要填寫免責聲明，6.5則不用。",
   },
 ];
 
@@ -98,16 +93,20 @@ export const RDApplication = [
   {
     order: "一",
     title: "申請RedDeer從哪裡開始呢？",
-    content:
-      "在申請RedDeer之前，建議先找 Daniel 談談，了解整體流程與準備事項。之後可以前往",
+    content: (
+      <p>
+        在申請RedDeer之前，建議先找 Daniel
+        談談，了解整體流程與準備事項。接下來申請加入雙聯課程，每學期課程費用約加幣800
+      </p>
+    ),
   },
   {
     order: "二",
-    title: "申請RedDeer需要準備哪些文件呢?",
+    title: "前往RedDeer需要準備哪些材料呢?",
     content: (
       <ul>
         <li>
-          雙聯
+          雙聯課程
           <ul>
             <li>高一一門英文課</li>
             <li>高二一門英文課</li>
@@ -121,13 +120,8 @@ export const RDApplication = [
   },
   {
     order: "三",
-    title: "申請UMC時間/Deadline",
-    content: <></>,
-  },
-  {
-    order: "四",
-    title: "申請UMC注意事項",
-    content: "IDK for Now, I will definitely update this section later.",
+    title: "申請Red Deer注意事項",
+    content: "雅思至少要是6.0，然後需要填寫免責聲明，6.5則不用。",
   },
 ];
 

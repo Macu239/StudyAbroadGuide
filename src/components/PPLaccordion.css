@@ -1,15 +1,21 @@
 .accordion {
-    margin-bottom: 1rem;
-    overflow: hidden;
-    display: flex;     
-    align-items: center;      
-    justify-content: center; 
-    flex-direction: column;
-  
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#PPLaccordion{
-    width:  var(--PPLaccordionWidth);
+#PPLaccordion {
+  width: var(--PPLaccordionWidth);
+}
+
+.accordionContentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .accordionTitle {
@@ -21,51 +27,75 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  width:100%;
+  width: 100%;
   min-width: 875px;
   aspect-ratio: 12.5;
 }
 
 .accordionTitle:hover {
-    background-color: #434343;
-    cursor: pointer;
+  background-color: #434343;
+  cursor: pointer;
 }
 
-.arrow{
-    margin-left: none;
+.arrow {
+  margin-left: none;
 }
-.accordionContent{
-    font-family: 'raleway', sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    width: 805px;
-    max-height: 530px;
-    background-color: #D9D9D9;
-    padding: 1.5rem;
-    color: #000;
-    white-space: pre-line;
-}
-
-.personalPic{
-    width: 200px;
-    height: 235px;
-     background-color:#ffffff;
-    border-radius: 10px;
+.accordionContent {
+  font-family: "raleway", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom:1.5rem;
+  width: 90%;
+  background-color: #d9d9d9;
+  padding: 1.5rem;
+  color: #000;
+  white-space: pre-line;
 }
 
-.accordionText{
-    margin-left: 20px;
-    max-width: 520px;
+.personalPic {
+  width: 25%;
+  aspect-ratio: 0.85;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
 
+.PplAccordionHeder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.PplAccordionHederLeft {
+  width: 40%;
+}
+
+.PplAccordionHederRight {
+  max-width: 60%;
+  align-content: flex-end;
+}
+
+.accordionText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  width: 75%;
 }
 
 .accordionText span {
-    font-size: 18px;
-    line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 100%;
 }
 .accordionText h2 {
-    line-height: 1.5;
+  line-height: 1.5;
 }
+
+.accordionContentWrapper #Email {
+  font-weight: 500;
+}
+

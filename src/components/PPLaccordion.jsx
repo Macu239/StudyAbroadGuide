@@ -29,30 +29,37 @@ function PPLaccordionItem({ School, people, isExpanded, width = "875px" }) {
           {/*inputting datas below*/}
           {people.map((person, index) => (
             <div key={person.id || index} className="accordionContent">
-              <div className="personalPic">{person.personalPic}</div>
+              <img className="personalPic" src={person.personalPic}></img>
               <div className="accordionText">
-                <h2>{person.name}</h2>
+                <div className="PplAccordionHeder">
+                  <div className="PplAccordionHederLeft">
+                    <h2>{person.name}</h2>
 
-                <h4>
-                  {person.major}
-                  <br />
-                  {person.currentSchool}
-                </h4>
+                    <h4>
+                      {person.major}
+                      <br />
+                      {person.currentSchool}
+                    </h4>
+                  </div>
+                  <div className="PplAccordionHederRight">
+                    {person.email && (
+                      <span id="Email">Email: {person.email}</span>
+                    )}
+                    <br/>
+                    {person.link && (
+                      <a
+                        href={person.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="accordionLink"
+                      >
+                        {person.linkText || "Linkedin Profile"}
+                      </a>
+                    )}
+                  </div>
+                </div>
 
-                <span>{person.infos}</span>
-
-                <br />
-
-                {person.link && (
-                  <a
-                    href={person.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="accordionLink"
-                  >
-                    {person.linkText || "Linkedin Profile"}
-                  </a>
-                )}
+                <span id="PersonalInfo">{person.infos}</span>
               </div>
             </div>
           ))}

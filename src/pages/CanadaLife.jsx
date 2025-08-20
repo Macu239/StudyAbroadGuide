@@ -12,7 +12,6 @@ export default function CocLife() {
   const weatherRef = useRef(null);
   const shoppingRef = useRef(null);
   const restaurantRef = useRef(null);
-  const entertainmentRef = useRef(null);
 
   const scrollToSection = (ref) => {
     if (ref.current) {
@@ -33,7 +32,6 @@ export default function CocLife() {
           <li onClick={() => scrollToSection(weatherRef)}>天氣/衣物</li>
           <li onClick={() => scrollToSection(shoppingRef)}>購物/超市</li>
           <li onClick={() => scrollToSection(restaurantRef)}>餐廳/飲食</li>
-          <li onClick={() => scrollToSection(entertainmentRef)}>娛樂/景點</li>
         </ul>
       </div>
       <div className="cocLifeContentWrapper">
@@ -320,9 +318,12 @@ export default function CocLife() {
                   />
 
                   <div className="CALifeResourceCardtext">
-                    <h3 className="CALifeResourceTitle">Uber/Hopp/Lyft/寄宿家庭</h3>
+                    <h3 className="CALifeResourceTitle">
+                      Uber/Hopp/Lyft/寄宿家庭
+                    </h3>
                     <h4>
-                      *不同寄宿家庭，規定不一，但可以詢問寄宿家庭接送<br/>
+                      *不同寄宿家庭，規定不一，但可以詢問寄宿家庭接送
+                      <br />
                       <en>Uber</en>單價偏高但品質也比較好
                       <br />
                       <en>lyft</en>和<en>Hopp</en>比較便宜但司機品質參差不齊
@@ -339,17 +340,21 @@ export default function CocLife() {
 
                   <div className="CALifeResourceCardtext">
                     <h3 className="CALifeResourceTitle">
-                      <a href="https://www.reddeer.ca/city-services/transit/" target="_Blank">
+                      <a
+                        href="https://www.reddeer.ca/city-services/transit/"
+                        target="_Blank"
+                      >
                         紅鹿公車
                       </a>
                     </h3>
                     <h4>
-                      Red Deer City Transit 是紅鹿市的公共巴士系統，提供市區內各社區、學校與主要設施之間的交通服務。<br/>
+                      Red Deer City Transit
+                      是紅鹿市的公共巴士系統，提供市區內各社區、學校與主要設施之間的交通服務。
+                      <br />
                       <strong>*半小時一班</strong>
                     </h4>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -451,7 +456,8 @@ export default function CocLife() {
 
                 <div className="cocLifeShoppingText">
                   <h3>A-Mart</h3>
-                 韓國超市 A-mart 有韓國食品與生活用品，店內可找到新鮮食材、調味品、零食與飲料，也有熟食和日常用品。
+                  韓國超市 A-mart
+                  有韓國食品與生活用品，店內可找到新鮮食材、調味品、零食與飲料，也有熟食和日常用品。
                 </div>
               </div>
               {/*TnT*/}
@@ -464,7 +470,9 @@ export default function CocLife() {
 
                 <div className="cocLifeShoppingText">
                   <h3>Trader Joe's</h3>
-                  大統華 (T&T Supermarket) 是加拿大最大的亞洲超市，紅鹿附近只有calgary/ edmonton有開，多倫多在UofT附近和Downtown各有一間
+                  大統華 (T&T Supermarket)
+                  是加拿大最大的亞洲超市，紅鹿附近只有calgary/
+                  edmonton有開，多倫多在UofT附近和Downtown各有一間
                 </div>
               </div>
               {/*Weee*/}
@@ -493,11 +501,10 @@ export default function CocLife() {
                 <div className="cocLifeShoppingText">
                   <h3>Walmart</h3>
                   Walmart 是北美其中最大規模的量販超市，
-                  價位的部分相較其他超市偏低、不管是買醬料、蔬果、零食、民生用品、都非常划算。 
+                  價位的部分相較其他超市偏低、不管是買醬料、蔬果、零食、民生用品、都非常划算。
                   超市內也設有亞洲部門，基本的華人食品也都找得到
                 </div>
               </div>
-              
             </div>
           </div>
           {/*Foods*/}
@@ -506,7 +513,186 @@ export default function CocLife() {
               <h2>餐廳/飲食</h2>
             </div>
             <div className="CaLifeDivider"></div>
-            <h4>多倫多食物便宜各種種類多由尤其還有唐人街</h4>
+            <div className="CaLifeFoodsection">
+              <h3>Around Red Deer</h3>
+              <h4>
+                在 Red
+                Deer，可以下廚，但需依寄宿家庭的規定而定。當地主要是美式飲食，常見的有
+                Five Guys、DQ、A&W、Jollibee、Wendy’s
+                等；中式餐廳非常少，而且味道不太道地。不過，也能找到不錯的日本料理與炸豬排店，如
+                Shiso 和 Wow Store。
+              </h4>
+              <div className="CaLifeEntertainmentCardsWrapper">
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://www.sixflags.com/magicmountain/things-to-do"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/fiveGuys.jpg"
+                      alt="Five Guys"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>大型遊樂園</h4>
+                    <h4>
+                      <en>Five Guys</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a href="https://www.bowlvalencialanes.com/" target="_Blank">
+                    <img
+                      src="/CALife/DQ.jpg"
+                      alt="Dairy Queen"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>保齡球館</h4>
+                    <h4>
+                      <en>Dairy Queen</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://www.thecubesantaclarita.com/"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/A&W.jpg"
+                      alt="A&W"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>溜冰場</h4>
+                    <h4>
+                      <en>A&W</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://maps.app.goo.gl/d3vbfGo5M3fxrmri8"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/Shiso.jpg"
+                      alt="Shiso"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>電影院</h4>
+                    <h4>
+                      <en>Regal Valencia</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://maps.app.goo.gl/Tr6nCGt47h56BRPn8"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/wowStore.webp"
+                      alt="wowStore"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>購物商場</h4>
+                    <h4>
+                      <en>Town Center</en>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="CaLifeFoodsection">
+              <h3>Around Red Deer</h3>
+              <h4>多倫多食物便宜各種種類多由尤其還有唐人街</h4>
+              <div className="CaLifeEntertainmentCardsWrapper">
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://www.sixflags.com/magicmountain/things-to-do"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/fiveGuys.jpg"
+                      alt="Five Guys"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>大型遊樂園</h4>
+                    <h4>
+                      <en>Five Guys</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a href="https://www.bowlvalencialanes.com/" target="_Blank">
+                    <img
+                      src="/CALife/DQ.jpg"
+                      alt="Dairy Queen"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>保齡球館</h4>
+                    <h4>
+                      <en>Dairy Queen</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://www.thecubesantaclarita.com/"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/A&W.jpg"
+                      alt="A&W"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>溜冰場</h4>
+                    <h4>
+                      <en>A&W</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://maps.app.goo.gl/d3vbfGo5M3fxrmri8"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/Shiso.jpg"
+                      alt="Shiso"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>電影院</h4>
+                    <h4>
+                      <en>Regal Valencia</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://maps.app.goo.gl/Tr6nCGt47h56BRPn8"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/wowStore.webp"
+                      alt="wowStore"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>購物商場</h4>
+                    <h4>
+                      <en>Town Center</en>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
