@@ -1,6 +1,6 @@
 import "./SchoolMainPage.css";
 import { Link } from "react-router-dom";
-import {Blur} from "../components"
+import { Blur } from "../components";
 
 export default function RedDeer() {
   return (
@@ -68,33 +68,40 @@ export default function RedDeer() {
               </div>
 
               <div className="peopleSuitsBox" id="RD1">
-                喜歡多元文化/跟大自然相處的學生
+                喜歡多元文化/跟大自然相處/運動的學生
               </div>
             </div>
           </div>
           <div className="divider" />
           <h2 className="section-title">Pros and Cons</h2>
-          <div className="pros-cons-section">
-            <div className="pros-cons-row">
-              <div className="ProsConsText" id="RD">
-                <div className="pros-cons-title">Pros:</div>
-                <ul className="pros-cons-list">
-                  <li>體驗真正的加拿大高中生活</li>
-                  <li>融入寄宿家庭（有機會遇見來自不同國家的家庭</li>
-                  <li>獲得優異的在校成績有助於申請世界頂尖大學</li>
-                  <li>體驗當地娛樂生活（滑雪、溜冰、冰上曲棍球）</li>
-                  <li>有很大機率可以看到極光</li>
-                </ul>
-              </div>
-              <div className="ProsConsText" id="RD1">
-                <div className="pros-cons-title">Cons:</div>
-                <ul className="pros-cons-list">
-                  <li>氣候嚴寒，冬天很長，日照也短。</li>
-                  <li>寄宿家庭的好壞取決於運氣</li>
-                  <li>不像大城市有百貨公司，只有小商場，也沒有亞洲超市。</li>
-                  <li>交通不方便 (只有公車，半小時一班)</li>
-                </ul>
-              </div>
+          <div className="pros-cons-row">
+            <div className="ProsConsText" id="RD">
+              <div className="pros-cons-title">Pros:</div>
+              <ul className="pros-cons-list">
+                <li>體驗真正的加拿大高中生活以及課程</li>
+                <li>融入寄宿家庭（有機會遇見來自不同國家的家庭</li>
+                <li>獲得優異的在校成績有助於申請世界頂尖大學</li>
+                <li>體驗當地娛樂生活（滑雪、溜冰、冰上曲棍球）</li>
+                <li>有很大機率可以看到極光</li>
+                <li>
+                  English 30-1的訓練可以很完整的培養學生以後大學的寫作能力
+                </li>
+                <li>學校有很多社團活動</li>
+                <li>
+                  因學校位置較偏僻，學生可以好好專心的上學讀書、有省考，鑑別度高
+                </li>
+              </ul>
+            </div>
+            <div className="ProsConsText" id="RD1">
+              <div className="pros-cons-title">Cons:</div>
+              <ul className="pros-cons-list">
+                <li>氣候嚴寒，冬天很長，日照也短。</li>
+                <li>天氣較容易影響心情</li>
+                <li>寄宿家庭的好壞取決於運氣</li>
+                <li>不像大城市有百貨公司，只有小商場，周遭極少亞洲超市</li>
+                <li>交通不方便 (只有公車，半小時一班)</li>
+                <li>申請亞伯達省以外的大學學校較無法給學生協助</li>
+              </ul>
             </div>
           </div>
           <div className="divider" />

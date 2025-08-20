@@ -15,7 +15,7 @@ export default function MainPage() {
             <p>這裡整理了惠文學生最常選擇出國留學的相關資訊，</p>
             <p>主要涵蓋 COC、UMC 以及 Red Deer，從申請流程、生活須知到未來升學方向等內容一應俱全。</p>
           </div>
-          <ImageCarousel Slides={MainPageImgs} height='400px'/>
+          <ImageCarousel Slides={MainPageImgs} width='50%'/>
         </div>
         
         <div className="mainPagedivider" />

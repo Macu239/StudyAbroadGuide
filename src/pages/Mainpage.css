@@ -10,11 +10,6 @@
   z-index: 0;
 }
 
-.logo {
-  height: 50px;
-  width: 50px;
-  margin-left: 10px;
-}
 
 .mainPageContent {
   display: flex;
