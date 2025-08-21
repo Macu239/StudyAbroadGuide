@@ -42,9 +42,8 @@ export default function UMC() {
             </a>
           </p>
           <div className="divider" />
-
+          <h2 className="section-title">誰適合UMC/加拿大</h2>
           <div className="peopleSuitsWrapper">
-            <h2 className="section-title">誰適合UMC/加拿大</h2>
             <div className="COCpeopleSuitsGrind">
               <div className="peopleSuitsBox" id="UMC">
                 可以跟自己獨處的學生
@@ -118,7 +117,7 @@ export default function UMC() {
       <section className="resources-section">
         <h2 className="section-title">更多資訊</h2>
 
-        <div className="resources-grid">
+        <div className="resourcesGrid">
           <div className="extra-info-row">
             <div className="resource-card">
               <Link to="/UMCApplication">

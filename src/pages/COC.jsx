@@ -128,7 +128,7 @@ export default function COC() {
         <div className="divider" />
         <h2 className="section-title">更多資訊</h2>
 
-        <div className="resources-grid">
+        <div className="resourcesGrid">
           <div className="extra-info-row">
             <div className="resource-card">
               <Link to="/COCApplication">

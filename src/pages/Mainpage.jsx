@@ -48,7 +48,7 @@ export default function MainPage() {
 
           <div className="box">
             <Link to="/RedDeer" className="school_page_link">
-              <h3>Red Deer Catholic Regional School</h3>
+              <h3>Red Deer Catholic Internatioal School</h3>
               <h4>加拿大紅鹿</h4>
               <Blur
                 src="/Mainpage/Reddeer.jpg"

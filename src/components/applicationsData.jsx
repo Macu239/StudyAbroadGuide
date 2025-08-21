@@ -58,7 +58,7 @@ export const cocApplication = [
   {
     order: "四",
     title: "申請COC注意事項",
-    content: "IDK for Now, I will definitely update this section later.",
+    content: "建議在2月到3月約中旬準備資料並提交申請，收到入學通知以後盡快處理簽證，6月畢業以後約8月初出發加州。",
   },
 ];
 

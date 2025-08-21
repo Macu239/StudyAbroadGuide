@@ -7,7 +7,7 @@ export default function UMCAcademicc(){
         <div className='cocAcademicContainer'>
             <div className='cocAcademicHero'>
                 <img className='cocAcademicBackground' src='/UMCAcademic/uoftHero.png' alt='COC Campus' />
-                <div className='cocAcademicTitle'>
+                <div className='CaAcademicTitle'>
                     <h1>加拿大升學指南：課程、成績與規劃</h1>
                 </div>
             </div>

@@ -13,9 +13,7 @@ export default function CocAcademicc() {
           alt="COC Campus"
           loading="lazy"
         />
-        <div className="cocAcademicTitle">
-          <h1>UC轉學指南：課程、GPA與規劃、線上課程</h1>
-        </div>
+          <h1 className="cocAcademicTitle">UC轉學指南：課程、GPA與規劃、線上課程</h1>
       </div>
       <div className="cocAcademicContents">
         <DividerContent

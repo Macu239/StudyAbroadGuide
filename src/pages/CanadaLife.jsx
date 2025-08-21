@@ -513,7 +513,7 @@ export default function CocLife() {
               <h2>餐廳/飲食</h2>
             </div>
             <div className="CaLifeDivider"></div>
-            <div className="CaLifeFoodsection">
+            <div className="CaLifeFoodsection" id="RD">
               <h3>Around Red Deer</h3>
               <h4>
                 在 Red
@@ -523,7 +523,7 @@ export default function CocLife() {
                 Shiso 和 Wow Store。
               </h4>
               <div className="CaLifeEntertainmentCardsWrapper">
-                <div className="CaLifeEntertainmentCard">
+                <div className="CaLifeEntertainmentCard" >
                   <a
                     href="https://www.sixflags.com/magicmountain/things-to-do"
                     target="_Blank"
@@ -533,28 +533,28 @@ export default function CocLife() {
                       alt="Five Guys"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>大型遊樂園</h4>
+                    <h4>美式速食店</h4>
                     <h4>
                       <en>Five Guys</en>
                     </h4>
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard">
+                <div className="CaLifeEntertainmentCard" >
                   <a href="https://www.bowlvalencialanes.com/" target="_Blank">
                     <img
                       src="/CALife/DQ.jpg"
                       alt="Dairy Queen"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>保齡球館</h4>
+                    <h4>美式速食店</h4>
                     <h4>
                       <en>Dairy Queen</en>
                     </h4>
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard">
+                <div className="CaLifeEntertainmentCard" >
                   <a
                     href="https://www.thecubesantaclarita.com/"
                     target="_Blank"
@@ -564,14 +564,14 @@ export default function CocLife() {
                       alt="A&W"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>溜冰場</h4>
+                    <h4>美式速食店</h4>
                     <h4>
                       <en>A&W</en>
                     </h4>
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard">
+                <div className="CaLifeEntertainmentCard" >
                   <a
                     href="https://maps.app.goo.gl/d3vbfGo5M3fxrmri8"
                     target="_Blank"
@@ -581,14 +581,14 @@ export default function CocLife() {
                       alt="Shiso"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>電影院</h4>
+                    <h4>日式料理、壽司</h4>
                     <h4>
-                      <en>Regal Valencia</en>
+                      <en>Shiso </en>
                     </h4>
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard">
+                <div className="CaLifeEntertainmentCard" >
                   <a
                     href="https://maps.app.goo.gl/Tr6nCGt47h56BRPn8"
                     target="_Blank"
@@ -598,16 +598,16 @@ export default function CocLife() {
                       alt="wowStore"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>購物商場</h4>
+                    <h4>炸豬排</h4>
                     <h4>
-                      <en>Town Center</en>
+                      <en>Wow Store</en>
                     </h4>
                   </a>
                 </div>
               </div>
             </div>
-            <div className="CaLifeFoodsection">
-              <h3>Around Red Deer</h3>
+            <div className="CaLifeFoodsection" id="TorontoFood">
+              <h3>Around UMC/ Toronto</h3>
               <h4>多倫多食物便宜各種種類多由尤其還有唐人街</h4>
               <div className="CaLifeEntertainmentCardsWrapper">
                 <div className="CaLifeEntertainmentCard">

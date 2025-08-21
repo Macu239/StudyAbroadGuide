@@ -39,11 +39,10 @@ export default function RedDeer() {
             </a>
           </p>
           <div className="divider" />
-
+          <h2 className="section-title">
+            誰適合 Red Deer Catholic International
+          </h2>
           <div className="peopleSuitsWrapper">
-            <h2 className="section-title">
-              誰適合 Red Deer Catholic International
-            </h2>
             <div className="COCpeopleSuitsGrind">
               <div className="peopleSuitsBox" id="RD">
                 願意去嘗試參與各式活動的人
@@ -113,7 +112,7 @@ export default function RedDeer() {
       <section className="resources-section">
         <h2 className="section-title">更多資訊</h2>
 
-        <div className="resources-grid">
+        <div className="resourcesGrid">
           <div className="extra-info-row">
             <div className="resource-card">
               <Link to="/RedDeerApplication">

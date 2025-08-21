@@ -88,9 +88,9 @@ en {
   background-color: #224291;
 }
 
-.cocLifeText h4 {
-  font-weight: 400;
-  line-height: 180%;
+.CaLifeFoodsection h4 {
+  font-weight: 500;
+  line-height: normal;
 }
 
 .cocLifeText h4 ul {
@@ -191,7 +191,7 @@ en {
   align-items: flex-start;
   justify-content: space-between;
   background-color: #87cde1;
-  color: #000000;
+  color: #fff;
   border-radius: 8px;
   margin-top: 20px;
   padding: 10px 20px 20px 20px;
@@ -203,6 +203,7 @@ en {
 }
 
 .CaLifeEntertainmentCardsWrapper {
+  margin-top: 0.8rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -212,10 +213,19 @@ en {
 .CaLifeEntertainmentCard {
   font-weight: 500;
   width: 19%;
-  background-color: #b7e6f3;
+  background-color: #0E5AA4;
   padding: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
+}
+
+#TorontoFood{
+  background-color: #af292e;
+  color: #fff;
+}
+
+#TorontoFood .CaLifeEntertainmentCard{
+  background-color: #CD494C;
 }
 
 .CaLifeEntertainmentCard:hover {
@@ -239,7 +249,7 @@ en {
   justify-content: center;
   text-decoration: none;
   font-weight: 500;
-  gap: 10px;
+  gap: 0.4rem;
 }
 
 .CaLifeEntertainmentOtherCity {
