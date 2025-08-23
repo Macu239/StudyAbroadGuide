@@ -15,15 +15,15 @@ function AccordionItem({ title, content, isExpanded,link,linkText }) {
 
     return (
         <div className='accordion'>
-            <div className='accordionTitle' 
+            <div className='QAaccordionTitle' 
             onClick={handleToggle}
             >
-                <span>{title}</span>
+                <h4>{title}</h4>
                 <span className='arrow'>{isOpen? '▲' : '▼'}</span>
             </div>
             {isOpen && (
             <div className='QAaccordionContent'>
-                <span>{content}</span>
+                <p>{content}</p>
                 {link && (
                         <a
                             href={link}

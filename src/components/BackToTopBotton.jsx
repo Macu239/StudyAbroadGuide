@@ -1,16 +1,17 @@
-import './BackToTopBotton.css'
+import "./BackToTopBotton.css";
 
-export default function BackToTopBotton({titleRef}){
+export default function BackToTopBotton() {
+  const scrollToSection = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // smooth scrolling effect
+    });
+  };
 
-    const scrollToSection = (ref) => {
-        if (ref.current) {
-            ref.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-
-    return(
-        <div onClick={() => scrollToSection(titleRef)} className='BackToTopBottonWrapper'>
-            <img src='/arrow.png' className='BackToTopBottonarrow'/>
-        </div>
-    )
+  return (
+    <div onClick={() => scrollToSection()} className="BackToTopBottonWrapper">
+      <img src="/arrow.png" className="BackToTopBottonarrow" />
+    </div>
+  );
 }

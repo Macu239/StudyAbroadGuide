@@ -28,7 +28,6 @@
   align-items: center;
   font-weight: 600;
   width: 100%;
-  min-width: 875px;
   aspect-ratio: 12.5;
 }
 
@@ -46,7 +45,7 @@
   flex-direction: row;
   align-items: flex-start;
   margin-top: 20px;
-  margin-bottom:1.5rem;
+  margin-bottom: 1.5rem;
   width: 90%;
   background-color: #d9d9d9;
   padding: 1.5rem;
@@ -65,7 +64,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 1rem;
 }
 
@@ -74,8 +73,12 @@
 }
 
 .PplAccordionHederRight {
-  max-width: 60%;
+  width: 60%;
   align-content: flex-end;
+}
+
+.PPLaccordionLink {
+  font-size: 1rem;
 }
 
 .accordionText {
@@ -98,4 +101,51 @@
 .accordionContentWrapper #Email {
   font-weight: 500;
 }
+@media (min-width: 380px) and (max-width: 590px) {
+  .accordion {
+    width: 100%;
+  }
 
+  .PPLaccordionLink {
+    font-size: 0.9rem;
+  }
+
+  .accordionContent {
+    margin-bottom: 0.4rem;
+    margin-top: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PplAccordionHeder {
+    flex-direction: column;
+  }
+
+  .PplAccordionHederLeft,
+  .PplAccordionHederRight {
+    width: 100%;
+  }
+
+  .personalPic {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .accordionText {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Header layout: stack school/major info */
+  .PplAccordionHeder {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Ensure links and emails wrap nicely */
+  .PplAccordionHederRight h4,
+  .PPLaccordionLink {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}

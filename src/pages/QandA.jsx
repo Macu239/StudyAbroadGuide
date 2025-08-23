@@ -37,7 +37,7 @@ function QandA() {
                 </ul>
             </div>
             <div className='QandA'> 
-                <div className='Title' ref={titleRef}>Common Questions For Study Abroad</div>
+                <h1 className='QandATitle' ref={titleRef}>Common Questions For Study Abroad</h1>
 
                 <div className='expandToggle'>
                     <span className='expandToggleText' onClick={toggleExpandAll}>

@@ -24,6 +24,7 @@ export default function Seniors() {
 
   const toggleExpandAll = () => {
     setExpandAll(!expandAll);
+    setExpandedSchool(null);
   };
 
   const scrollToSection = (ref) => {
@@ -57,9 +58,9 @@ export default function Seniors() {
         <SeniorsForms formTitle="If you are willing to be one of the Seniors" />
       </div>
       <div className="Seniorsarea">
-        <div className="seniorTitle" ref={titleRef}>
+        <h1 className="seniorTitle" ref={titleRef}>
           學長姐們
-        </div>
+        </h1>
 
         <div className="expandToggle">
           <span className="expandToggleText" onClick={toggleExpandAll}>
@@ -134,7 +135,7 @@ export default function Seniors() {
         <div className="PPLdivider" />
         {/*Cold Email */}
         <div className="PPLColdEmail">
-          <div className="seniorTitle">Cold Email/聯繫學長姊Tips</div>
+          <h2 className="seniorTitle">Cold Email/聯繫學長姊Tips</h2>
           <div className="PPLColdEmailText">
             在北美，「Reach
             out」是一種常用來主動聯絡陌生人或不熟識學長姐的方式。

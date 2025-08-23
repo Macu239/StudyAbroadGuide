@@ -11,7 +11,7 @@
   border-radius: 8px;
 }
 
-.EmailForm h3{
+.EmailForm h3 {
   align-self: center;
   margin-bottom: 20px;
 }
@@ -25,26 +25,26 @@
 .EmailForm select,
 .EmailForm textarea {
   width: 100%;
-  padding: 10px   ;
+  padding: 10px;
   border: none;
-  border-bottom: 1px solid #00000070; 
+  border-bottom: 1px solid #00000070;
   outline: none;
   background: inherit;
   font-size: 18px;
   margin-bottom: 12px;
 }
 
-.EmailForm #intro{
-  border:1px solid #000000;
+.EmailForm #intro {
+  border: 1px solid #000000;
 }
 
 .EmailForm input:focus,
 .EmailForm textarea:focus {
   background-color: inherit;
-  border-bottom: 2px solid #3f76f7; 
+  border-bottom: 2px solid #3f76f7;
 }
 
-.EmailForm select{
+.EmailForm select {
   border: 1px solid #00000070;
 }
 
@@ -59,11 +59,23 @@
 
 .EmailForm input[type="submit"]:hover {
   cursor: pointer;
-  background-color: #4da6f0; 
+  background-color: #4da6f0;
   box-shadow: 0 4px 10px rgba(77, 166, 240, 0.4);
 }
 
 .EmailForm input[type="submit"]:active {
   transform: scale(0.98);
   box-shadow: 0 2px 6px rgba(77, 166, 240, 0.3);
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .EmailForm {
+    font-size: 1rem;
+  }
+  
+  .EmailForm input,
+  .EmailForm select,
+  .EmailForm textarea {
+    font-size: 0.9rem;
+  }
 }
