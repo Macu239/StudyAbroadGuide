@@ -175,7 +175,7 @@ export default function COC() {
               </Link>
             </div>
             <div className="resource-card">
-              <Link to="/Seniors">
+              <Link to="/Seniors"  state={{ openSection: "COC" }}>
                 <img
                   src="/COC/img_img_5504_1.png"
                   alt="Find Seniors"

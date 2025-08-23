@@ -26,7 +26,7 @@ function QandA() {
 
     return (
         <div className='QandAContainer'>
-            <div className='QandASideBar'>
+            <div className='QandASideBar SIDEBAR'>
                 <span className='SideBarTitle'>問題主題/Topics</span>
                 <ul>
                     <li onClick={() => scrollToSection(cocRef)}>COC</li>

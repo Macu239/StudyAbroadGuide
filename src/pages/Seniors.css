@@ -10,7 +10,7 @@
   gap: 4%;
 }
 
-.PPLSideSection{
+.PPLSideSection {
   display: flex;
   flex-direction: column;
   width: 24%;
@@ -84,6 +84,26 @@
   color: transparent;
 }
 
+.accordionWrapper {
+  width: 100%;
+}
+
+.highlight {
+  animation: popEffect 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); 
+}
+
+@keyframes popEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .PPLdivider {
   width: 110%;
   border-top: 3px solid #8c8a8a;
@@ -126,5 +146,3 @@
   border: #171717 1px solid;
   font-weight: 500;
 }
-
-

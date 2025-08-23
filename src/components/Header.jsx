@@ -38,7 +38,11 @@ export default function Header() {
               <Link to="/CocAcademic" className="dropdown-link">
                 UC轉學、線上課程
               </Link>
-              <Link to="/Seniors" className="dropdown-link">
+              <Link
+                to="/Seniors"
+                className="dropdown-link"
+                state={{ openSection: "COC" }}
+              >
                 找學長姊
               </Link>
               <Link to="/CocLife" className="dropdown-link">
@@ -71,7 +75,11 @@ export default function Header() {
               <Link to="/UMCAcademic" className="dropdown-link">
                 加拿大升學/大學申請
               </Link>
-              <Link to="/Seniors" className="dropdown-link">
+              <Link
+                to="/Seniors"
+                className="dropdown-link"
+                state={{ openSection: "UMC" }}
+              >
                 找學長姊
               </Link>
               <Link to="/CanadaLife" className="dropdown-link">
@@ -104,7 +112,11 @@ export default function Header() {
               <Link to="/UMCAcademic" className="dropdown-link">
                 加拿大升學/大學申請
               </Link>
-              <Link to="/Seniors" className="dropdown-link">
+              <Link
+                to="/Seniors"
+                className="dropdown-link"
+                state={{ openSection: "RedDeer" }}
+              >
                 找學長姊
               </Link>
               <Link to="/CanadaLife" className="dropdown-link">

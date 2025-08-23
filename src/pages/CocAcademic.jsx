@@ -22,7 +22,7 @@ export default function CocAcademicc() {
           content="以下會介紹 COC 的上課制度與轉學相關的重要資訊，包含能為申請加分的項目、必備的學習工具，以及在美國上課時必須了解的幾件事。COC 採小班制教學，每堂課約 30 人，規模與高中相近。成績評定使用 ABCDF 等級制，GPA 滿分為 4.0。每學期修習約 12 至 17 學分，大多數課程為 3 學分。"
         />
         <DividerContent order="二" title="COC線上課程註冊、選課時間" />
-        <div className="cocAcademicTransferContentWrapper">
+        <div className="cocAcademicOnlineClassWrapper">
           <p>
             假如你是現在惠文的在校生要選修COC的線上課程，跟Daniel討論後可以前往ISP網站申請，以下有列出常見的申請時間及該注意的截止日期
             ，選課時間大多都在開課時間3個月前，所以一旦拿到帳號必須馬上前往選課，第一個學期推薦先修

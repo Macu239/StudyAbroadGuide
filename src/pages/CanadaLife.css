@@ -295,3 +295,8 @@ en {
   color: #000000;
 }
 
+@media (min-width: 380px) and (max-width: 590px) {
+  .cocLifeContentWrapper{
+    width: 90%;
+  }
+}

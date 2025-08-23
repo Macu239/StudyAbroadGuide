@@ -1,16 +1,27 @@
 import { PPLaccordionItem, BackToTopBotton, SeniorsForms } from "../components";
 import "./Seniors.css";
 import { CollegeOfTheCanyons, UMC, RedDeer } from "../components/PPLData";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Seniors() {
+  const location = useLocation();
   const cocRef = useRef(null);
   const umcRef = useRef(null);
   const redDeerRef = useRef(null);
   const otherRef = useRef(null);
   const titleRef = useRef(null);
-
+  const [highlightSchool, setHighlightSchool] = useState(null);
   const [expandAll, setExpandAll] = useState(false);
+  const [expandedSchool, setExpandedSchool] = useState(null);
+  /*Map */
+  const sectionRefs = {
+    COC: cocRef,
+    UMC: umcRef,
+    RedDeer: redDeerRef,
+    Others: otherRef,
+  };
+
   const toggleExpandAll = () => {
     setExpandAll(!expandAll);
   };
@@ -21,10 +32,20 @@ export default function Seniors() {
     }
   };
 
+  useEffect(() => {
+    const target = location.state?.openSection;
+    if (target && sectionRefs[target]) {
+      setExpandedSchool(target);
+      scrollToSection(sectionRefs[target]);
+      setHighlightSchool(target);
+      setTimeout(() => setHighlightSchool(null), 2000);
+    }
+  }, [location.state]);
+
   return (
     <div className="PPLContainer">
       <div className="PPLSideSection">
-        <div className="seniorSideBar">
+        <div className="seniorSideBar SIDEBAR">
           <span className="seniorSideBarTitle">學校/School</span>
           <ul>
             <li onClick={() => scrollToSection(cocRef)}>COC</li>
@@ -49,35 +70,50 @@ export default function Seniors() {
         <span className="invisibleTitle" ref={cocRef}>
           COC
         </span>
-
-        <PPLaccordionItem
-          School="College of the Canyons"
-          people={CollegeOfTheCanyons}
-          isExpanded={expandAll}
-          width="100%"
-        />
+        <div
+          className={`accordionWrapper ${
+            highlightSchool === "COC" ? "highlight" : ""
+          }`}
+        >
+          <PPLaccordionItem
+            School="College of the Canyons"
+            people={CollegeOfTheCanyons}
+            isExpanded={expandAll || expandedSchool === "COC"}
+            width="100%"
+          />
+        </div>
 
         <span className="invisibleTitle" ref={umcRef}>
           UMC
         </span>
-
-        <PPLaccordionItem
-          School="UMC"
-          people={UMC}
-          isExpanded={expandAll}
-          width="100%"
-        />
+        <div
+          className={`accordionWrapper ${
+            highlightSchool === "UMC" ? "highlight" : ""
+          }`}
+        >
+          <PPLaccordionItem
+            School="UMC"
+            people={UMC}
+            isExpanded={expandAll || expandedSchool === "UMC"}
+            width="100%"
+          />
+        </div>
 
         <span className="invisibleTitle" ref={redDeerRef}>
           RedDeer
         </span>
-
-        <PPLaccordionItem
-          School="Red Deer"
-          people={RedDeer}
-          isExpanded={expandAll}
-          width="100%"
-        />
+        <div
+          className={`accordionWrapper ${
+            highlightSchool === "RedDeer" ? "highlight" : ""
+          }`}
+        >
+          <PPLaccordionItem
+            School="Red Deer"
+            people={RedDeer}
+            isExpanded={expandAll || expandedSchool === "RedDeer"}
+            width="100%"
+          />
+        </div>
 
         <span className="invisibleTitle" ref={otherRef}>
           Others

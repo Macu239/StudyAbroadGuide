@@ -22,7 +22,7 @@ export default function CocLife() {
 
   return (
     <div className="cocLifeContainer">
-      <div className="cocLifeSideBar">
+      <div className="cocLifeSideBar SIDEBAR">
         <span className="cocLifeSideBarTitle">問題主題/Topics</span>
         <ul>
           <li onClick={() => scrollToSection(socialLifeRef)}>社交生活</li>
