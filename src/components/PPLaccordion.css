@@ -44,8 +44,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-top: 20px;
-  margin-bottom: 1.5rem;
+  margin-top: 16px;
+  margin-bottom: 1rem;
   width: 90%;
   background-color: #d9d9d9;
   padding: 1.5rem;
@@ -58,6 +58,7 @@
   aspect-ratio: 0.85;
   background-color: #ffffff;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .PplAccordionHeder {
@@ -69,11 +70,11 @@
 }
 
 .PplAccordionHederLeft {
-  width: 40%;
+  width: auto;
+  margin-right: 1rem;
 }
 
 .PplAccordionHederRight {
-  width: 60%;
   align-content: flex-end;
 }
 
@@ -129,6 +130,7 @@
   .personalPic {
     width: 60%;
     margin-bottom: 1rem;
+    object-fit: cover;
   }
 
   .accordionText {

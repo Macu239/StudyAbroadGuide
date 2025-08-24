@@ -202,6 +202,9 @@
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
+  .cocAcademicContents{
+    width: 92%;
+  }
   .cocAcademicTitle {
     padding: 0.8rem;
     font-size: 1.3rem !important;
@@ -250,6 +253,18 @@
   .cocAcademicCardText {
     padding: 0.8rem;
     font-size: 0.8rem;
+  }
+
+  .cocAcademicTransferContent{
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.5rem;
+  }
+
+  .cocAcademicTransferText{
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 0;
   }
 
   .cocAcademicExtraSourcesWeapper {
