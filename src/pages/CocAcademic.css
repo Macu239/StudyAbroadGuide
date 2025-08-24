@@ -223,7 +223,10 @@
   }
 
   .cocAcademicBackground {
-    object-fit: fill;
+    height: 100%;
+    width: auto;
+    object-position: center;
+    transform: translateX(-10px);
   }
 
   .cocAcademicCardContainer {
