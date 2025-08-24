@@ -35,7 +35,7 @@ export default function CocAcademicc() {
             </strong>
           </p>
           {/*Application time */}
-          <div className="cocAcademicTransferContent">
+          <div className="cocAcademicOnlineContent">
             <div className="cocAcademicTransferTag">
               <a
                 href="https://www.canyons.edu/academics/isp/international_students/apply.php"
@@ -64,7 +64,7 @@ export default function CocAcademicc() {
             </div>
           </div>
           {/* Registration Time */}
-          <div className="cocAcademicTransferContent">
+          <div className="cocAcademicOnlineContent">
             <div className="cocAcademicTransferTag">
               <a
                 href=" https://selfservice.canyons.edu/Student/Planning"
@@ -90,7 +90,7 @@ export default function CocAcademicc() {
             </div>
           </div>
           {/*推薦課程/GE*/}
-          <div className="cocAcademicTransferContent">
+          <div className="cocAcademicOnlineContent">
             <div className="cocAcademicTransferTag">
               <a
                 href="https://selfservice.canyons.edu/Student/Planning/Programs/MyProgress"

@@ -47,6 +47,12 @@
   gap: 30px;
 }
 
+.cocAcademicOnlineContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .cocAcademicOnlineClassWrapper p {
   line-height: 2rem;
 }
@@ -245,7 +251,8 @@
     font-size: 1.05rem;
     font-weight: bold;
   }
-  .cocAcademicTransferContentWrapper,.cocAcademicOnlineClassWrapper{
+  .cocAcademicTransferContentWrapper,
+  .cocAcademicOnlineClassWrapper {
     gap: 1rem;
   }
 
@@ -256,9 +263,15 @@
     padding: 0.8rem;
     font-size: 0.8rem;
   }
+  .cocAcademicOnlineContent {
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.5rem;
+  }
 
   .cocAcademicTransferContent {
     flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
     line-height: 1.5rem;
   }
@@ -266,6 +279,14 @@
   .cocAcademicTransferText {
     width: 100%;
     font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .cocAcademicTransferSchduleWrapper{
+    align-items: center;
+  }
+
+  .cocAcademicTransferLine{
     margin: 0;
   }
 
