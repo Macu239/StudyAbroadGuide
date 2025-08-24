@@ -98,7 +98,7 @@
 }
 
 .cocAcademicCardText {
-  padding: 12pc;
+  padding: 12px;
   font-size: 0.9rem;
   line-height: 1.5;
   width: 70%;
@@ -202,7 +202,7 @@
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-  .cocAcademicContents{
+  .cocAcademicContents {
     width: 92%;
   }
   .cocAcademicTitle {
@@ -245,23 +245,25 @@
     font-size: 1.05rem;
     font-weight: bold;
   }
+  .cocAcademicTransferContentWrapper,.cocAcademicOnlineClassWrapper{
+    gap: 1rem;
+  }
 
   .cocAcademicCardsubtitle {
     font-size: 0.9rem;
   }
-
   .cocAcademicCardText {
     padding: 0.8rem;
     font-size: 0.8rem;
   }
 
-  .cocAcademicTransferContent{
+  .cocAcademicTransferContent {
     flex-direction: column;
     width: 100%;
     line-height: 1.5rem;
   }
 
-  .cocAcademicTransferText{
+  .cocAcademicTransferText {
     width: 100%;
     font-size: 0.8rem;
     margin: 0;
@@ -276,7 +278,10 @@
     width: 100%;
   }
   .cocAcademicTransferTag {
+    width: 55%;
+    padding: 0.5rem;
     font-size: 1rem;
+    margin-bottom: 0.8rem;
   }
   .cocAcademicTransferText {
     font-size: 0.9rem;

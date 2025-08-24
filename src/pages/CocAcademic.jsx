@@ -13,7 +13,9 @@ export default function CocAcademicc() {
           alt="COC Campus"
           loading="lazy"
         />
-          <h1 className="cocAcademicTitle">UC轉學指南：課程、GPA與規劃、線上課程</h1>
+        <h1 className="cocAcademicTitle">
+          UC轉學指南：課程、GPA與規劃、線上課程
+        </h1>
       </div>
       <div className="cocAcademicContents">
         <DividerContent
@@ -76,10 +78,8 @@ export default function CocAcademicc() {
             </div>
 
             <div className="cocAcademicTransferText">
-              點擊右邊的連結登入帳號以後就可以看見你每個學期的註冊/選課開始日期，只要過了Start
-              Date就可以開始註冊/選課了
-              <br />
-              也可以從
+              點擊連結登入帳號以後就可以看見你每個學期的註冊/選課開始日期，只要過了Start
+              Date就可以開始註冊/選課了， 也可以從
               <a
                 href="https://my.canyons.edu/campusm/home#menu"
                 target="_blank"
@@ -488,9 +488,7 @@ export default function CocAcademicc() {
               target="_blank"
             >
               <h3>Transfer By Major</h3>
-              <h4>
-                這可以查詢各個學校各科系的錄取率，先了解GPA範圍及競爭程度
-              </h4>
+              <h4>這可以查詢各個學校各科系的錄取率，先了解GPA範圍及競爭程度</h4>
             </a>
           </div>
 
