@@ -372,9 +372,15 @@ en {
     align-items: center;
     gap: 0.8rem;
   }
+  
+
+  .cocLifeShoppingCards{
+    gap: 0.8rem;
+  }
 
   .cocLifeShoppingText{
     font-size: 0.8rem;
+    width: 100%;
   }
 
   .cocLifeResourceCard {

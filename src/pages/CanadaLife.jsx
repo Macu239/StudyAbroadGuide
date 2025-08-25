@@ -445,7 +445,7 @@ export default function CocLife() {
             </div>
             <div className="CaLifeDivider" />
 
-            <div className="cocLifeShoppingCardsWrapper">
+            <div className="CaLifeShoppingCardsWrapper">
               {/*A-Mart*/}
               <div className="CaLifeShoppingCards">
                 <img
