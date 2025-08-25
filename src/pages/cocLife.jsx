@@ -37,9 +37,9 @@ export default function CocLife() {
         </ul>
       </div>
       <div className="cocLifeContentWrapper">
-        <div className="cocLifeTitle" ref={cocLifeRef}>
+        <h1 className="cocLifeTitle" ref={cocLifeRef}>
           美國留學生活/COC
-        </div>
+        </h1>
         <div className="cocLifeContents">
           {/*Social Life, Small Talk*/}
           <div className="cocLifeText">

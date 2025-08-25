@@ -3,16 +3,16 @@ import DividerContent from "../components/dividerContent";
 
 export default function UMCAcademicc() {
   return (
-    <div className="cocAcademicContainer">
-      <div className="cocAcademicHero">
+    <div className="CaAcademicContainer">
+      <div className="CaAcademicHero">
         <img
-          className="cocAcademicBackground"
+          className="CaAcademicBackground"
           src="/UMCAcademic/uoftHero.png"
           alt="COC Campus"
         />
         <h1 className="CaAcademicTitle">加拿大升學指南：課程、成績與規劃</h1>
       </div>
-      <div className="cocAcademicContents">
+      <div className="CaAcademicContents">
         <DividerContent
           order="一"
           title="UMC課堂基本資訊"
@@ -34,18 +34,18 @@ export default function UMCAcademicc() {
 
         <DividerContent order="三" title="學業相關" />
 
-        <div className="cocAcademicCardContainer">
-          <div className="cocAcademiccard">
-            <div className="cocAcademicIconBox">
+        <div className="CaAcademicCardContainer">
+          <div className="CaAcademiccard">
+            <div className="CaAcademicIconBox">
               <img
                 src="/UCtransfer/consultant.png"
                 alt="icon"
-                className="cocAcademicIcon"
+                className="CaAcademicIcon"
               />
-              <div className="cocAcademicCardTitle">Counselor</div>
-              <div className="cocAcademicCardsubtitle">課程顧問</div>
+              <div className="CaAcademicCardTitle">Counselor</div>
+              <div className="CaAcademicCardsubtitle">課程顧問</div>
             </div>
-            <div className="cocAcademicCardText">
+            <div className="CaAcademicCardText">
               <ul>
                 <li>課程規劃與排課</li>
                 <li>學分查詢與認證</li>
@@ -56,9 +56,9 @@ export default function UMCAcademicc() {
         </div>
 
         <DividerContent order="四" title="升學、申請相關" />
-        <div className="cocAcademicTransferContentWrapper">
-          <div className="cocAcademicTransferContent">
-            <div className="cocAcademicTransferTag">
+        <div className="CaAcademicTransferContentWrapper">
+          <div className="CaAcademicTransferContent">
+            <div className="CaAcademicTransferTag">
               <a
                 href=" https://www.canyons.edu/academics/honors/index.php "
                 target="_blank"
@@ -70,28 +70,27 @@ export default function UMCAcademicc() {
               </a>
             </div>
 
-            <div className="cocAcademicTransferText">
+            <div className="CaAcademicTransferText">
               TAP 計畫可申請 UCLA 優先轉學(特別競爭的科系差別不大) UC/CSU
               可轉學分滿 12 學分，GPA 達 3.25 畢業時若要獲得榮譽認證，需達 GPA
               3.5
             </div>
           </div>
 
-          <div className="cocAcademicTransferContent">
-            <div className="cocAcademicTransferTag">
+          <div className="CaAcademicTransferContent">
+            <div className="CaAcademicTransferTag">
               <a
                 href="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html"
                 target="_blank"
               >
                 <h3>
-                  Application&
-                  <br />
+                  Application& <br />
                 </h3>
                 <h4>Personal Insight Question</h4>
               </a>
             </div>
 
-            <div className="cocAcademicTransferText">
+            <div className="CaAcademicTransferText">
               UC 轉學申請的兩大關鍵在於 Personal Insight Question（PIQ） 與
               Activity & Awards Section。PIQ
               總共需回答四題，其中一題為轉學生必答，其餘從七題中選三，
@@ -103,16 +102,15 @@ export default function UMCAcademicc() {
             </div>
           </div>
 
-          <div className="cocAcademicTransferContent">
-            <div className="cocAcademicTransferTag">
+          <div className="CaAcademicTransferContent">
+            <div className="CaAcademicTransferTag">
               <h3>
-                Clubs
-                <br />
+                Clubs <br />
               </h3>
               <h4>社團</h4>
             </div>
 
-            <div className="cocAcademicTransferText">
+            <div className="CaAcademicTransferText">
               參加社團活動不僅能豐富大學生活，還能提升履歷。COC
               有各式各樣的社團，從學術性質到興趣愛好應有盡有，
               參與社團活動可以建立人脈、提升領導力與團隊合作能力，並且在申請 UC
@@ -137,16 +135,15 @@ export default function UMCAcademicc() {
 
         <DividerContent order="五" title="轉學完整時間規劃" />
         <div className="UMCAcademicSchduleWrapper">
-          <div className="cocAcademicTransferContent">
-            <div className="cocAcademicTransferTag">
+          <div className="CaAcademicTransferContent">
+            <div className="CaAcademicTransferTag">
               <h3>
-                First Fall Semester
-                <br />
+                First Fall Semester <br />
               </h3>
               <h4>高三的第一個學期9月-12月</h4>
             </div>
 
-            <div className="cocAcademicTransferText">
+            <div className="CaAcademicTransferText">
               Discuss students’ future path with the counselors and students’
               parents. (which will affect your electives and your credits)
               <br />
@@ -156,21 +153,20 @@ export default function UMCAcademicc() {
           </div>
 
           <img
-            className="cocAcademicTransferLine"
+            className="CaAcademicTransferLine"
             src="/UCtransfer/Line.png"
             alt="Line"
           />
 
-          <div className="cocAcademicTransferContent">
-            <div className="cocAcademicTransferTag">
+          <div className="CaAcademicTransferContent">
+            <div className="CaAcademicTransferTag">
               <h3>
-                Winter Semester
-                <br />
+                Winter Semester <br />
               </h3>
               <h4>1月 - 2月</h4>
             </div>
 
-            <div className="cocAcademicTransferText">
+            <div className="CaAcademicTransferText">
               Application season. At the same time continue school and work.
               <br />
               <strong>
@@ -180,21 +176,20 @@ export default function UMCAcademicc() {
           </div>
 
           <img
-            className="cocAcademicTransferLine"
+            className="CaAcademicTransferLine"
             src="/UCtransfer/Line.png"
             alt="Line"
           />
 
-          <div className="cocAcademicTransferContent">
-            <div className="cocAcademicTransferTag">
+          <div className="CaAcademicTransferContent">
+            <div className="CaAcademicTransferTag">
               <h3>
-                Spring Semester
-                <br />
+                Spring Semester <br />
               </h3>
               <h4>3月 - 6月</h4>
             </div>
 
-            <div className="cocAcademicTransferText">
+            <div className="CaAcademicTransferText">
               Wait & complete your application (if you move on to the 2nd stage
               and have interviews…) Complete all credits and requirements After
               receiving the offer, accept Then youre good 👍
@@ -207,20 +202,20 @@ export default function UMCAcademicc() {
           </div>
 
           <img
-            className="cocAcademicTransferLine"
+            className="CaAcademicTransferLine"
             src="/UCtransfer/Line.png"
             alt="Line"
           />
 
-          <div className="cocAcademicTransferContent">
-            <div className="cocAcademicTransferTag">
+          <div className="CaAcademicTransferContent">
+            <div className="CaAcademicTransferTag">
               <h3>
                 Fall Sem <br />
               </h3>
               <h4>隔年9月</h4>
             </div>
 
-            <div className="cocAcademicTransferText">University begins</div>
+            <div className="CaAcademicTransferText">University begins</div>
           </div>
         </div>
       </div>

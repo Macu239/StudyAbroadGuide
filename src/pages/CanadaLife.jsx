@@ -20,7 +20,7 @@ export default function CocLife() {
   };
 
   return (
-    <div className="cocLifeContainer">
+    <div className="CaLifeContainer">
       <div className="cocLifeSideBar SIDEBAR">
         <span className="cocLifeSideBarTitle">問題主題/Topics</span>
         <ul>
@@ -454,7 +454,7 @@ export default function CocLife() {
                   className="CaLifeShoppingTag"
                 />
 
-                <div className="cocLifeShoppingText">
+                <div className="CaLifeShoppingText">
                   <h3>A-Mart</h3>
                   韓國超市 A-mart
                   有韓國食品與生活用品，店內可找到新鮮食材、調味品、零食與飲料，也有熟食和日常用品。
@@ -468,7 +468,7 @@ export default function CocLife() {
                   className="CaLifeShoppingTag"
                 />
 
-                <div className="cocLifeShoppingText">
+                <div className="CaLifeShoppingText">
                   <h3>Trader Joe's</h3>
                   大統華 (T&T Supermarket)
                   是加拿大最大的亞洲超市，紅鹿附近只有calgary/
@@ -483,7 +483,7 @@ export default function CocLife() {
                   className="CaLifeShoppingTag"
                 />
 
-                <div className="cocLifeShoppingText">
+                <div className="CaLifeShoppingText">
                   <h3>Weee</h3>
                   北美最大的亞洲食品的線上超市，提供各種亞洲國家的食品選擇，方便購買亞洲食材。
                   尤其是不會臭的豬肉、便宜的蔬菜、蔥薑蒜等調味料，還有各種亞洲零食和飲料。
@@ -498,7 +498,7 @@ export default function CocLife() {
                   className="CaLifeShoppingTag"
                 />
 
-                <div className="cocLifeShoppingText">
+                <div className="CaLifeShoppingText">
                   <h3>Walmart</h3>
                   Walmart 是北美其中最大規模的量販超市，
                   價位的部分相較其他超市偏低、不管是買醬料、蔬果、零食、民生用品、都非常划算。

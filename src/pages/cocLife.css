@@ -1,5 +1,5 @@
-en{
-  font-weight: 600;;
+en {
+  font-weight: 600;
 }
 
 .cocLifeContainer {
@@ -47,7 +47,7 @@ en{
 }
 
 .cocLifeContentWrapper {
-    width: 72%;
+  width: 72%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,22 +55,21 @@ en{
 
 .cocLifeTitle {
   font-size: 32px;
-  font-family: "Raleway", sans-serif;
   text-align: center;
   font-weight: 700;
   height: auto;
 }
 
-.cocLifeContents{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.cocLifeContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.cocLifeText{
-    width: 100%;
-    margin-bottom: 20px;
+.cocLifeText {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .cocLifeDivider {
@@ -82,26 +81,26 @@ en{
   z-index: 0;
 }
 
-.cocLifeText h4{
-    font-weight: 400;
-    line-height: 180%;
+.cocLifeText h4 {
+  font-weight: 400;
+  line-height: 180%;
 }
 
-.cocLifeText h4 ul{
-    padding-left: 1rem;
-    list-style-type: numeric;
+.cocLifeText h4 ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
 }
 
 .cocLifeText h4 li ul {
   padding-left: 1rem;
   list-style-type: numeric;
 }
-.cocLifeTransportationCards{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
+.cocLifeTransportationCards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .cocLifeResourceCard {
@@ -114,7 +113,6 @@ en{
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
-
 
 .cocLifeResourceImage {
   max-width: 100%;
@@ -132,7 +130,7 @@ en{
   text-decoration: bold;
 }
 
-.cocLifeShoppingCardsWrapper{
+.cocLifeShoppingCardsWrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -140,29 +138,27 @@ en{
   gap: 20px;
 }
 
-.cocLifeShoppingCards{
+.cocLifeShoppingCards {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
 }
 
-.cocLifeShoppingTag{
+.cocLifeShoppingTag {
   width: 20%;
   height: auto;
-  border-radius: 8px;
   background-color: #ffffff;
 }
 
-.cocLifeShoppingText{
+.cocLifeShoppingText {
   width: 80%;
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
 }
 
-
-.cocLifeRestaurantsSection{
+.cocLifeRestaurantsSection {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -170,10 +166,10 @@ en{
   background-color: #ffffff;
   border-radius: 8px;
   margin-top: 20px;
-  gap: 25px; 
+  gap: 25px;
 }
 
-.cocLifeRestaurantsLeft{
+.cocLifeRestaurantsLeft {
   width: 40%;
   gap: 20px;
   padding: 15px;
@@ -182,13 +178,13 @@ en{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #87CDE1;
+  background-color: #87cde1;
 }
 
-.cocLifeRestaurantsLeft .cocLifeRestaurantsCard{
+.cocLifeRestaurantsLeft .cocLifeRestaurantsCard {
   width: 46.3%;
 }
-.cocLifeRestaurantsRight{
+.cocLifeRestaurantsRight {
   width: 60%;
   gap: 20px;
   padding: 15px;
@@ -197,10 +193,10 @@ en{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #87CDE1;
+  background-color: #87cde1;
 }
 
-.cocLifeRestaurantsRight .cocLifeRestaurantsCard{
+.cocLifeRestaurantsRight .cocLifeRestaurantsCard {
   width: 31%;
 }
 
@@ -209,7 +205,7 @@ en{
   font-weight: 600;
 }
 
-.cocLifeRestaurantsCardsWrapper{
+.cocLifeRestaurantsCardsWrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -217,10 +213,10 @@ en{
   justify-content: space-between;
 }
 
-.cocLifeRestaurantsCard{
+.cocLifeRestaurantsCard {
   font-weight: 500;
   overflow: hidden;
-  background-color: #B7E6F3;
+  background-color: #b7e6f3;
   padding: 10px;
   border-radius: 8px;
   z-index: 1;
@@ -229,11 +225,11 @@ en{
 
 .cocLifeRestaurantsCard:hover {
   transform: scale(2.5);
-  cursor:default;
+  cursor: default;
   z-index: 2;
 }
 
-.cocLifeRestaurantsImage{
+.cocLifeRestaurantsImage {
   width: 100%;
   border-radius: 8px;
   aspect-ratio: 15/10;
@@ -242,14 +238,14 @@ en{
   margin-bottom: 4px;
 }
 
-.cocLifeRestaurantsCard h4{
+.cocLifeRestaurantsCard h4 {
   font-size: 8px;
   font-weight: 600;
   text-align: center;
   color: #000000;
 }
 
-.cocLifeRestaurantsCard a{
+.cocLifeRestaurantsCard a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,17 +254,17 @@ en{
   font-weight: 500;
 }
 
-.cocLifeRestaurantsCardText{
+.cocLifeRestaurantsCardText {
   font-size: 6px;
   width: 100%;
 }
 
-.cocLifeEntertainmentsection{
+.cocLifeEntertainmentsection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: #87CDE1;
+  background-color: #87cde1;
   color: #000000;
   border-radius: 8px;
   margin-top: 20px;
@@ -280,17 +276,17 @@ en{
   font-weight: 600;
 }
 
-.cocLifeEntertainmentCardsWrapper{
+.cocLifeEntertainmentCardsWrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.cocLifeEntertainmentCard{
+.cocLifeEntertainmentCard {
   font-weight: 500;
   width: 19%;
-  background-color: #B7E6F3;
+  background-color: #b7e6f3;
   padding: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -298,10 +294,10 @@ en{
 
 .cocLifeEntertainmentCard:hover {
   transform: scale(1.5);
-  cursor:default
+  cursor: default;
 }
 
-.cocLifeEntertainmentImage{
+.cocLifeEntertainmentImage {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -310,7 +306,7 @@ en{
   object-fit: cover;
 }
 
-.cocLifeEntertainmentCard a{
+.cocLifeEntertainmentCard a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,21 +316,21 @@ en{
   gap: 10px;
 }
 
-.cocLifeEntertainmentOtherCity{
+.cocLifeEntertainmentOtherCity {
   width: 32%;
   padding: 4px;
 }
 
-.cocLifeEntertainmentOtherCity:hover{
+.cocLifeEntertainmentOtherCity:hover {
   transform: scale(2.5);
 }
 
-.cocLifeEntertainmentTitle{
+.cocLifeEntertainmentTitle {
   font-size: 12px;
   font-weight: 600;
 }
 
-.cocLifeEntertainmentSpotsWrapper{
+.cocLifeEntertainmentSpotsWrapper {
   width: 100%;
   height: auto;
   display: flex;
@@ -345,17 +341,17 @@ en{
   padding: 4px;
 }
 
-.cocLifeEntertainmentSpot{
+.cocLifeEntertainmentSpot {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 31%;
-  background-color: #E6F8FD;
+  background-color: #e6f8fd;
   padding: 4px;
   border-radius: 8px;
 }
 
-.cocLifeEntertainmentSpot h4{
+.cocLifeEntertainmentSpot h4 {
   margin-top: 5%;
   font-weight: 500;
   font-size: 8px;
@@ -363,6 +359,40 @@ en{
   color: #000000;
 }
 
+@media (min-width: 380px) and (max-width: 590px) {
+  .cocLifeContainer {
+    width: 100%;
+  }
+  .cocLifeContentWrapper {
+    width: 92%;
+  }
 
+  .cocLifeTransportationCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
 
+  .cocLifeShoppingText{
+    font-size: 0.8rem;
+  }
 
+  .cocLifeResourceCard {
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  .cocLifeResourceImage {
+    width: 60%;
+  }
+
+  .cocLifeEntertainmentCardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .cocLifeEntertainmentCard {
+    width: 80%;
+  }
+}

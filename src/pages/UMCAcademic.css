@@ -1,4 +1,4 @@
-.cocAcademicContainer{
+.CaAcademicContainer{
     align-self: center;
     margin: 0 auto;
     display: flex;
@@ -6,13 +6,13 @@
     align-items: center;
 }
 
-.cocAcademicContents{
+.CaAcademicContents{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 85%;
 }
-.cocAcademicHero {
+.CaAcademicHero {
   position: relative;
   width: 100%;
   height: 500px; 
@@ -23,7 +23,7 @@
   justify-content: center;
 }
 
-.cocAcademicBackground {
+.CaAcademicBackground {
   position: absolute;
   width: 100%;
   object-fit: cover;
@@ -44,7 +44,7 @@
   margin-bottom: 0px;
 }
 
-.cocAcademicCardContainer{
+.CaAcademicCardContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -52,7 +52,7 @@
   margin-bottom: 25px;
 }
 
-.cocAcademiccard {
+.CaAcademiccard {
   display: flex;
   max-width: 600px;
   border: 1px solid #ccc;
@@ -61,7 +61,7 @@
   border-radius: 15px;
 }
 
-.cocAcademicIconBox {
+.CaAcademicIconBox {
   background-color: #1295D8;
   color: white;
   padding: 20px 10px;
@@ -70,34 +70,34 @@
   text-align: center;
 }
 
-.cocAcademicIcon {
+.CaAcademicIcon {
   width: 48px;
   height: 48px;
   margin-bottom: 10px;
 }
 
-.cocAcademicCardTitle {
+.CaAcademicCardTitle {
   font-size: 18px;
   font-weight: bold;
 }
 
-.cocAcademicCardsubtitle {
+.CaAcademicCardsubtitle {
   font-size: 16px;
   margin-top: 4px;
 }
 
-.cocAcademicCardText {
+.CaAcademicCardText {
   padding: 20px;
   font-size: 14px;
   line-height: 1.6;
   color: #000;
 }
 
-.cocAcademicCardText ul{
+.CaAcademicCardText ul{
   list-style-type: none;
 }
 
-.cocAcademicTransferContentWrapper{
+.CaAcademicTransferContentWrapper{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -105,14 +105,14 @@
   gap: 30px;
 }
 
-.cocAcademicTransferContent{
+.CaAcademicTransferContent{
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.cocAcademicTransferTag{
+.CaAcademicTransferTag{
   min-width: 22%;
   padding: 20px 10px;
   border-radius: 15px;
@@ -124,17 +124,17 @@
   line-height: 24px;
 }
 
-.cocAcademicTransferTag h4{
+.CaAcademicTransferTag h4{
   font-weight: 400;
 }
-.cocAcademicTransferText{
+.CaAcademicTransferText{
   font-size: 16px;
   margin-left: 20px;
   width: 78%;
   line-height: 30px;
 }
 
-.cocAcademicTransferText a{
+.CaAcademicTransferText a{
   font-weight: 600;
 }
 
@@ -146,12 +146,12 @@
   margin-bottom: 40px;
 }
 
-.cocAcademicTransferLine{
+.CaAcademicTransferLine{
   height: 50px;
   margin-left: 11%;
 }
 
-.cocAcademicExtraSourcesWeapper{
+.CaAcademicExtraSourcesWeapper{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -159,7 +159,7 @@
   width: 100%;
 }
 
-.cocAcademicExtraSourceCard{
+.CaAcademicExtraSourceCard{
   width: 20%;
   border-radius: 20px;
   padding: 20px;
@@ -167,103 +167,103 @@
   transition: transform 0.3s ease;
 }
 
-.cocAcademicExtraSourceCard:hover{
+.CaAcademicExtraSourceCard:hover{
   transform: translateY(-8px);
   box-shadow: 0 8px 25px #8c8a8a72;
   cursor: pointer;
 }
 
-.cocAcademicExtraSourceCard a{
+.CaAcademicExtraSourceCard a{
   text-decoration: none;
 }
 
-.cocAcademicExtraSourceCard h3{
+.CaAcademicExtraSourceCard h3{
   font-weight: 600;
   margin-bottom: 10px;
   
 }
 
-.cocAcademicExtraSourceCard h4{
+.CaAcademicExtraSourceCard h4{
   font-weight: 400;
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-  .cocAcademicContents {
+  .CaAcademicContents {
     width: 92%;
   }
   .CaAcademicTitle {
     padding: 0.5rem;
     font-size: 1rem !important;
   }
-  .cocAcademicOnlineClassWrapper p {
+  .CaAcademicOnlineClassWrapper p {
     line-height: 1.5rem;
   }
-  .cocAcademicHero {
+  .CaAcademicHero {
     height: 26vh;
   }
 
-  .cocAcademicBackground {
+  .CaAcademicBackground {
     height: 100%;
     width: auto;
     object-position: center;
     transform: translateX(-10px);
   }
 
-  .cocAcademicCardContainer {
+  .CaAcademicCardContainer {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 1rem;
   }
 
-  .cocAcademiccard {
+  .CaAcademiccard {
     display: flex;
     width: 100%;
     border: 1px solid #ccc;
   }
 
-  .cocAcademicIconBox {
+  .CaAcademicIconBox {
     padding: 20px 10px;
     width: 30%;
     border-radius: 15px;
     text-align: center;
   }
 
-  .cocAcademicIcon {
+  .CaAcademicIcon {
     width: 48px;
     aspect-ratio: 1;
     margin-bottom: 8px;
   }
 
-  .cocAcademicCardTitle {
+  .CaAcademicCardTitle {
     font-size: 1.05rem;
     font-weight: bold;
   }
-  .cocAcademicTransferContentWrapper,
-  .cocAcademicOnlineClassWrapper {
+  .CaAcademicTransferContentWrapper,
+  .CaAcademicOnlineClassWrapper {
     gap: 1rem;
   }
 
-  .cocAcademicCardsubtitle {
+  .CaAcademicCardsubtitle {
     font-size: 0.9rem;
   }
-  .cocAcademicCardText {
+  .CaAcademicCardText {
     padding: 0.8rem;
     font-size: 0.8rem;
   }
-  .cocAcademicOnlineContent {
+  .CaAcademicOnlineContent {
     flex-direction: column;
     width: 100%;
     line-height: 1.5rem;
   }
 
-  .cocAcademicTransferContent {
+  .CaAcademicTransferContent {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
     line-height: 1.5rem;
   }
 
-  .cocAcademicTransferText {
+  .CaAcademicTransferText {
     width: 100%;
     font-size: 0.8rem;
     margin: 0;
@@ -273,25 +273,25 @@
     align-items: center;
   }
 
-  .cocAcademicTransferLine {
+  .CaAcademicTransferLine {
     margin: 0;
   }
 
-  .cocAcademicExtraSourcesWeapper {
+  .CaAcademicExtraSourcesWeapper {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .cocAcademicExtraSourceCard {
+  .CaAcademicExtraSourceCard {
     width: 100%;
   }
-  .cocAcademicTransferTag {
+  .CaAcademicTransferTag {
     width: 55%;
     padding: 0.5rem;
     font-size: 1rem;
     margin-bottom: 0.8rem;
   }
-  .cocAcademicTransferText {
+  .CaAcademicTransferText {
     font-size: 0.9rem;
   }
 }

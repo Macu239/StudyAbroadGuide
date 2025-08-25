@@ -90,12 +90,13 @@ export const RedDeer = [
   },
   {
     personalPic: "",
-    name: "Annie",
-    major: "Data Science",
-    currentSchool: "RedDeer ->",
-    infos: "21屆國際班...",
+    name: "劉恩瑜/ Annie",
+    major: "Commerce",
+    currentSchool: "University of Melbourne",
     link: "",
-    linkText: "Linkedin",
+    email: "ajsister06@gmail.com",
+    linkText: "",
+    infos: "我是24年從惠文和St.Joseph 畢業，目前人在墨爾本大學商科就讀",
   },
   {
     personalPic: "",
