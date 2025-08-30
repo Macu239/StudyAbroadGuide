@@ -34,11 +34,11 @@ export default function CocLife() {
           <li onClick={() => scrollToSection(restaurantRef)}>餐廳/飲食</li>
         </ul>
       </div>
-      <div className="cocLifeContentWrapper">
+      <div className="CaLifeContentWrapper">
         <h1 className="cocLifeTitle" ref={cocLifeRef}>
           加拿大留學生活 - UMC/RedDeer
         </h1>
-        <div className="cocLifeContents">
+        <div className="CaLifeContents">
           {/*Social Life, Small Talk*/}
           <div className="cocLifeText">
             <div className="cocLifeTopic" ref={socialLifeRef}>

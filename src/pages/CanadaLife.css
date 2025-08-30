@@ -46,7 +46,7 @@ en {
   color: #ffffff;
 }
 
-.cocLifeContentWrapper {
+.CaLifeContentWrapper {
   width: 72%;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ en {
   height: auto;
 }
 
-.cocLifeContents {
+.CaLifeContents {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -296,7 +296,19 @@ en {
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-  .cocLifeContentWrapper{
-    width: 90%;
+  .CaLifeContainer{
+    width: 100%;
+  }
+
+  .CaLifeContentWrapper{
+    width: 92%;
+  }
+  
+  .CALifeResourceCardtext{
+    gap: 0.8rem;
+  }
+
+  .CaLifeShoppingText{
+    font-size: 0.8rem;
   }
 }
