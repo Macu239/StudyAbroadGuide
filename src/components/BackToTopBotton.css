@@ -8,6 +8,7 @@
     background-color: #ffffff;
     border-radius: 25px;
     transition: transform 0.25s ease-in-out;
+    z-index: 100;
 }
 
 .BackToTopBottonarrow{

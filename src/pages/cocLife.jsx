@@ -121,8 +121,9 @@ export default function CocLife() {
               score，對於未來申請貸款或租屋等都很有幫助，
               但要注意信用卡的使用，避免過度消費或逾期。推薦
               <strong>
-                <a href="https://refer.discover.com/s/jeremy02012005?advocate.partner_share_id=9756999471"
-                target="_Blank"
+                <a
+                  href="https://refer.discover.com/s/jeremy02012005?advocate.partner_share_id=9756999471"
+                  target="_Blank"
                 >
                   Discover it
                 </a>
@@ -209,7 +210,12 @@ export default function CocLife() {
                   className="cocLifeResourceImage"
                 />
                 <h3 className="cocLifeResourceTitle">駕照/租買車</h3>
-                <h4>加州要重考專門的駕照喔(Class C)，要去美國的<a href="https://www.dmv.ca.gov/portal/" target="_BLank">監理站(DMV)</a></h4>
+                <h4>
+                  加州要重考專門的駕照喔(Class C)，要去美國的
+                  <a href="https://www.dmv.ca.gov/portal/" target="_BLank">
+                    監理站(DMV)
+                  </a>
+                </h4>
               </div>
             </div>
           </div>
@@ -353,19 +359,18 @@ export default function CocLife() {
               外食方面，餐廳價格普遍偏高，平均每餐約在 $12 至 $30
               之間，此外還需加收約 15% 起跳的小費與 9.5% 的稅金。
               <br />
-              <strong>省錢Tips:各家速食店都有Apps，一定要下載很常給折價券和各式優惠</strong>
+              <strong>
+                省錢Tips:各家速食店都有Apps，一定要下載很常給折價券和各式優惠
+              </strong>
             </h4>
             <div className="cocLifeRestaurantsSection">
               {/*速食*/}
               <div className="cocLifeRestaurantsLeft">
                 <h3>速食連鎖店</h3>
-                <div className="cocLifeRestaurantsCardsWrapper">
+                <div className="cocLifeRestaurantsCards">
                   {/*In N Out*/}
                   <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://www.in-n-out.com/"
-                      target="_Blank"
-                    >
+                    <a href="https://www.in-n-out.com/" target="_Blank">
                       <img
                         src="/USLife/InNout.jpg"
                         alt="In N Out"
@@ -376,17 +381,15 @@ export default function CocLife() {
                         <en>In N Out</en>
                       </h4>
                       <div className="cocLifeRestaurantsCardText">
-                        ($10 - 20)大推Protein Style(以美生菜替代外層的麵包)的Cheese Bruger、 
-                        Double Double Cheese Bruger、Animal Style Fries
+                        ($10 - 20)大推Protein
+                        Style(以美生菜替代外層的麵包)的Cheese Bruger、 Double
+                        Double Cheese Bruger、Animal Style Fries
                       </div>
                     </a>
                   </div>
                   {/*Panda Express*/}
                   <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://www.pandaexpress.com/"
-                      target="_Blank"
-                    >
+                    <a href="https://www.pandaexpress.com/" target="_Blank">
                       <img
                         src="/USLife/PandaExpress.jpg"
                         alt="Panda Express"
@@ -397,20 +400,18 @@ export default function CocLife() {
                         <en>Panda Express</en>
                       </h4>
                       <div className="cocLifeRestaurantsCardText">
-                        ($12 - 20)經典美式中餐，有名的有Orange Chicken(就是很甜的糖醋排骨換成雞肉)，
+                        ($12 - 20)經典美式中餐，有名的有Orange
+                        Chicken(就是很甜的糖醋排骨換成雞肉)，
                         主餐推炒麵，別點炒飯很濕
                       </div>
                     </a>
                   </div>
                 </div>
-                  
-                <div className="cocLifeRestaurantsCardsWrapper">
+
+                <div className="cocLifeRestaurantsCards">
                   {/*Wendys */}
                   <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://www.wendys.com/"
-                      target="_Blank"
-                    >
+                    <a href="https://www.wendys.com/" target="_Blank">
                       <img
                         src="/USLife/Wendys.jpg"
                         alt="Wendys"
@@ -421,17 +422,14 @@ export default function CocLife() {
                         <en>Wendys</en>
                       </h4>
                       <div className="cocLifeRestaurantsCardText">
-                        ($9-15)美式速食連鎖，大推各種漢堡。
-                        推薦點 4 for $5 / $6 Meal Deal，小份炸雞塊、薯條、飲料加漢堡超划算。
+                        ($9-15)美式速食連鎖，大推各種漢堡。 推薦點 4 for $5 / $6
+                        Meal Deal，小份炸雞塊、薯條、飲料加漢堡超划算。
                       </div>
                     </a>
                   </div>
-                    {/*Chick fill a*/}
+                  {/*Chick fill a*/}
                   <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://www.chick-fil-a.com/"
-                      target="_Blank"
-                    >
+                    <a href="https://www.chick-fil-a.com/" target="_Blank">
                       <img
                         src="/USLife/ChickFilla.jpg"
                         alt="Popeyes"
@@ -442,8 +440,9 @@ export default function CocLife() {
                         <en>Chick-fil-A</en>
                       </h4>
                       <div className="cocLifeRestaurantsCardText">
-                        ($10–18):速食連鎖店，推 Original Chicken Sandwich，就是炸雞排加醃黃瓜。
-                        Chick-fil-A Sauce是特色甜甜鹹鹹很好吃。炸雞相關都好吃
+                        ($10–18):速食連鎖店，推 Original Chicken
+                        Sandwich，就是炸雞排加醃黃瓜。 Chick-fil-A
+                        Sauce是特色甜甜鹹鹹很好吃。炸雞相關都好吃
                       </div>
                     </a>
                   </div>
@@ -453,137 +452,140 @@ export default function CocLife() {
               <div className="cocLifeRestaurantsRight">
                 <h3>附近好吃的餐廳</h3>
                 <div className="cocLifeRestaurantsCardsWrapper">
-                  {/*JinCook*/}
-                  <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://maps.app.goo.gl/75rcHTHTaRB7DgoG9"
-                      target="_Blank"
-                      draggable="false"
-                    >
-                      <img
-                        src="/USLife/JinCook.jpg"
-                        alt="Jin Cook"
-                        className="cocLifeRestaurantsImage"
-                      />
-                      <h4>韓國餐廳</h4>
-                      <h4>
-                        <en>Jin Cook</en>
-                      </h4>
-                      <div className="cocLifeRestaurantsCardText">
-                        ($30–45)9/10 好吃的韓餐，最熱門的是石鍋拌飯、部隊鍋和辣炒年糕，也有韓式烤肉和小菜可以無限續。
-                        價格比快餐高一點，但份量大、食材新鮮，適合跟朋友聚餐
-                      </div>
-                    </a>
+                  <div className="cocLifeRestaurantsCards">
+                    {/*JinCook*/}
+                    <div className="cocLifeRestaurantsCard">
+                      <a
+                        href="https://maps.app.goo.gl/75rcHTHTaRB7DgoG9"
+                        target="_Blank"
+                        draggable="false"
+                      >
+                        <img
+                          src="/USLife/JinCook.jpg"
+                          alt="Jin Cook"
+                          className="cocLifeRestaurantsImage"
+                        />
+                        <h4>韓國餐廳</h4>
+                        <h4>
+                          <en>Jin Cook</en>
+                        </h4>
+                        <div className="cocLifeRestaurantsCardText">
+                          ($30–45)9/10
+                          最熱門的是石鍋拌飯、部隊鍋和辣炒年糕，也有韓式烤肉和小菜可以無限續，適合跟朋友聚餐
+                        </div>
+                      </a>
+                    </div>
+                    {/*牛角*/}
+                    <div className="cocLifeRestaurantsCard">
+                      <a
+                        href="https://maps.app.goo.gl/FdfwMDm1paRMSBSK6"
+                        target="_Blank"
+                        draggable="false"
+                      >
+                        <img
+                          src="/USLife/GyuKaku.jpg"
+                          alt="牛角"
+                          className="cocLifeRestaurantsImage"
+                        />
+                        <h4>日式燒肉</h4>
+                        <h4>
+                          <en>牛角(Gyu Kaku)</en>
+                        </h4>
+                        <div className="cocLifeRestaurantsCardText">
+                          ($50up)8/10跟台灣的差不多，就是日式燒肉，推中午Happy
+                          Hour打折很划算(Around$20 - 30)
+                        </div>
+                      </a>
+                    </div>
+                    {/*Royal Tandoor*/}
+                    <div className="cocLifeRestaurantsCard">
+                      <a
+                        href="https://maps.app.goo.gl/ejq5AQzbB7Y8Uj787"
+                        target="_Blank"
+                        draggable="false"
+                      >
+                        <img
+                          src="/USLife/RoyalTandoor.jpg"
+                          alt="Royal Tandoor"
+                          className="cocLifeRestaurantsImage"
+                        />
+                        <h4>印度菜</h4>
+                        <h4>
+                          <en>Royal Tandoor</en>
+                        </h4>
+                        <div className="cocLifeRestaurantsCardText">
+                          ($15–22)8/10 特色是豐富的香料口味、咖哩、印度菜
+                          包括 Butter Chicken、Tandoori Chicken與烤餅
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                  {/*牛角*/}
-                  <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://maps.app.goo.gl/FdfwMDm1paRMSBSK6"
-                      target="_Blank"
-                      draggable="false"
-                    >
-                      <img
-                        src="/USLife/GyuKaku.jpg"
-                        alt="牛角"
-                        className="cocLifeRestaurantsImage"
-                      />
-                      <h4>日式燒肉</h4>
-                      <h4>
-                        <en>牛角(Gyu Kaku)</en>
-                      </h4>
-                      <div className="cocLifeRestaurantsCardText">
-                        ($50up)8/10連鎖日式燒肉餐廳，跟台灣的差不多，就是日式燒肉，推中午Happy Hour打折很划算(Around$20 - 30)
-                      </div>
-                    </a>
-                  </div>
-                  {/*Royal Tandoor*/}
-                  <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://maps.app.goo.gl/ejq5AQzbB7Y8Uj787"
-                      target="_Blank"
-                      draggable="false"
-                    >
-                      <img
-                        src="/USLife/RoyalTandoor.jpg"
-                        alt="Royal Tandoor"
-                        className="cocLifeRestaurantsImage"
-                        
-                      />
-                      <h4>印度菜</h4>
-                      <h4>
-                        <en>Royal Tandoor</en>
-                      </h4>
-                      <div className="cocLifeRestaurantsCardText">
-                        ($15–22)8/10印度餐廳，特色是豐富的香料口味、咖哩、印度特色菜，
-                        包括 Butter Chicken、Tandoori Chicken、各類燉飯與烤餅
-                      </div>
-                    </a>
-                  </div>
-                </div>
 
-                <div className="cocLifeRestaurantsCardsWrapper">
-                  {/*Gogi House*/}
-                  <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://maps.app.goo.gl/sgwc5iuUKGhusFLq7"
-                      target="_Blank"
-                      draggable="false"
-                    >
-                      <img
-                        src="/USLife/GogiHouse.jpg"
-                        alt="Gogi House"
-                        className="cocLifeRestaurantsImage"
-                      />
-                      <h4>韓式燒肉吃到飽</h4>
-                      <h4>
-                        <en>Gogi House</en>
-                      </h4>
-                      <div className="cocLifeRestaurantsCardText">
-                        ($55up)6/10有點貴的韓式吃到飽，肉質中偏下除了肉還有炸蝦、小菜，跟朋友聚餐是不錯的選擇會吃得很滿足
-                      </div>
-                    </a>
-                  </div>
-                  {/*I Love SuShi*/}
-                  <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://maps.app.goo.gl/eBddZP5vKL3fHBVb6"
-                      target="_Blank"
-                    >
-                      <img
-                        src="/USLife/ILoveSuShi.jpg"
-                        alt="ILoveSuShi"
-                        className="cocLifeRestaurantsImage"
-                      />
-                      <h4>壽司店</h4>
-                      <h4>
-                        <en>I Love SuShi</en>
-                      </h4>
-                      <div className="cocLifeRestaurantsCardText">
-                        ($12–35)7/10選項多樣的壽司店，烏龍麵不錯，可以幫助你解決亞洲胃，解嘴饞的實用選擇之一
-                      </div>
-                    </a>
-                  </div>
+                  <div className="cocLifeRestaurantsCards">
+                    {/*Gogi House*/}
+                    <div className="cocLifeRestaurantsCard">
+                      <a
+                        href="https://maps.app.goo.gl/sgwc5iuUKGhusFLq7"
+                        target="_Blank"
+                        draggable="false"
+                      >
+                        <img
+                          src="/USLife/GogiHouse.jpg"
+                          alt="Gogi House"
+                          className="cocLifeRestaurantsImage"
+                        />
+                        <h4>韓式燒肉吃到飽</h4>
+                        <h4>
+                          <en>Gogi House</en>
+                        </h4>
+                        <div className="cocLifeRestaurantsCardText">
+                          ($55up)6/10有點貴，肉質中偏下除了肉還有炸蝦、小菜，跟朋友聚餐不錯
+                        </div>
+                      </a>
+                    </div>
+                    {/*I Love SuShi*/}
+                    <div className="cocLifeRestaurantsCard">
+                      <a
+                        href="https://maps.app.goo.gl/eBddZP5vKL3fHBVb6"
+                        target="_Blank"
+                      >
+                        <img
+                          src="/USLife/ILoveSuShi.jpg"
+                          alt="ILoveSuShi"
+                          className="cocLifeRestaurantsImage"
+                        />
+                        <h4>壽司店</h4>
+                        <h4>
+                          <en>I Love SuShi</en>
+                        </h4>
+                        <div className="cocLifeRestaurantsCardText">
+                          ($12–35)7/10烏龍麵不錯，可以幫助你解決亞洲胃
+                        </div>
+                      </a>
+                    </div>
                     {/*The Cheese Cake Factory*/}
-                  <div className="cocLifeRestaurantsCard">
-                    <a
-                      href="https://www.thecheesecakefactory.com/"
-                      target="_Blank"
-                      draggable="false"
-                    >
-                      <img
-                        src="/USLife/CheeseCakeFactory.jpg"
-                        alt="The Cheese Cake Factory"
-                        className="cocLifeRestaurantsImage"
-                      />
-                      <h4>美式連鎖家庭餐廳</h4>
-                      <h4>
-                        <en>The Cheese Cake Factory</en>
-                      </h4>
-                      <div className="cocLifeRestaurantsCardText">
-                        ($20-35)7/10 份量蠻大、選擇很多的美式餐廳，各種美式、義式、亞洲風通通有，
-                        招牌是起司蛋糕，推烤球甘藍、達文西義大利麵、牛排
-                      </div>
-                    </a>
+                    <div className="cocLifeRestaurantsCard">
+                      <a
+                        href="https://www.thecheesecakefactory.com/"
+                        target="_Blank"
+                        draggable="false"
+                      >
+                        <img
+                          src="/USLife/CheeseCakeFactory.jpg"
+                          alt="The Cheese Cake Factory"
+                          className="cocLifeRestaurantsImage"
+                        />
+                        <h4>美式連鎖家庭餐廳</h4>
+                        <h4>
+                          <en>The Cheese Cake Factory</en>
+                        </h4>
+                        <div className="cocLifeRestaurantsCardText">
+                          ($20-35)7/10
+                          選擇很多，
+                          招牌是起司蛋糕，推烤球甘藍、達文西義大利麵、牛排
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -684,7 +686,10 @@ export default function CocLife() {
 
             <div className="cocLifeEntertainmentsection">
               <h3>Near Cities</h3>
-              <div className="cocLifeEntertainmentCardsWrapper" id="otherCities">
+              <div
+                className="cocLifeEntertainmentCardsWrapper"
+                id="otherCities"
+              >
                 {/*Santa Monica*/}
                 <div className="cocLifeEntertainmentCard cocLifeEntertainmentOtherCity">
                   <span className="cocLifeEntertainmentTitle">
@@ -771,8 +776,10 @@ export default function CocLife() {
                         alt="Americana"
                         className="cocLifeEntertainmentImage"
                       />
-                      <h4>大型生活風格型戶外購物中心</h4>
-                      <h4>The Americana at Brand</h4>
+                      <h4>戶外購物中心</h4>
+                      <h4>
+                        The Americana <inv>at Brand</inv>
+                      </h4>
                     </div>
 
                     <div className="cocLifeEntertainmentSpot">
@@ -781,7 +788,7 @@ export default function CocLife() {
                         alt="Pasadena"
                         className="cocLifeEntertainmentImage"
                       />
-                      <h4>文創氣息濃厚的悠閒歷史城區</h4>
+                      <h4>文創歷史城區</h4>
                       <h4>Pasadena</h4>
                     </div>
 
@@ -791,7 +798,7 @@ export default function CocLife() {
                         alt="WestfieldCenturyCity"
                         className="cocLifeEntertainmentImage"
                       />
-                      <h4>大型生活風格型戶外購物中心</h4>
+                      <h4>戶外購物中心</h4>
                       <h4>Westfield Century City</h4>
                     </div>
                   </div>
