@@ -392,11 +392,28 @@ en {
     width: 60%;
   }
 
+  .cocLifeEntertainmentsection{
+    padding: 8px 10px 10px 10px;
+  }
+
   .cocLifeEntertainmentCardsWrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
+
+  #otherCities{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cocLifeEntertainmentOtherCity{
+    width: 100% !important;
+  }
+
+  .cocLifeEntertainmentOtherCity:hover {
+  transform:none;
+}
 
   .cocLifeEntertainmentCard {
     width: 80%;

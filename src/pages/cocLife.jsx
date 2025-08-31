@@ -684,7 +684,7 @@ export default function CocLife() {
 
             <div className="cocLifeEntertainmentsection">
               <h3>Near Cities</h3>
-              <div className="cocLifeEntertainmentCardsWrapper">
+              <div className="cocLifeEntertainmentCardsWrapper" id="otherCities">
                 {/*Santa Monica*/}
                 <div className="cocLifeEntertainmentCard cocLifeEntertainmentOtherCity">
                   <span className="cocLifeEntertainmentTitle">

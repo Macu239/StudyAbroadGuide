@@ -35,7 +35,7 @@
 .footer_menus {
   display: flex;
   justify-content: space-between;
-  width:100%;
+  width: 100%;
   font-family: "Libre Baskerville";
   margin-bottom: 20px;
   margin-top: 20px;
@@ -58,10 +58,14 @@
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-  .footer-text{
+  .FooterContainer {
+    width: 90%;
+  }
+
+  .footer-text {
     display: none;
   }
-  .footer_menus{
+  .footer_menus {
     font-size: 0.7rem;
   }
 }
