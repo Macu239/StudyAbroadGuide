@@ -475,21 +475,6 @@ export default function CocLife() {
                   edmonton有開，多倫多在UofT附近和Downtown各有一間
                 </div>
               </div>
-              {/*Weee*/}
-              <div className="CaLifeShoppingCards">
-                <img
-                  src="/USLife/Weee.jpg"
-                  alt="Target"
-                  className="CaLifeShoppingTag"
-                />
-
-                <div className="CaLifeShoppingText">
-                  <h3>Weee</h3>
-                  北美最大的亞洲食品的線上超市，提供各種亞洲國家的食品選擇，方便購買亞洲食材。
-                  尤其是不會臭的豬肉、便宜的蔬菜、蔥薑蒜等調味料，還有各種亞洲零食和飲料。
-                  只要在網站上下單，Wee會將商品送到你家門口，非常方便。
-                </div>
-              </div>
               {/*Walmart */}
               <div className="CaLifeShoppingCards">
                 <img
@@ -581,7 +566,7 @@ export default function CocLife() {
                       alt="Shiso"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>日式料理、壽司</h4>
+                    <h4>日式料理</h4>
                     <h4>
                       <en>Shiso </en>
                     </h4>

@@ -211,7 +211,6 @@ en {
 }
 
 .CaLifeEntertainmentCard {
-  font-weight: 500;
   width: 19%;
   background-color: #0E5AA4;
   padding: 10px;
@@ -310,5 +309,20 @@ en {
 
   .CaLifeShoppingText{
     font-size: 0.8rem;
+  }
+
+  .CaLifeFoodsection{
+    padding: 6px 10px 10px 10px;
+  }
+
+  .CaLifeEntertainmentCardsWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+  }
+
+  .CaLifeEntertainmentCard{
+    width: 100%;
+    padding: 6px;
   }
 }
