@@ -48,4 +48,8 @@ main {
   .SIDEBAR{
     display: none;
   }
+
+  a{
+    font-size: inherit !important;
+  }
 }

@@ -66,3 +66,11 @@
 .SuggestionForm input[type="submit"]:active{
     transform: scale(0.98);
 }
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .SuggestionForm{
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0.8rem auto;
+  }
+}

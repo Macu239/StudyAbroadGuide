@@ -508,7 +508,7 @@ export default function CocLife() {
                 Shiso 和 Wow Store。
               </h4>
               <div className="CaLifeEntertainmentCardsWrapper">
-                <div className="CaLifeEntertainmentCard" >
+                <div className="CaLifeEntertainmentCard">
                   <a
                     href="https://www.sixflags.com/magicmountain/things-to-do"
                     target="_Blank"
@@ -525,7 +525,7 @@ export default function CocLife() {
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard" >
+                <div className="CaLifeEntertainmentCard">
                   <a href="https://www.bowlvalencialanes.com/" target="_Blank">
                     <img
                       src="/CALife/DQ.jpg"
@@ -539,7 +539,7 @@ export default function CocLife() {
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard" >
+                <div className="CaLifeEntertainmentCard">
                   <a
                     href="https://www.thecubesantaclarita.com/"
                     target="_Blank"
@@ -556,7 +556,7 @@ export default function CocLife() {
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard" >
+                <div className="CaLifeEntertainmentCard">
                   <a
                     href="https://maps.app.goo.gl/d3vbfGo5M3fxrmri8"
                     target="_Blank"
@@ -573,7 +573,7 @@ export default function CocLife() {
                   </a>
                 </div>
 
-                <div className="CaLifeEntertainmentCard" >
+                <div className="CaLifeEntertainmentCard">
                   <a
                     href="https://maps.app.goo.gl/Tr6nCGt47h56BRPn8"
                     target="_Blank"
@@ -593,7 +593,7 @@ export default function CocLife() {
             </div>
             <div className="CaLifeFoodsection" id="TorontoFood">
               <h3>Around UMC/ Toronto</h3>
-              <h4>多倫多食物便宜各種種類多由尤其還有唐人街</h4>
+              <h4>多倫多食物便宜各種種類多由尤其還有唐人街、韓國城，亞洲餐廳豐富，不會讓你餓到</h4>
               <div className="CaLifeEntertainmentCardsWrapper">
                 <div className="CaLifeEntertainmentCard">
                   <a
@@ -601,44 +601,47 @@ export default function CocLife() {
                     target="_Blank"
                   >
                     <img
-                      src="/CALife/fiveGuys.jpg"
+                      src="/CALife/ikkoushaRamen.jpeg"
                       alt="Five Guys"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>大型遊樂園</h4>
+                    <h4>拉麵</h4>
                     <h4>
-                      <en>Five Guys</en>
-                    </h4>
-                  </a>
-                </div>
-
-                <div className="CaLifeEntertainmentCard">
-                  <a href="https://www.bowlvalencialanes.com/" target="_Blank">
-                    <img
-                      src="/CALife/DQ.jpg"
-                      alt="Dairy Queen"
-                      className="CaLifeEntertainmentImage"
-                    />
-                    <h4>保齡球館</h4>
-                    <h4>
-                      <en>Dairy Queen</en>
+                      <en>Ikkousha Ramen Toronto</en>
                     </h4>
                   </a>
                 </div>
 
                 <div className="CaLifeEntertainmentCard">
                   <a
-                    href="https://www.thecubesantaclarita.com/"
+                    href="https://maps.app.goo.gl/fESW9o1qdRZ3KXSj6"
                     target="_Blank"
                   >
                     <img
-                      src="/CALife/A&W.jpg"
-                      alt="A&W"
+                      src="/CALife/momsPanFriedBun.jpg"
+                      alt="老娘水煎包"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>溜冰場</h4>
+                    <h4>包子、中餐館</h4>
                     <h4>
-                      <en>A&W</en>
+                      <en>老娘水煎包</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
+                    href="https://maps.app.goo.gl/GkjbLAdmmd7bsdAQ9"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/jinDalLae.jpg"
+                      alt="Jin Dal Lae"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>韓式餐廳</h4>
+                    <h4>
+                      <en>Jin Dal Lae</en>
                     </h4>
                   </a>
                 </div>
@@ -653,9 +656,9 @@ export default function CocLife() {
                       alt="Shiso"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>電影院</h4>
+                    <h4>N/A</h4>
                     <h4>
-                      <en>Regal Valencia</en>
+                      <en>N/A</en>
                     </h4>
                   </a>
                 </div>
@@ -670,9 +673,9 @@ export default function CocLife() {
                       alt="wowStore"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>購物商場</h4>
+                    <h4>N/A</h4>
                     <h4>
-                      <en>Town Center</en>
+                      <en>N/A</en>
                     </h4>
                   </a>
                 </div>

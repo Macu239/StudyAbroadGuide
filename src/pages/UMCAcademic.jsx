@@ -55,7 +55,7 @@ export default function UMCAcademicc() {
           </div>
         </div>
 
-        <DividerContent order="四" title="升學、申請相關" />
+        {/*<DividerContent order="四" title="升學、申請相關" />
         <div className="CaAcademicTransferContentWrapper">
           <div className="CaAcademicTransferContent">
             <div className="CaAcademicTransferTag">
@@ -131,9 +131,9 @@ export default function UMCAcademicc() {
               都是很棒的選擇，前者提供實際參與太空計畫的機會，後者則專注於商業領域的實踐與學習。
             </div>
           </div>
-        </div>
+        </div>*/}
 
-        <DividerContent order="五" title="轉學完整時間規劃" />
+        <DividerContent order="四" title="轉學完整時間規劃" />
         <div className="UMCAcademicSchduleWrapper">
           <div className="CaAcademicTransferContent">
             <div className="CaAcademicTransferTag">

@@ -184,9 +184,8 @@ export default function CocAcademicc() {
               </ul>
             </div>
           </div>
-        </div>
 
-        <div className="cocAcademiccard">
+          <div className="cocAcademiccard">
           <div className="cocAcademicIconBox">
             <img
               src="/UCtransfer/OfficeHour.png"
@@ -210,6 +209,9 @@ export default function CocAcademicc() {
             </ul>
           </div>
         </div>
+        </div>
+
+        
 
         <DividerContent order="五" title="轉學相關" />
         <div className="cocAcademicTransferContentWrapper">
