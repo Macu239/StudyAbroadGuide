@@ -185,7 +185,7 @@ export default function COC() {
               </Link>
             </div>
             <div className="resource-card">
-              <Link to="/QandA">
+              <Link to="/QandA" state={{ moveSection: "COC" }}>
                 <img
                   src="/COC/img_image_12.png"
                   alt="Q&A"

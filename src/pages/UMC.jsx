@@ -179,7 +179,7 @@ export default function UMC() {
               </Link>
             </div>
             <div className="resource-card">
-              <Link to="/QandA">
+              <Link to="/QandA" state={{ moveSection: "UMC" }}>
                 <img
                   src="/COC/img_image_12.png"
                   alt="Q&A"

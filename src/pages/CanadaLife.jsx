@@ -419,7 +419,8 @@ export default function CocLife() {
                   <ul>
                     <li>8月底-10月中：入秋 天氣涼涼 但不會到冷</li>
                     <li>
-                      10月底-11月初：開始下雪 （會持續下雪寒冷到隔天4月底）
+                      10月底-11月初：開始下雪
+                      ，可以開始多加外套這類的保暖衣物（雪會持續到隔年4月底）
                     </li>
                     <li>
                       12月底-1月初：冬天最冷的時期，最低溫度零下40度
@@ -432,6 +433,14 @@ export default function CocLife() {
                           Mall 購買，寄宿家庭帶你去購買
                         </li>
                       </ul>
+                    </li>
+                    <li>
+                      1月-4月 :
+                      天氣會慢慢回暖，帶是氣溫還是會保持在大概-10到-20度之間
+                    </li>
+                    <li>
+                      4月-6月:
+                      雪開始融化，氣溫會回升到20度左右，可以開始穿短袖衣服
                     </li>
                   </ul>
                 </li>
@@ -593,7 +602,9 @@ export default function CocLife() {
             </div>
             <div className="CaLifeFoodsection" id="TorontoFood">
               <h3>Around UMC/ Toronto</h3>
-              <h4>多倫多食物便宜各種種類多由尤其還有唐人街、韓國城，亞洲餐廳豐富，不會讓你餓到</h4>
+              <h4>
+                多倫多食物便宜各種種類多由尤其還有唐人街、韓國城，亞洲餐廳豐富，不會讓你餓到
+              </h4>
               <div className="CaLifeEntertainmentCardsWrapper">
                 <div className="CaLifeEntertainmentCard">
                   <a

@@ -53,7 +53,7 @@ export default function RedDeer() {
               </div>
 
               <div className="peopleSuitsBox" id="RD">
-                可以適應長時間嚴寒溫度的人
+                希望降低升學壓力、想在較輕鬆的教育環境中學習的人
               </div>
             </div>
 
@@ -67,7 +67,7 @@ export default function RedDeer() {
               </div>
 
               <div className="peopleSuitsBox" id="RD1">
-                喜歡多元文化/跟大自然相處/運動的學生
+                具備一定抗壓性、能獨立面對孤單與文化差異的人（因為一個人在國外，氣候和環境可能會影響情緒，需要心理調適）
               </div>
             </div>
           </div>
@@ -77,18 +77,30 @@ export default function RedDeer() {
             <div className="ProsConsText" id="RD">
               <div className="pros-cons-title">Pros:</div>
               <ul className="pros-cons-list">
-                <li>體驗真正的加拿大高中生活以及課程</li>
+                <li>
+                  體驗真正的加拿大高中生活
+                  (因為這兩間學校都是加拿大的公立高中，氛圍比較接近電視劇裡的校園生活，白人比例約
+                  60%)
+                </li>
                 <li>融入寄宿家庭（有機會遇見來自不同國家的家庭</li>
-                <li>獲得優異的在校成績有助於申請世界頂尖大學</li>
-                <li>體驗當地娛樂生活（滑雪、溜冰、冰上曲棍球）</li>
+                <li>
+                  獲得優異的在校成績有助於申請世界頂尖大學
+                  (教學進度較慢，高三程度相當於台灣高一，因此亞洲學生常能取得不錯的成績)
+                </li>
+                <li>
+                  體驗當地特色娛樂生活（滑雪、溜冰、冰上曲棍球、美式橄欖球、越野跑步）
+                </li>
                 <li>有很大機率可以看到極光</li>
                 <li>
                   English 30-1的訓練可以很完整的培養學生以後大學的寫作能力
                 </li>
+                <li>語言能力提升快，全英語環境有助於口語和聽力</li>
                 <li>學校有很多社團活動</li>
                 <li>
                   因學校位置較偏僻，學生可以好好專心的上學讀書、有省考，鑑別度高
                 </li>
+                <li>教育重視討論與表達，能培養批判思考</li>
+                <li>師生關係友善、互動較自由</li>
               </ul>
             </div>
             <div className="ProsConsText" id="RD1">
@@ -103,9 +115,6 @@ export default function RedDeer() {
               </ul>
             </div>
           </div>
-          <div className="divider" />
-          <h2 className="section-title">預先線上課程/雙聯學制</h2>
-          <div className="RDOnlineClasses">高一二要同時上線上英文課程...</div>
         </div>
         <div className="divider" />
       </main>
@@ -159,7 +168,7 @@ export default function RedDeer() {
               </Link>
             </div>
             <div className="resource-card">
-              <Link to="/Seniors"  state={{ openSection: "RedDeer" }}> 
+              <Link to="/Seniors" state={{ openSection: "RedDeer" }}>
                 <img
                   src="/COC/img_img_5504_1.png"
                   alt="Find Seniors"
@@ -169,7 +178,7 @@ export default function RedDeer() {
               </Link>
             </div>
             <div className="resource-card">
-              <Link to="/QandA">
+              <Link to="/QandA" state={{ moveSection: "RedDeer" }}>
                 <img
                   src="/COC/img_image_12.png"
                   alt="Q&A"
