@@ -16,11 +16,13 @@ export const cocQuestions = [
   },
   {
     title: "現金應該帶多少?",
-    content: "建議帶大約1000美金其實就可以，等你銀行開戶完成以後再請父母電匯、國際匯款就可以了",
+    content:
+      "建議帶大約1000美金其實就可以，等你銀行開戶完成以後再請父母電匯、國際匯款就可以了",
   },
   {
     title: "要先辦台灣的信用卡/爸媽副卡嗎",
-    content: "Jeremy:推，建議在出國前辦爸媽的副卡。美國大部分地方都可以刷卡，比帶現金更方便也更安全，記得確認信用卡是否收取國外手續費，出國前也要通知銀行，避免刷卡被凍結。",
+    content:
+      "Jeremy:推，建議在出國前辦爸媽的副卡。美國大部分地方都可以刷卡，比帶現金更方便也更安全，記得確認信用卡是否收取國外手續費，出國前也要通知銀行，避免刷卡被凍結。",
   },
   {
     title: "COC需要托福／雅思成績嗎？",
@@ -48,10 +50,6 @@ export const cocQuestions = [
     title: "Santa Clarita安全嗎",
     content:
       "非常安全，Santa Clarita 是美國前十大適合居住的城市，物價低於灣區，且距離洛杉磯機場僅需要一小時開車時間，純白人環境，治安非常良好。",
-  },
-  {
-    title: "",
-    content: "",
   },
 ];
 
@@ -85,14 +83,23 @@ export const redDeerQuestions = [
       </ul>
     ),
   },
-    {
+  {
     title: "RedDeer 需要托福/雅思成績嗎？",
-    content:"需要，取得6.0含或以上的成績，否則需要填寫免責聲明"
+    content: "需要，取得6.0含或以上的成績，否則需要填寫免責聲明",
   },
 ];
 
 export const usQuestions = [
-  { title: "Is the USA Expensive?", content: "Depends" },
+  {
+    title: "美國會很危險嗎",
+    content:
+      "保持警覺心沒有想像中那麼危險，多關注新聞避開市區(Downtown)的鬧區，不要隨便露出現金、放東西在桌上、跟奇怪的人Eye contact，you will be alright。",
+  },
+  {
+    title: "美國會有很嚴重的種族歧視嗎",
+    content:
+      "假如在加州及較北邊的大州、城市，種族歧視的情況較少，南部及較小的城市會比較嚴重，但大部分人都不會特別去注意你是什麼種族。",
+  },
 ];
 
 export const canadaQuestions = [
