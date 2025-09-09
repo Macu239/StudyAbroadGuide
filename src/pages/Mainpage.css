@@ -57,7 +57,6 @@
   padding: 0.8rem;
   border-radius: 10px;
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 .box h3,
 .box h4 {
@@ -72,7 +71,13 @@
 .school_pic {
   width: 100%;
   aspect-ratio: 1.67;
-  border-radius: 8px;
+
+}
+
+.boxLine{
+  height: 40vh;
+  width: 2px;
+  background-color: #8c8a8a;
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
@@ -84,7 +89,13 @@
 
   .box {
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 0.7rem;
+    padding: 0;
+  }
+
+  .boxLine{
+    width: 80%;
+    height: 2px;
   }
 
   .mainIntro{

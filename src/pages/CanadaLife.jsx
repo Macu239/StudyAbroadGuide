@@ -625,6 +625,23 @@ export default function CocLife() {
 
                 <div className="CaLifeEntertainmentCard">
                   <a
+                    href="https://maps.app.goo.gl/SeBJ6jLCwDCKmtD97"
+                    target="_Blank"
+                  >
+                    <img
+                      src="/CALife/Afuri.jpg"
+                      alt="Afuri"
+                      className="CaLifeEntertainmentImage"
+                    />
+                    <h4>柚子拉麵</h4>
+                    <h4>
+                      <en>Afuri Ramen</en>
+                    </h4>
+                  </a>
+                </div>
+
+                <div className="CaLifeEntertainmentCard">
+                  <a
                     href="https://maps.app.goo.gl/fESW9o1qdRZ3KXSj6"
                     target="_Blank"
                   >
@@ -659,34 +676,17 @@ export default function CocLife() {
 
                 <div className="CaLifeEntertainmentCard">
                   <a
-                    href="https://maps.app.goo.gl/d3vbfGo5M3fxrmri8"
+                    href="https://maps.app.goo.gl/chctPN1pka95zSov9"
                     target="_Blank"
                   >
                     <img
-                      src="/CALife/Shiso.jpg"
-                      alt="Shiso"
+                      src="/CALife/KohLipe.jpeg"
+                      alt="Koh Lipe Thai Kitchen"
                       className="CaLifeEntertainmentImage"
                     />
-                    <h4>N/A</h4>
+                    <h4>泰式餐廳</h4>
                     <h4>
-                      <en>N/A</en>
-                    </h4>
-                  </a>
-                </div>
-
-                <div className="CaLifeEntertainmentCard">
-                  <a
-                    href="https://maps.app.goo.gl/Tr6nCGt47h56BRPn8"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/wowStore.webp"
-                      alt="wowStore"
-                      className="CaLifeEntertainmentImage"
-                    />
-                    <h4>N/A</h4>
-                    <h4>
-                      <en>N/A</en>
+                      <en>Koh Lipe Thai Kitchen</en>
                     </h4>
                   </a>
                 </div>
