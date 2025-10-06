@@ -40,6 +40,7 @@ export default function UMC() {
             >
               詳細資訊
             </a>
+            P.S. 由於澳洲大學對於加拿大私立高中文憑的政策改變，大學想藉由UMC申請<strong>澳洲大學</strong>要多交考慮、跟Daniel討論。
           </p>
           <div className="divider" />
           <h2 className="section-title">誰適合UMC/加拿大</h2>
