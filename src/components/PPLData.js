@@ -1,6 +1,6 @@
 export const CollegeOfTheCanyons = [
   {
-    personalPic: "./Seniors/Me.jpg",
+    personalPic: "./Seniors/Me.JPG",
     name: "Jeremy",
     major: "Computer Science",
     currentSchool: "UCSD",
