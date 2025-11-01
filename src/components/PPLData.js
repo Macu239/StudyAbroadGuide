@@ -1,13 +1,14 @@
 export const CollegeOfTheCanyons = [
   {
-    personalPic: "",
+    personalPic: "./Seniors/Me.jpg",
     name: "Jeremy",
     major: "Computer Science",
     currentSchool: "UCSD",
     link: "https://www.linkedin.com/in/jeremy-s-750718287/",
     email: "Jeremy02012005@gmail.com",
     linkText: "Linkedin",
-    infos: "The One who built this website",
+    infos:
+      "20屆國際班畢業生，架構這個網站的人，假如有資訊工程、美國生活相關的問題都可以問我喔",
   },
   {
     personalPic: "",
