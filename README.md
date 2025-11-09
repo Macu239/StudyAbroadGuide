@@ -1,12 +1,17 @@
-# React + Vite
+> HWSH Study Abroad Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and user-friendly website designed to help HWSH students explore and plan their study abroad opportunities.
+Built with React, HTML, and CSS, and deployed via Render, this project focuses on usability, scalability, and accessibility across devices.
 
-Currently, two official plugins are available:
+> Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The HWSH Study Abroad Guide provides students with clear, structured information about study abroad programs, including country overviews, application steps, and student life tips.
+It was developed in collaboration with alumni and school officials to ensure accuracy and practicality for future applicants.
 
-## Expanding the ESLint configuration
+> Motivation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Many HWSH students were uncertain about study abroad procedures and university options. This project was created to centralize reliable information, improve accessibility, and make the process less intimidating.
+
+>Live Demo
+
+Deployed on Render: https://hwshstudyabroadguide.onrender.com/
