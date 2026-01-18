@@ -11,7 +11,7 @@ export const CollegeOfTheCanyons = [
       "20屆國際班畢業生，架構這個網站的人，假如有資訊工程、美國生活相關的問題都可以問我喔",
   },
   {
-    personalPic: "",
+    personalPic: "./Seniors/defaultimg.jpg",
     name: "Alice",
     major: "Business Administration",
     currentSchool: "UCR",

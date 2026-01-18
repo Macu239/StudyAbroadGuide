@@ -11,7 +11,7 @@ import {
 } from "../components/QandAData.jsx";
 
 function QandA() {
-    const location = useLocation();
+  const location = useLocation();
   const cocRef = useRef(null);
   const umcRef = useRef(null);
   const redDeerRef = useRef(null);

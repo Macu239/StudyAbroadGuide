@@ -29,7 +29,7 @@ function PPLaccordionItem({ School, people, isExpanded, width = "875px" }) {
           {/*inputting datas below*/}
           {people.map((person, index) => (
             <div key={person.id || index} className="accordionContent">
-              <img className="personalPic" src={person.personalPic}></img>
+              <img className="personalPic" src={person.personalPic ||"./Seniors/defaultimg.jpg"}></img>
               <div className="accordionText">
                 <h2>{person.name}</h2>
                 <div className="PplAccordionHeder">

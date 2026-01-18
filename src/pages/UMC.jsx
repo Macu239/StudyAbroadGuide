@@ -171,7 +171,7 @@ export default function UMC() {
             <div className="resource-card">
               <Link to="/Seniors" state={{ openSection: "UMC" }}>
                 <img
-                  src="/COC/img_img_5504_1.png"
+                  src="/COC/seniors.jpg"
                   alt="Find Seniors"
                   className="resource-image"
                   loading="lazy"
