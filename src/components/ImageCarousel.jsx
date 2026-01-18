@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./ImageCarousel.css";
-
-
 
 export default function ImageCarousel({ width = "300px", Slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,10 +28,7 @@ export default function ImageCarousel({ width = "300px", Slides }) {
   }, []);
 
   return (
-    <div 
-      className="carousel"
-      style={{ "--carousel-width": width }}
-    >
+    <div className="carousel" style={{ "--carousel-width": width }}>
       <div
         className="slides"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -41,12 +36,12 @@ export default function ImageCarousel({ width = "300px", Slides }) {
         {Slides.map((src, index) => (
           <Link key={index} to={src.path}>
             <img
-            key={index}
-            src={src.img}
-            alt={`Slide ${index}`}
-            className="slide"
-            draggable="false"
-          />
+              key={index}
+              src={src.img}
+              alt={`Slide ${index}`}
+              className="slide"
+              draggable="false"
+            />
           </Link>
         ))}
       </div>

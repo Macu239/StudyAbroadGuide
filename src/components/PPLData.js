@@ -11,11 +11,12 @@ export const CollegeOfTheCanyons = [
       "20屆國際班畢業生，架構這個網站的人，假如有資訊工程、美國生活相關的問題都可以問我喔",
   },
   {
-    personalPic: "./Seniors/defaultimg.jpg",
+    personalPic: "",
     name: "Alice",
-    major: "Business Administration",
+    major: "Business Administration/Accounting",
     currentSchool: "UCR",
-    infos: "2021開始上線上課2023前往COC...",
+    email: "shen78832@gmail.com",
+    infos: "",
   },
   {
     personalPic: "./Seniors/Linus.jpg",
@@ -35,7 +36,7 @@ export const UMC = [
     name: "Samantha",
     major: "Business Administration",
     currentSchool: "UMC -> UofT",
-    infos: "學姊",
+    infos: "",
     link: "",
     linkText: "Linkedin",
   },
@@ -44,7 +45,7 @@ export const UMC = [
     name: "Iris",
     major: "Business Management",
     currentSchool: "UMC -> UofT",
-    infos: "Uoft...",
+    infos: "",
     link: "",
     linkText: "Linkedin",
   },
@@ -53,7 +54,7 @@ export const UMC = [
     name: "Esther",
     major: "Business Management",
     currentSchool: "UMC -> UofT",
-    infos: "Uoft...",
+    infos: "",
     link: "",
     linkText: "Linkedin",
   },
@@ -119,7 +120,7 @@ export const RedDeer = [
     linkText: "Instagram",
     infos: "",
   },
-  {
+  /*{
     personalPic: "",
     name: "Vincent",
     major: "Computer Science",
@@ -127,5 +128,5 @@ export const RedDeer = [
     infos: "23屆國際班...",
     link: "",
     linkText: "Linkedin",
-  },
+  },*/
 ];

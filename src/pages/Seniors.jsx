@@ -122,7 +122,7 @@ export default function Seniors() {
 
         <PPLaccordionItem
           School="其他學校/國家"
-          people={RedDeer}
+          people={[]}
           isExpanded={expandAll}
           width="100%"
         />
