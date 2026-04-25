@@ -1,3 +1,4 @@
+'use client'
 import "./BlurImage.css";
 import { useState } from "react";
 

@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+'use client'
+import Link from "next/link";
 import "./Footer.css";
 
-export default function Header() {
+export default function Footer() {
   return (
     <div className="footer">
       <div className="FooterContainer">
         <div className="footer-text">
           <img src="/ROCflag.png" className="flags" />
-          <Link to="/CocLife">
+          <Link href="/CocLife">
             <img src="/USAflag.png" className="flags" />
           </Link>
-          <Link to="/CanadaLife">
+          <Link href="/CanadaLife">
             <img src="/Canadaflag.png" className="flags" />
           </Link>
         </div>
@@ -21,10 +21,10 @@ export default function Header() {
         <div className="footer_menus">
           <ul className="footer_menu">
             <li>
-              <Link to="/AboutUS">About Us</Link>
+              <Link href="/AboutUs">About Us</Link>
             </li>
             <li>
-              <Link to="/QandA">FAQs</Link>
+              <Link href="/QandA">FAQs</Link>
             </li>
             <li>Outer resources</li>
             <li>
@@ -36,55 +36,55 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <Link to="/Seniors">Alumnis</Link>
+              <Link href="/Seniors">Alumnis</Link>
             </li>
           </ul>
 
           <ul className="footer_menu">
             <li>
-              <Link to="/COC">College of the Canyons</Link>
+              <Link href="/COC">College of the Canyons</Link>
             </li>
             <li>
-              <Link to="/COCApplication">申請流程</Link>
+              <Link href="/COCApplication">申請流程</Link>
             </li>
             <li>
-              <Link to="/UsVisa">美國學生簽證</Link>
+              <Link href="/UsVisa">美國學生簽證</Link>
             </li>
             <li>
-              <Link to="/CocAcademic">UC轉學</Link>
+              <Link href="/CocAcademic">UC轉學</Link>
             </li>
             <li>
-              <Link to="/CocLife">美國留學生活指南</Link>
-            </li>
-          </ul>
-
-          <ul className="footer_menu">
-            <li>
-              <Link to="/UMC">UMC</Link>
-            </li>
-            <li>
-              <Link to="/UMCApplication">UMC申請流程</Link>
-            </li>
-            <li>
-              <Link to="/CanadaVisa">加拿大學生簽證</Link>
-            </li>
-            <li>
-              <Link to="/UMCAcademic">加拿大升學</Link>
-            </li>
-            <li>
-              <Link to="/CanadaLife">加拿大留學生活指南</Link>
+              <Link href="/CocLife">美國留學生活指南</Link>
             </li>
           </ul>
 
           <ul className="footer_menu">
             <li>
-              <Link to="/RedDeer">Red Deer</Link>
+              <Link href="/UMC">UMC</Link>
             </li>
             <li>
-              <Link to="/RedDeerApplication">Red Deer申請流程</Link>
+              <Link href="/UMCApplication">UMC申請流程</Link>
             </li>
             <li>
-              <Link to="/UMCAcademic">Red Deer升學</Link>
+              <Link href="/CanadaVisa">加拿大學生簽證</Link>
+            </li>
+            <li>
+              <Link href="/UMCAcademic">加拿大升學</Link>
+            </li>
+            <li>
+              <Link href="/CanadaLife">加拿大留學生活指南</Link>
+            </li>
+          </ul>
+
+          <ul className="footer_menu">
+            <li>
+              <Link href="/RedDeer">Red Deer</Link>
+            </li>
+            <li>
+              <Link href="/RedDeerApplication">Red Deer申請流程</Link>
+            </li>
+            <li>
+              <Link href="/UMCAcademic">Red Deer升學</Link>
             </li>
           </ul>
         </div>

@@ -1,0 +1,9 @@
+{
+  "/page": "app/page.js",
+  "/COC/page": "app/COC/page.js",
+  "/UsVisa/page": "app/UsVisa/page.js",
+  "/CocAcademic/page": "app/CocAcademic/page.js",
+  "/Seniors/page": "app/Seniors/page.js",
+  "/QandA/page": "app/QandA/page.js",
+  "/AboutUs/page": "app/AboutUs/page.js"
+}

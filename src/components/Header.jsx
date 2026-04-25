@@ -1,151 +1,94 @@
-import React from "react";
-import { Link } from "react-router-dom";
+'use client'
+import Link from "next/link";
 import "./Header.css";
+
+const menus = [
+  {
+    label: "COC",
+    items: [
+      { href: "/COC", text: "介紹網頁" },
+      { href: "https://www.canyons.edu/", text: "School Website", external: true },
+      { href: "/COCApplication", text: "申請流程" },
+      { href: "/UsVisa", text: "簽證" },
+      { href: "/CocAcademic", text: "UC轉學、線上課程" },
+      { href: "/Seniors?section=COC", text: "找學長姊" },
+      { href: "/CocLife", text: "美國生活" },
+    ],
+  },
+  {
+    label: "UMC",
+    items: [
+      { href: "/UMC", text: "介紹網頁" },
+      { href: "https://umchighschool.com/", text: "School Website", external: true },
+      { href: "/UMCApplication", text: "申請流程" },
+      { href: "/CanadaVisa", text: "簽證" },
+      { href: "/UMCAcademic", text: "加拿大升學/大學申請" },
+      { href: "/Seniors?section=UMC", text: "找學長姊" },
+      { href: "/CanadaLife", text: "加拿大生活" },
+    ],
+  },
+  {
+    label: "Red Dear",
+    items: [
+      { href: "/RedDeer", text: "介紹網頁" },
+      { href: "https://www.rdcrs.ca/", text: "School Website", external: true },
+      { href: "/RedDeerApplication", text: "申請流程" },
+      { href: "/CanadaVisa", text: "簽證" },
+      { href: "/UMCAcademic", text: "加拿大升學/大學申請" },
+      { href: "/Seniors?section=RedDeer", text: "找學長姊" },
+      { href: "/CanadaLife", text: "加拿大生活" },
+    ],
+  },
+  {
+    label: "Other",
+    items: [
+      {
+        href: "https://www.instagram.com/ma0201cu/?utm_source=ig_web_button_share_sheet",
+        text: "Contact ME",
+        external: true,
+      },
+      { href: "/QandA", text: "Frequently Asked Questions" },
+      { href: "/AboutUs", text: "關於我們、意見箱" },
+    ],
+  },
+];
 
 export default function Header() {
   return (
     <div className="title_bar">
       <div className="websiteHeader">
-        <Link to="/" id="logoLink">
+        <Link href="/" id="logoLink">
           <img className="logo" src="/globeLogo.svg" alt="Logo" />
         </Link>
-
         <h1 id="Pagename">傑洛米好鬆餅</h1>
       </div>
 
       <div className="Schools">
-        <div className="dropdown">
-          {/*COC*/}
-          <button className="button">
-            COC
-            <div className="dropdown-content">
-              <Link to="/COC" className="dropdown-link">
-                介紹網頁
-              </Link>
-              <a
-                href="https://www.canyons.edu/"
-                target="_blank"
-                className="dropdown-link"
-              >
-                School Website
-              </a>
-              <Link to="/COCApplication" className="dropdown-link">
-                申請流程
-              </Link>
-              <Link to="/UsVisa" className="dropdown-link">
-                簽證
-              </Link>
-              <Link to="/CocAcademic" className="dropdown-link">
-                UC轉學、線上課程
-              </Link>
-              <Link
-                to="/Seniors"
-                className="dropdown-link"
-                state={{ openSection: "COC" }}
-              >
-                找學長姊
-              </Link>
-              <Link to="/CocLife" className="dropdown-link">
-                美國生活
-              </Link>
-            </div>
-          </button>
-        </div>
-        <div className="dropdown">
-          {/*UMC*/}
-          <button className="button">
-            UMC
-            <div className="dropdown-content">
-              <Link to="/UMC" className="dropdown-link">
-                介紹網頁
-              </Link>
-              <a
-                href="https://umchighschool.com/"
-                target="_blank"
-                className="dropdown-link"
-              >
-                School Website
-              </a>
-              <Link to="/UMCApplication" className="dropdown-link">
-                申請流程
-              </Link>
-              <Link to="/CanadaVisa" className="dropdown-link">
-                簽證
-              </Link>
-              <Link to="/UMCAcademic" className="dropdown-link">
-                加拿大升學/大學申請
-              </Link>
-              <Link
-                to="/Seniors"
-                className="dropdown-link"
-                state={{ openSection: "UMC" }}
-              >
-                找學長姊
-              </Link>
-              <Link to="/CanadaLife" className="dropdown-link">
-                加拿大生活
-              </Link>
-            </div>
-          </button>
-        </div>
-        <div className="dropdown">
-          {/*RedDeer*/}
-          <button className="button">
-            Red Dear
-            <div className="dropdown-content">
-              <Link to="/RedDeer" className="dropdown-link">
-                介紹網頁
-              </Link>
-              <a
-                href="https://www.rdcrs.ca/"
-                target="_blank"
-                className="dropdown-link"
-              >
-                School Website
-              </a>
-              <Link to="/RedDeerApplication" className="dropdown-link">
-                申請流程
-              </Link>
-              <Link to="/CanadaVisa" className="dropdown-link">
-                簽證
-              </Link>
-              <Link to="/UMCAcademic" className="dropdown-link">
-                加拿大升學/大學申請
-              </Link>
-              <Link
-                to="/Seniors"
-                className="dropdown-link"
-                state={{ openSection: "RedDeer" }}
-              >
-                找學長姊
-              </Link>
-              <Link to="/CanadaLife" className="dropdown-link">
-                加拿大生活
-              </Link>
-            </div>
-          </button>
-        </div>
-        <div className="dropdown">
-          {/*sth else*/}
-          <button className="button">
-            Other
-            <div className="dropdown-content">
-              <a
-                href="https://www.instagram.com/ma0201cu/?utm_source=ig_web_button_share_sheet"
-                target="_blank"
-                className="dropdown-link"
-              >
-                Contact ME
-              </a>
-              <Link to="/QandA" className="dropdown-link">
-                Frequently Asked Questions
-              </Link>
-              <Link to="/AboutUs" className="dropdown-link">
-                關於我們、意見箱
-              </Link>
-            </div>
-          </button>
-        </div>
+        {menus.map((menu) => (
+          <div key={menu.label} className="dropdown">
+            <button className="button">
+              {menu.label}
+              <div className="dropdown-content">
+                {menu.items.map((item) =>
+                  item.external ? (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      target="_blank"
+                      className="dropdown-link"
+                    >
+                      {item.text}
+                    </a>
+                  ) : (
+                    <Link key={item.href} href={item.href} className="dropdown-link">
+                      {item.text}
+                    </Link>
+                  )
+                )}
+              </div>
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );

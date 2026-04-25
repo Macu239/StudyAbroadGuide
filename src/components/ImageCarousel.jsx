@@ -1,5 +1,6 @@
+'use client'
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import "./ImageCarousel.css";
 
 export default function ImageCarousel({ width = "300px", Slides }) {
@@ -34,7 +35,7 @@ export default function ImageCarousel({ width = "300px", Slides }) {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {Slides.map((src, index) => (
-          <Link key={index} to={src.path}>
+          <Link key={index} href={src.path}>
             <img
               key={index}
               src={src.img}

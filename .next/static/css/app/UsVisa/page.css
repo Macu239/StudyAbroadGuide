@@ -1,0 +1,814 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/page-components/Visa.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.UsVisaContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'raleway', sans-serif;
+    margin-bottom: 2.5rem;
+}
+
+.usVisaHero {
+  position: relative;
+  width: 100%;
+  height: 200px; /* adjust as needed */
+  overflow: hidden;
+}
+
+.Background {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.usVisaHero h1{
+    position: absolute;
+    bottom:25px;
+    left:7.5%;
+    z-index: 2;
+    color: black;
+}
+
+#DOSlogo{
+    position: absolute;
+    width: 150px;
+    right:7.5%;
+    bottom: 25px;
+}
+
+.UsVisaText{
+  width: 85%;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  #DOSlogo{
+    width: 20%;
+  }
+
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/Header.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+body {
+  line-height: 1.6;
+}
+
+.title_bar {
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem;
+  color: white;
+  width: 100%;
+}
+
+.websiteHeader {
+  width: 17%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#Pagename {
+  width: 75%;
+  font-family: Libre Baskerville;
+  font-weight: bold;
+}
+
+#logoLink {
+  width: 20%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  margin: auto 0;
+  aspect-ratio: 1;
+}
+.Schools {
+  width: 75%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3%;
+}
+.button {
+  font-weight: bold;
+  font-family: Libre Baskerville;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  gap: 10px;
+}
+.dropdown {
+  max-width: 20%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  text-align: left;
+  width: max-content;
+  z-index: 10;
+}
+
+.dropdown-link {
+  padding: 10px 16px;
+  width: 100%;
+  display: block;
+  font-family: Libre Baskerville;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+.dropdown-link:hover {
+  background-color: black;
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Small phones (0 - 380px) */
+@media (min-width: 380px) and (max-width: 590px) {
+  .title_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .websiteHeader {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #logoLink {
+    width: 12%;
+  }
+
+  .Schools {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 8px;
+  }
+
+  .dropdown {
+    max-width: 100%;
+
+    .dropdown-link {
+      font-size: 1rem;
+    }
+  }
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/Footer.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.footer {
+  background-color: #171717;
+}
+
+.FooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding-bottom: 20px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.flags {
+  height: 35px;
+}
+
+.footer-text {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.footer-divider {
+  width: 100%;
+  border-top: 1px solid #8c8a8a;
+  border-bottom: none;
+  opacity: 1;
+}
+
+.footer_menus {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Libre Baskerville";
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.footer_menu a {
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer_menu a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .FooterContainer {
+    width: 90%;
+  }
+
+  .footer-text {
+    display: none;
+  }
+  .footer_menus {
+    font-size: 0.7rem;
+  }
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/QAaccordionItem.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.accordion {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.QAaccordionTitle {
+  color: #ffffff;
+  background-color: #565656;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  width: 100%;
+  aspect-ratio: 12.5;
+}
+
+.arrow {
+  margin-left: 80px;
+}
+.QAaccordionContent {
+  margin-top: 20px;
+  width: 90%;
+  background-color: #d9d9d9;
+  padding: 1.5rem;
+  color: #000;
+  line-height: 2rem;
+}
+
+.QAaccordionContent ul {
+  padding: 1rem;
+  list-style-type: disc;
+}
+
+@media screen {
+    .QAaccordionTitle h4{
+        font-weight: 500;
+    }
+    
+    .QAaccordionContent{
+        margin-top: 0.8rem;
+        padding:1rem;
+        line-height: 1.5rem;
+    }
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/PPLaccordion.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.accordion {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#PPLaccordion {
+  width: var(--PPLaccordionWidth);
+}
+
+.accordionContentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordionTitle {
+  color: #ffffff;
+  background-color: #565656;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  width: 100%;
+  aspect-ratio: 12.5;
+}
+
+.accordionTitle:hover {
+  background-color: #434343;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: none;
+}
+.accordionContent {
+  font-family: "raleway", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 16px;
+  margin-bottom: 1rem;
+  width: 90%;
+  background-color: #d9d9d9;
+  padding: 1.5rem;
+  color: #000;
+  white-space: pre-line;
+}
+
+.personalPic {
+  width: 25%;
+  aspect-ratio: 0.85;
+  background-color: #ffffff;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.PplAccordionHeder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.PplAccordionHederLeft {
+  width: auto;
+  margin-right: 1rem;
+}
+
+.PplAccordionHederRight {
+  align-content: flex-end;
+}
+
+.PPLaccordionLink {
+  font-size: 1rem;
+}
+
+.accordionText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  width: 75%;
+}
+
+.accordionText span {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+.accordionText h2 {
+  line-height: 1.5;
+}
+
+.accordionContentWrapper #Email {
+  font-weight: 500;
+}
+@media (min-width: 380px) and (max-width: 590px) {
+  .accordion {
+    width: 100%;
+  }
+
+  .PPLaccordionLink {
+    font-size: 0.9rem;
+  }
+
+  .accordionContent {
+    margin-bottom: 0.4rem;
+    margin-top: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PplAccordionHeder {
+    flex-direction: column;
+  }
+
+  .PplAccordionHederLeft,
+  .PplAccordionHederRight {
+    width: 100%;
+  }
+
+  .personalPic {
+    width: 60%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  .accordionText {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Header layout: stack school/major info */
+  .PplAccordionHeder {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Ensure links and emails wrap nicely */
+  .PplAccordionHederRight h4,
+  .PPLaccordionLink {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/dividerContent.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.dividerContent_sectionWrapper__CwAeR {
+  width: 100%;
+}
+
+.dividerContent_topicbar__2OEY_ {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.dividerContent_dividerContentTitle__NipB2 {
+  white-space: nowrap;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.dividerContent_dividerContentDivider__i2MLy {
+  flex-grow: 1;
+  height: 1.2px;
+  background-color: #171717;
+  opacity: 0.4;
+}
+
+.dividerContent_dividerContentText__KIxnR {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height:2rem;
+}
+
+.dividerContent_dividerContentText__KIxnR ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
+}
+
+.dividerContent_dividerContentText__KIxnR li ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .dividerContent_topicbar__2OEY_{
+    margin-top: 12px;
+  }
+  .dividerContent_dividerContentTitle__NipB2{
+    font-size:1rem ;
+    margin-right: 1rem;
+  }
+
+  .dividerContent_dividerContentText__KIxnR{
+    font-size: 0.8rem;
+    margin-top: 12px;
+    line-height:1.5rem;
+  }
+
+  
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/BackToTopBotton.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.BackToTopBottonWrapper{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    transition: transform 0.25s ease-in-out;
+    z-index: 100;
+}
+
+.BackToTopBottonarrow{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.BackToTopBottonWrapper:hover{
+    transform: translateY(-4px);
+  cursor: pointer;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/ImageCarousel.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: var(--carousel-width);
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slides a {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  flex-shrink: 0;
+}
+
+.slide {
+  width: 100%;
+  object-fit: cover;
+}
+
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  aspect-ratio: 1;
+  margin: 0 6px;
+  background-color: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .dot{
+    height: 6px;
+    margin: 0 2%;
+  }
+
+  .dots{
+    bottom: 5px;
+  }
+
+  .carousel{
+    width: 100%;
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/SeniorsForms.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.EmailForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: var(--formWidth);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: var(--formColor);
+  border-radius: 8px;
+}
+
+.EmailForm h3 {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.EmailForm textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.EmailForm input,
+.EmailForm select,
+.EmailForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #00000070;
+  outline: none;
+  background: inherit;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.EmailForm #intro {
+  border: 1px solid #000000;
+}
+
+.EmailForm input:focus,
+.EmailForm textarea:focus {
+  background-color: inherit;
+  border-bottom: 2px solid #3f76f7;
+}
+
+.EmailForm select {
+  border: 1px solid #00000070;
+}
+
+.EmailForm input[type="submit"] {
+  width: 50%;
+  border: none;
+  align-self: center;
+  border-radius: 8px;
+  background-color: #a8d8ff; /* light sky blue */
+  color: #003366; /* dark navy text for contrast */
+}
+
+.EmailForm input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #4da6f0;
+  box-shadow: 0 4px 10px rgba(77, 166, 240, 0.4);
+}
+
+.EmailForm input[type="submit"]:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(77, 166, 240, 0.3);
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .EmailForm {
+    font-size: 1rem;
+  }
+  
+  .EmailForm input,
+  .EmailForm select,
+  .EmailForm textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/SuggForm.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.SuggestionForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: var(--formWidth);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: var(--formColor);
+  border-radius: 8px;
+  align-self: flex-end;
+  margin: 2% 7.5% 0 0; /* top right bottom left */
+}
+
+.SuggestionForm h3 {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.SuggestionForm textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.SuggestionForm input,
+.SuggestionForm select,
+.SuggestionForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #00000070;
+  color: #fff;
+  outline: none;
+  background: inherit;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.SuggestionForm input:focus,
+.SuggestionForm textarea:focus {
+  background-color: inherit;
+  border-bottom: 2px solid #fff;
+}
+
+.SuggestionForm select {
+  border: 1px solid #00000070;
+}
+
+.SuggestionForm input[type="submit"] {
+  width: 50%;
+  border: none;
+  align-self: center;
+  border-radius: 8px;
+  background-color: #ffffff26;
+  color: #fff;
+}
+
+.SuggestionForm input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 10px #ecf7ff66;
+}
+
+.SuggestionForm input[type="submit"]:active{
+    transform: scale(0.98);
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .SuggestionForm{
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0.8rem auto;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/BlurImage.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.BlurImage {
+  opacity: 0.5;
+  filter: blur(10px);
+  transition: filter 0.6s ease, opacity 0.6s ease;
+}
+
+.BlurImage.loaded {
+  opacity: 1;
+  filter: blur(0);
+}
+

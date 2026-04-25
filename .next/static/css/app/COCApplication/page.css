@@ -1,0 +1,122 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/page-components/COCApp.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.cocAppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'raleway', sans-serif;
+}
+
+.cocAppHero {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  overflow: hidden; /*當子元素超出容器範圍時，將多餘的部分隱藏起來，不讓它顯示出來*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cocAppBackground {
+  position: absolute;
+  object-position:0% 70%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 不會拉扯圖片 */
+  z-index: 0;
+}
+
+.cocAppOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #003B70; 
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.cocAppTitle {
+   position: absolute;
+   left: 7.5%;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  color: white;
+}
+
+.cocLogo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.cocAppText{
+  width: 85%;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/dividerContent.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.dividerContent_sectionWrapper__CwAeR {
+  width: 100%;
+}
+
+.dividerContent_topicbar__2OEY_ {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.dividerContent_dividerContentTitle__NipB2 {
+  white-space: nowrap;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.dividerContent_dividerContentDivider__i2MLy {
+  flex-grow: 1;
+  height: 1.2px;
+  background-color: #171717;
+  opacity: 0.4;
+}
+
+.dividerContent_dividerContentText__KIxnR {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height:2rem;
+}
+
+.dividerContent_dividerContentText__KIxnR ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
+}
+
+.dividerContent_dividerContentText__KIxnR li ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .dividerContent_topicbar__2OEY_{
+    margin-top: 12px;
+  }
+  .dividerContent_dividerContentTitle__NipB2{
+    font-size:1rem ;
+    margin-right: 1rem;
+  }
+
+  .dividerContent_dividerContentText__KIxnR{
+    font-size: 0.8rem;
+    margin-top: 12px;
+    line-height:1.5rem;
+  }
+
+  
+}
+

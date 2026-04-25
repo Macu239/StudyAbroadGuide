@@ -1,3 +1,4 @@
+'use client'
 import "./BackToTopBotton.css";
 
 export default function BackToTopBotton() {

@@ -1,0 +1,58 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/COC/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/COC/page.css",
+      "static/chunks/app/COC/page.js"
+    ],
+    "/COCApplication/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/COCApplication/page.css",
+      "static/chunks/app/COCApplication/page.js"
+    ],
+    "/UsVisa/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/UsVisa/page.css",
+      "static/chunks/app/UsVisa/page.js"
+    ],
+    "/CocAcademic/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/CocAcademic/page.css",
+      "static/chunks/app/CocAcademic/page.js"
+    ],
+    "/Seniors/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Seniors/page.css",
+      "static/chunks/app/Seniors/page.js"
+    ],
+    "/QandA/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/QandA/page.css",
+      "static/chunks/app/QandA/page.js"
+    ],
+    "/AboutUs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/AboutUs/page.css",
+      "static/chunks/app/AboutUs/page.js"
+    ]
+  }
+}
