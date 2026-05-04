@@ -1,4 +1,4 @@
-// File: D:\React projects\StudyAbroad\FrontEnd\src\app\UsVisa\page.jsx
+// File: D:\React projects\StudyAbroadGuide\src\app\UsVisa\page.jsx
 import * as entry from '../../../../src/app/UsVisa/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

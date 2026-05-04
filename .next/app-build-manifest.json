@@ -18,29 +18,23 @@
       "static/css/app/COC/page.css",
       "static/chunks/app/COC/page.js"
     ],
-    "/COCApplication/page": [
+    "/UMC/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/COCApplication/page.css",
-      "static/chunks/app/COCApplication/page.js"
+      "static/css/app/UMC/page.css",
+      "static/chunks/app/UMC/page.js"
     ],
-    "/UsVisa/page": [
+    "/CanadaLife/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/UsVisa/page.css",
-      "static/chunks/app/UsVisa/page.js"
+      "static/css/app/CanadaLife/page.css",
+      "static/chunks/app/CanadaLife/page.js"
     ],
-    "/CocAcademic/page": [
+    "/RedDeer/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/CocAcademic/page.css",
-      "static/chunks/app/CocAcademic/page.js"
-    ],
-    "/Seniors/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Seniors/page.css",
-      "static/chunks/app/Seniors/page.js"
+      "static/css/app/RedDeer/page.css",
+      "static/chunks/app/RedDeer/page.js"
     ],
     "/QandA/page": [
       "static/chunks/webpack.js",
@@ -53,6 +47,42 @@
       "static/chunks/main-app.js",
       "static/css/app/AboutUs/page.css",
       "static/chunks/app/AboutUs/page.js"
+    ],
+    "/COCApplication/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/COCApplication/page.css",
+      "static/chunks/app/COCApplication/page.js"
+    ],
+    "/UsVisa/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/UsVisa/page.css",
+      "static/chunks/app/UsVisa/page.js"
+    ],
+    "/Seniors/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Seniors/page.css",
+      "static/chunks/app/Seniors/page.js"
+    ],
+    "/CocLife/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/CocLife/page.css",
+      "static/chunks/app/CocLife/page.js"
+    ],
+    "/UMCApplication/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/UMCApplication/page.css",
+      "static/chunks/app/UMCApplication/page.js"
+    ],
+    "/CanadaVisa/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/CanadaVisa/page.css",
+      "static/chunks/app/CanadaVisa/page.js"
     ]
   }
 }

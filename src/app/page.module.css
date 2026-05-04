@@ -1,0 +1,106 @@
+.mainPageWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photo {
+  display: block;
+  margin: 10px auto;
+  z-index: 0;
+}
+
+.mainPageContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: main;
+  width: 85%;
+}
+
+.mainIntro {
+  width: 100%;
+  align-self: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+#introText {
+  font-family: "Libre Baskerville";
+  width: 45%;
+}
+
+.mainPagedivider {
+  width: 110%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 3px solid #8c8a8a;
+}
+.schoolBoxes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Libre Baskerville";
+  margin-bottom: 2.5rem;
+}
+.box {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+.box h3,
+.box h4 {
+  margin-bottom: 2%;
+}
+
+.school_page_link {
+  text-decoration: none;
+  color: black;
+}
+
+.school_pic {
+  width: 100%;
+  aspect-ratio: 1.67;
+}
+
+.boxLine {
+  height: 40vh;
+  width: 2px;
+  background-color: #8c8a8a;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .schoolBoxes {
+    margin-bottom: 0px;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+    margin-bottom: 0.7rem;
+    padding: 0;
+  }
+
+  .boxLine {
+    width: 80%;
+    height: 2px;
+  }
+
+  .mainIntro {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  #introText {
+    width: 100%;
+  }
+}

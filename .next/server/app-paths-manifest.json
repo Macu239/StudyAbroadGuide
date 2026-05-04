@@ -1,9 +1,13 @@
 {
-  "/page": "app/page.js",
-  "/COC/page": "app/COC/page.js",
   "/UsVisa/page": "app/UsVisa/page.js",
-  "/CocAcademic/page": "app/CocAcademic/page.js",
   "/Seniors/page": "app/Seniors/page.js",
+  "/CocLife/page": "app/CocLife/page.js",
+  "/UMC/page": "app/UMC/page.js",
+  "/CanadaLife/page": "app/CanadaLife/page.js",
+  "/UMCApplication/page": "app/UMCApplication/page.js",
+  "/CanadaVisa/page": "app/CanadaVisa/page.js",
   "/QandA/page": "app/QandA/page.js",
-  "/AboutUs/page": "app/AboutUs/page.js"
+  "/page": "app/page.js",
+  "/RedDeer/page": "app/RedDeer/page.js",
+  "/COC/page": "app/COC/page.js"
 }

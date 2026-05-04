@@ -1,19 +1,19 @@
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/page-components/Mainpage.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
-.mainPageWrapper {
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.page_mainPageWrapper__g2coQ {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.photo {
+.page_photo__nxU_7 {
   display: block;
   margin: 10px auto;
   z-index: 0;
 }
 
-.mainPageContent {
+.page_mainPageContent__pNTQE {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,7 +21,7 @@
   width: 85%;
 }
 
-.mainIntro {
+.page_mainIntro__zjhGN {
   width: 100%;
   align-self: center;
   justify-content: space-between;
@@ -31,18 +31,18 @@
   gap: 40px;
 }
 
-#introText {
+#page_introText__kmJDf {
   font-family: "Libre Baskerville";
   width: 45%;
 }
 
-.mainPagedivider {
+.page_mainPagedivider__O8ANc {
   width: 110%;
   margin-top: 30px;
   margin-bottom: 30px;
   border-top: 3px solid #8c8a8a;
 }
-.schoolBoxes {
+.page_schoolBoxes__5Oco1 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   font-family: "Libre Baskerville";
   margin-bottom: 2.5rem;
 }
-.box {
+.page_box__nSTsO {
   width: 32%;
   display: flex;
   flex-direction: column;
@@ -59,55 +59,51 @@
   text-align: center;
   padding: 0.8rem;
   border-radius: 10px;
-
 }
-.box h3,
-.box h4 {
+.page_box__nSTsO h3,
+.page_box__nSTsO h4 {
   margin-bottom: 2%;
 }
 
-.school_page_link {
+.page_school_page_link__jEdAd {
   text-decoration: none;
   color: black;
 }
 
-.school_pic {
+.page_school_pic__77pFB {
   width: 100%;
   aspect-ratio: 1.67;
-
 }
 
-.boxLine{
+.page_boxLine__R54uq {
   height: 40vh;
   width: 2px;
   background-color: #8c8a8a;
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-  
-  .schoolBoxes {
+  .page_schoolBoxes__5Oco1 {
     margin-bottom: 0px;
     flex-direction: column;
   }
 
-  .box {
+  .page_box__nSTsO {
     width: 80%;
     margin-bottom: 0.7rem;
     padding: 0;
   }
 
-  .boxLine{
+  .page_boxLine__R54uq {
     width: 80%;
     height: 2px;
   }
 
-  .mainIntro{
+  .page_mainIntro__zjhGN {
     width: 100%;
     flex-direction: column-reverse;
-    
   }
 
-  #introText{
+  #page_introText__kmJDf {
     width: 100%;
   }
 }

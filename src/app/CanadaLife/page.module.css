@@ -1,0 +1,326 @@
+
+
+.CaLifeContainer {
+  align-self: center;
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 45px;
+}
+
+.cocLifeSideBar {
+  width: 18%;
+  height: auto;
+  margin-right: 80px;
+  margin-top: 25px;
+  border: #000000 2px solid;
+}
+
+.cocLifeSideBarTitle {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 18px;
+}
+
+.cocLifeSideBar > ul {
+  list-style-type: none;
+  padding: 0;
+  height: auto;
+}
+.cocLifeSideBar > ul li {
+  font-size: 1rem;
+  border-top: #000000 2px solid;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.cocLifeSideBar > ul li:hover {
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.CaLifeContentWrapper {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cocLifeTitle {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  height: auto;
+}
+
+.CaLifeContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cocLifeText {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.CaLifeDivider {
+  margin-bottom: 20px;
+  height: 1.2px;
+  background-color: #171717;
+  opacity: 0.4;
+  width: 100%;
+}
+
+#TransDivider {
+  width: 80%;
+  height: 3px;
+  margin: 1rem auto;
+  background-color: #224291;
+}
+
+.CaLifeFoodsection h4 {
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cocLifeText h4 ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
+}
+
+.cocLifeText h4 li ul {
+  padding-left: 1rem;
+  list-style-type: numeric;
+}
+
+#UMCTransportation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.CALifeTransportationCards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.CALifeResourceCard {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.CALifeResourceImage {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.CALifeResourceCardtext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 65%;
+  gap: 20px;
+}
+
+.CALifeResourceTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+}
+
+.CaLifeShoppingCardsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.CaLifeShoppingCards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.CaLifeShoppingTag {
+  aspect-ratio: 2;
+  object-fit: cover;
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.CaLifeShoppingText {
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.CaLifeFoodsection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #87cde1;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 20px 20px 20px;
+}
+
+.CaLifeEntertainmentsection h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.CaLifeEntertainmentCardsWrapper {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CaLifeEntertainmentCard {
+  width: 19%;
+  background-color: #0E5AA4;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#TorontoFood{
+  background-color: #af292e;
+  color: #fff;
+}
+
+#TorontoFood .CaLifeEntertainmentCard{
+  background-color: #CD494C;
+}
+
+.CaLifeEntertainmentCard:hover {
+  transform: scale(1.5);
+  cursor: default;
+}
+
+.CaLifeEntertainmentImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  aspect-ratio: 15/10;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.CaLifeEntertainmentCard a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  gap: 0.4rem;
+}
+
+.CaLifeEntertainmentOtherCity {
+  width: 32%;
+  padding: 4px;
+}
+
+.CaLifeEntertainmentOtherCity:hover {
+  transform: scale(2.5);
+}
+
+.CaLifeEntertainmentTitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.CaLifeEntertainmentSpotsWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px;
+}
+
+.CaLifeEntertainmentSpot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+  background-color: #e6f8fd;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.CaLifeEntertainmentSpot h4 {
+  margin-top: 5%;
+  font-weight: 500;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  color: #000000;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .CaLifeContainer{
+    width: 100%;
+  }
+
+  .CaLifeContentWrapper{
+    width: 92%;
+  }
+
+  .CALifeResourceCardtext{
+    gap: 0.8rem;
+  }
+
+  .CaLifeShoppingText{
+    font-size: 0.8rem;
+  }
+
+  .CaLifeFoodsection{
+    padding: 6px 10px 10px 10px;
+  }
+
+  .CaLifeEntertainmentCardsWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+  }
+
+  .CaLifeEntertainmentCard{
+    width: 100%;
+    padding: 6px;
+  }
+}

@@ -1,3 +1,175 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/Seniors/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.page_PPLContainer__bsFO4 {
+  align-self: center;
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 45px;
+  gap: 4%;
+}
+
+.page_PPLSideSection__mdYXd {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: auto;
+  margin-right: 40px;
+  margin-top: 6%;
+  gap: 40px;
+}
+
+.page_seniorSideBar__O8i2x {
+  align-self: center;
+  width: 70%;
+  border: #000000 2px solid;
+}
+
+.page_seniorSideBarTitle__IRNLi {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 18px;
+}
+
+.page_seniorSideBar__O8i2x > ul {
+  list-style-type: none;
+  padding: 0;
+  height: auto;
+}
+.page_seniorSideBar__O8i2x > ul li {
+  font-size: 16px;
+  border-top: #000000 2px solid;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.page_seniorSideBar__O8i2x > ul li:hover {
+  background-color: #171717;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.page_Seniorsarea__V7RnX {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page_seniorTitle__46jz2 {
+  text-align: center;
+  font-weight: 700;
+  height: auto;
+}
+
+.page_expandToggle__T232u {
+  align-self: flex-start;
+}
+.page_expandToggleText__Hj_Ic {
+  text-align: left;
+}
+
+.page_expandToggleText__Hj_Ic:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.page_invisibleTitle__Oj6A3 {
+  height: 0px;
+  color: transparent;
+}
+
+.page_accordionWrapper__ie3OF {
+  width: 100%;
+}
+
+.page_highlight__ZT63V {
+  animation: page_popEffect__RLvZL 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes page_popEffect__RLvZL {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.page_PPLdivider__NEF65 {
+  width: 110%;
+  border-top: 3px solid #8c8a8a;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border-bottom: none;
+  opacity: 1;
+}
+
+.page_PPLColdEmail___KNDA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page_PPLColdEmailText__uC0pU {
+  line-height: 1.7rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.page_PPLColdEmailExampleWrapper__KBAVy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+.page_PPLColdEmailExampleTitle__W0Mc_ {
+  font-size: 18px;
+}
+
+.page_PPLColdEmailExampleText__XFu_M {
+  padding: 1rem;
+  line-height: 2rem;
+  border-radius: 20px;
+  border: #171717 1px solid;
+  font-weight: 500;
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .page_PPLContainer__bsFO4 {
+    flex-direction: column-reverse;
+    margin-top: 1.2rem;
+  }
+
+  .page_PPLSideSection__mdYXd {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .page_Seniorsarea__V7RnX {
+    width: 100%;
+  }
+  .page_PPLColdEmailText__uC0pU {
+    font-size: 0.9rem;
+  }
+  .page_PPLColdEmailExampleText__XFu_M {
+    font-size: 0.8rem;
+  }
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/Header.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -751,177 +923,5 @@ body {
 .BlurImage.loaded {
   opacity: 1;
   filter: blur(0);
-}
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/page-components/Seniors.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
-.PPLContainer {
-  align-self: center;
-  margin: 0 auto;
-  width: 85%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 45px;
-  gap: 4%;
-}
-
-.PPLSideSection {
-  display: flex;
-  flex-direction: column;
-  width: 24%;
-  height: auto;
-  margin-right: 40px;
-  margin-top: 6%;
-  gap: 40px;
-}
-
-.seniorSideBar {
-  align-self: center;
-  width: 70%;
-  border: #000000 2px solid;
-}
-
-.seniorSideBarTitle {
-  font-size: 20px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding: 18px;
-}
-
-.seniorSideBar > ul {
-  list-style-type: none;
-  padding: 0;
-  height: auto;
-}
-.seniorSideBar > ul li {
-  font-size: 16px;
-  border-top: #000000 2px solid;
-  padding: 1rem;
-  font-weight: 600;
-}
-
-.seniorSideBar > ul li:hover {
-  background-color: #171717;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.Seniorsarea {
-  width: 72%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.seniorTitle {
-  text-align: center;
-  font-weight: 700;
-  height: auto;
-}
-
-.expandToggle {
-  align-self: flex-start;
-}
-.expandToggleText {
-  text-align: left;
-}
-
-.expandToggleText:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.invisibleTitle {
-  height: 0px;
-  color: transparent;
-}
-
-.accordionWrapper {
-  width: 100%;
-}
-
-.highlight {
-  animation: popEffect 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@keyframes popEffect {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.PPLdivider {
-  width: 110%;
-  border-top: 3px solid #8c8a8a;
-  margin-top: 20px;
-  margin-bottom: 25px;
-  border-bottom: none;
-  opacity: 1;
-}
-
-.PPLColdEmail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.PPLColdEmailText {
-  line-height: 1.7rem;
-  font-weight: 500;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.PPLColdEmailExampleWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  gap: 20px;
-}
-
-.PPLColdEmailExampleTitle {
-  font-size: 18px;
-}
-
-.PPLColdEmailExampleText {
-  padding: 1rem;
-  line-height: 2rem;
-  border-radius: 20px;
-  border: #171717 1px solid;
-  font-weight: 500;
-}
-
-@media (min-width: 380px) and (max-width: 590px) {
-  .PPLContainer {
-    flex-direction: column-reverse;
-    margin-top: 1.2rem;
-  }
-
-  .PPLSideSection {
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
-  .Seniorsarea {
-    width: 100%;
-  }
-  .PPLColdEmailText {
-    font-size: 0.9rem;
-  }
-  .PPLColdEmailExampleText {
-    font-size: 0.8rem;
-  }
 }
 

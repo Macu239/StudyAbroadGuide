@@ -1,7 +1,7 @@
-/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/page-components/SchoolMainPage.css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************/
-.COCschooWrapper {
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/COC/page.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.page_COCschooWrapper__ZFqja {
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -10,23 +10,23 @@
   margin: 0 auto;
 }
 
-#UMC {
+#page_UMC__6lu66 {
   background-color: #af292e;
 }
 
-#COC {
+#page_COC__R6yBd {
   background-color: #0581c4;
 }
 
-#RD {
+#page_RD__jaBe8 {
   background-color: #053a6d;
 }
 
-#RD1 {
+#page_RD1__rLnha {
   background-color: #12874d;
 }
 
-.header {
+.page_header__ZcU6U {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -35,18 +35,18 @@
   padding: 12px;
 }
 
-.header-logo {
+.page_header-logo__4ayr7 {
   width: 5%;
   min-width: 60px;
   height: auto;
 }
 
-#UMCLogo {
+#page_UMCLogo__wQaup {
   width: 10%;
   height: auto;
 }
 
-.header-title {
+.page_header-title__ZvOMk {
   font-size: 1.5rem;
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
@@ -57,7 +57,7 @@
   margin-top: 2px;
 }
 
-.hero-section {
+.page_hero-section__TJgmn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -66,7 +66,7 @@
   margin-top: 46px;
 }
 
-.hero-content {
+.page_hero-content__3nyFZ {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -74,7 +74,7 @@
   width: 100%;
 }
 
-.hero-text {
+.page_hero-text__nfTHH {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -83,24 +83,24 @@
   flex: 1 1;
 }
 
-.hero-section h1 {
+.page_hero-section__TJgmn h1 {
   font-size: 2rem;
 }
 
-.hero-subtitle {
+.page_hero-subtitle__0jX0l {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
 }
 
-.hero-logo {
+.page_hero-logo__AMd4l {
   width: 18%;
   height: auto;
   margin-left: 24px;
 }
 
-.main-content {
+.page_main-content__BOXGo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -109,7 +109,7 @@
   margin-top: 24px;
 }
 
-.content-section {
+.page_content-section__uT7B8 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -117,7 +117,7 @@
   width: 100%;
 }
 
-.main-image {
+.page_main-image__8eH9Q {
   width: 100%;
   aspect-ratio: 5/2;
   height: auto;
@@ -126,7 +126,7 @@
   object-fit: cover;
 }
 
-.description-text {
+.page_description-text__cWwvy {
   margin-top: 36px;
   font-size: 18px;
   font-weight: 500;
@@ -134,7 +134,7 @@
   width: 100%;
 }
 
-.divider {
+.page_divider__OMWsH {
   width: 110%;
   height: 2px;
   background-color: #565656;
@@ -142,7 +142,7 @@
   opacity: 0.8;
 }
 
-.COCpeopleSuitsGrind {
+.page_COCpeopleSuitsGrind__j7pqG {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -150,7 +150,7 @@
   justify-content: space-between;
 }
 
-.peopleSuitsBox {
+.page_peopleSuitsBox__a36TG {
   width: 30%;
   aspect-ratio: 5/2;
   display: flex;
@@ -163,7 +163,7 @@
   font-weight: 500;
 }
 
-.pros-cons-row {
+.page_pros-cons-row__AvcOK {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -172,7 +172,7 @@
   width: 100%;
 }
 
-.ProsConsText {
+.page_ProsConsText__5Jw9z {
   width: 45%;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -183,26 +183,26 @@
   border-radius: 8px;
 }
 
-.pros-cons-title {
+.page_pros-cons-title__lqc03 {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
 }
 
-.pros-cons-list {
+.page_pros-cons-list__ri3_W {
   font-size: 16px;
   list-style-type: disc;
   padding-left: 2.5rem;
   margin-bottom: 12px;
 }
 
-.pros-cons-image {
+.page_pros-cons-image__GRRUJ {
   width: 36%;
   border-radius: 4px;
 }
 
-.peopleSuitsWrapper {
+.page_peopleSuitsWrapper__N0KOi {
   gap: 20px;
   width: 100%;
   display: flex;
@@ -210,7 +210,7 @@
   align-items: center;
 }
 
-.section-title {
+.page_section-title__i2Z9R {
   font-size: 32px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -219,11 +219,11 @@
   color: #000000;
   margin-bottom: 24px;
 }
-#Tuition-Fees {
+#page_Tuition-Fees__rA77X {
   width: 100%;
   height: auto;
 }
-.resources-section {
+.page_resources-section__cR2vv {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -232,7 +232,7 @@
   margin-top: 12px;
 }
 
-.resourcesGrid {
+.page_resourcesGrid__qlDjM {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -242,7 +242,7 @@
   margin-bottom: 40px;
 }
 
-.extra-info-row {
+.page_extra-info-row__d0l_A {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -250,7 +250,7 @@
   width: 100%;
 }
 
-.resource-card {
+.page_resource-card__X8meF {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -261,12 +261,12 @@
   transition: transform 0.3s ease;
 }
 
-.resource-card:hover {
+.page_resource-card__X8meF:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 25px #8c8a8a;
 }
 
-.resource-image {
+.page_resource-image__AkVxq {
   max-width: 100%;
   aspect-ratio: 1;
   height: auto;
@@ -274,7 +274,7 @@
   object-fit: cover;
 }
 
-.resource-title {
+.page_resource-title__1l_Mx {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
@@ -282,59 +282,59 @@
   color: #000000;
 }
 
-.resource-card a {
+.page_resource-card__X8meF a {
   text-decoration: none;
   text-align: center;
   color: inherit;
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-  .hero-logo{
+  .page_hero-logo__AMd4l{
     width: 18% !important;
   }
-  .peopleSuitsWrapper {
+  .page_peopleSuitsWrapper__N0KOi {
     flex-direction: row;
     align-items: flex-start;
     gap: 12px;
   }
-  .COCpeopleSuitsGrind {
+  .page_COCpeopleSuitsGrind__j7pqG {
     flex-direction: column;
     gap: 12px;
   }
 
-  .peopleSuitsBox {
+  .page_peopleSuitsBox__a36TG {
     width: 100%;
     padding: 8px;
     font-size: 0.8rem;
     aspect-ratio: 1.2;
   }
 
-  .pros-cons-row {
+  .page_pros-cons-row__AvcOK {
     flex-direction: column;
   }
 
-  .ProsConsText {
+  .page_ProsConsText__5Jw9z {
     width: 100%;
   }
 
-  .pros-cons-title {
+  .page_pros-cons-title__lqc03 {
     font-size: 1rem;
   }
 
-  .pros-cons-list {
+  .page_pros-cons-list__ri3_W {
     font-size: 0.9rem;
   }
-  .resourcesGrid {
+  .page_resourcesGrid__qlDjM {
     flex-direction: row;
     gap: 0px;
   }
-  .extra-info-row {
+  .page_extra-info-row__d0l_A {
     width: 50%;
     flex-direction: column;
     gap: 1rem;
   }
 
-  .resource-card {
+  .page_resource-card__X8meF {
     width: 80%;
   }
 }

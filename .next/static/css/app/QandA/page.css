@@ -1,7 +1,7 @@
-/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/page-components/QandA.css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************/
-.QandAContainer{
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/QandA/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.page_QandAContainer__dfEs6{
     align-self: center;
     margin: 0 auto;
     width: 85%;
@@ -12,15 +12,15 @@
     margin-top: 45px;
 }
 
-.QandASideBar{
+.page_QandASideBar__K3R6R{
     height: auto;
     margin-right: 40px;
     margin-top: 25px;
-    border: #000000 2px solid; 
+    border: #000000 2px solid;
 }
 
 
-.SideBarTitle{
+.page_SideBarTitle__0iyHC{
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -28,31 +28,31 @@
     padding:18px;
 }
 
-.QandASideBar > ul{
+.page_QandASideBar__K3R6R > ul{
     list-style-type: none;
     padding: 0;
     height: auto;
 }
-.QandASideBar >ul li{
+.page_QandASideBar__K3R6R >ul li{
     font-size: 16px;
     border-top: #000000 2px solid;
     padding: 1rem;
     font-weight: 500;
 }
 
-.QandASideBar >ul li:hover{
+.page_QandASideBar__K3R6R >ul li:hover{
     background-color: #171717;
     color: #ffffff;
 }
 
-.QandA {
+.page_QandA__M4wLi {
    display: flex;
    flex-direction: column;
     align-items: center;
     width: 72%;
 }
 
-.QandATitle{
+.page_QandATitle__i4nAk{
     font-size: 32px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -60,33 +60,34 @@
     height: auto;
 }
 
-.expandToggle{
+.page_expandToggle__yhxY6{
     align-self: flex-start;
 }
-.expandToggleText{
+.page_expandToggleText__VBznm{
     text-align: left;
 }
 
-.expandToggleText:hover{
+.page_expandToggleText__VBznm:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 
-.invisibleTitle{
+.page_invisibleTitle__hjUf3{
     height: 0px;
     color: transparent;
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-    .QandAContainer{
+    .page_QandAContainer__dfEs6{
         margin-top: 1.2rem;
         width: 90%;
     }
 
-    .QandA{
+    .page_QandA__M4wLi{
         width: 100%;
     }
 }
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/Header.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/

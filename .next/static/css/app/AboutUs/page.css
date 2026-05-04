@@ -1,7 +1,7 @@
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/page-components/AboutUs.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
-.AboutUsWrapper {
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/AboutUs/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.page_AboutUsWrapper__xMEuO {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
   padding: 60px 0;
 }
 
-.AboutUsContainer {
+.page_AboutUsContainer__aGDeY {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,48 +20,48 @@
   gap: 40px;
 }
 
-.AboutUsTitle {
+.page_AboutUsTitle__zXx4H {
   flex: 1 1 300px;
   max-width: 400px;
 }
 
-.AboutUsTitle h1 {
+.page_AboutUsTitle__zXx4H h1 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.AboutUsTitle p {
+.page_AboutUsTitle__zXx4H p {
   font-size: 1.1rem;
   line-height: 1.8;
   font-weight: 500;
 }
 
-.AboutUsText {
+.page_AboutUsText__FexPu {
   flex: 2 1 500px;
 }
 
-.AboutUsText h3 {
+.page_AboutUsText__FexPu h3 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.CreditSections {
+.page_CreditSections__pOdZ_ {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 20px;
   gap: 20px;
 }
 
-#Jeremy h4 {
+#page_Jeremy__nl6ur h4 {
   font-size: 1.56rem;
 }
 
-#Jeremy p {
+#page_Jeremy__nl6ur p {
   font-size: 1.3rem;
 }
 
-.CreditSection {
+.page_CreditSection__VWxVo {
   padding: 20px;
   border-radius: 12px;
   background-color: #ffffff26;
@@ -70,35 +70,34 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.CreditSection:hover {
+.page_CreditSection__VWxVo:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
 }
 
-.CreditSection h4 {
+.page_CreditSection__VWxVo h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.CreditSection p {
+.page_CreditSection__VWxVo p {
   margin: 4px 0;
   font-size: 1rem;
 }
 
 @media (min-width: 380px) and (max-width: 590px) {
-  .AboutUsText h3{
+  .page_AboutUsText__FexPu h3{
     margin-bottom: 0.8rem;
   }
 
-  #Jeremy h4{
+  #page_Jeremy__nl6ur h4{
     font-size: 1.2rem !important;
   }
 
-  #Jeremy p{
+  #page_Jeremy__nl6ur p{
     font-size: 1rem !important;
   }
 }
-
 
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/components/Header.css ***!
