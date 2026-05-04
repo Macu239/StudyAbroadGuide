@@ -1,4 +1,4 @@
-import styles from "./ProsCons.module.css";
+import styles from "./prosCons.module.css";
 
 export default function ProsCons({ data, color }) {
   return (
