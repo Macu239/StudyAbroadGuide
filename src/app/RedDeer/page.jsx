@@ -1,38 +1,70 @@
-'use client'
+"use client";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Blur,PeopleSuits } from "../../components";
+import { Blur, PeopleSuits, ProsCons } from "../../components";
 
 export default function RedDeerPage() {
   const peopleSuitsData = [
-    ["願意去嘗試參與各式活動的人", "大學有意願繼續留在國外（加拿大或是其他國家）就讀的人", "希望降低升學壓力、想在較輕鬆的教育環境中學習的人"],
-    ["個性獨立、具有自我學習動力與時間管理能力的學生", "喜歡安靜環境、遠離城市喧囂的學生", "具備一定抗壓性、能獨立面對孤單與文化差異的人（因為一個人在國外，氣候和環境可能會影響情緒，需要心理調適）"]
+    [
+      "願意去嘗試參與各式活動的人",
+      "大學有意願繼續留在國外（加拿大或是其他國家）就讀的人",
+      "希望降低升學壓力、想在較輕鬆的教育環境中學習的人",
+    ],
+    [
+      "個性獨立、具有自我學習動力與時間管理能力的學生",
+      "喜歡安靜環境、遠離城市喧囂的學生",
+      "具備一定抗壓性、能獨立面對孤單與文化差異的人（因為一個人在國外，氣候和環境可能會影響情緒，需要心理調適）",
+    ],
   ];
 
-  const colorList =["#053a6d","#12874d"];
+  const prosConsData = [
+    [
+      "體驗真正的加拿大高中生活 (因為這兩間學校都是加拿大的公立高中，氛圍比較接近電視劇裡的校園生活，白人比例約60%)",
+      "融入寄宿家庭（有機會遇見來自不同國家的家庭）",
+      "獲得優異的在校成績有助於申請世界頂尖大學",
+      "（教學進度較慢，高三程度相當於台灣高一，因此亞洲學生常能取得不錯的成績）",
+      "體驗當地特色娛樂生活（滑雪、溜冰、冰上曲棍球、美式橄欖球、越野跑步）",
+      "有很大機率可以看到極光",
+      "English 30-1的訓練可以很完整的培養學生以後大學的寫作能力",
+      "語言能力提升快，全英語環境有助於口語和聽力",
+      "學校有很多社團活動",
+      "因學校位置較偏僻，學生可以好好專心的上學讀書、有省考，鑑別度高",
+      "教育重視討論與表達，能培養批判思考",
+      "師生關係友善、互動較自由",
+    ],
+    [
+      "氣候嚴寒，冬天很長，日照也短。",
+      "天氣較容易影響心情",
+      "寄宿家庭的好壞取決於運氣",
+      "不像大城市有百貨公司，只有小商場，周遭極少亞洲超市",
+      "交通不方便 (只有公車，半小時一班)",
+      "申請亞伯達省以外的大學學校較無法給學生協助",
+    ],
+  ];
+  const colorList = ["#053a6d", "#12874d"];
   return (
     <div className={styles.COCschooWrapper}>
-      <section className={styles['hero-section']}>
-        <div className={styles['hero-content']}>
-          <div className={styles['hero-text']}>
+      <section className={styles["hero-section"]}>
+        <div className={styles["hero-content"]}>
+          <div className={styles["hero-text"]}>
             <h2>Red Deer Catholic International</h2>
-            <p className={styles['hero-subtitle']}>加拿大紅鹿國際高中</p>
+            <p className={styles["hero-subtitle"]}>加拿大紅鹿國際高中</p>
           </div>
           <Blur
             src="/RedDeer/RedDeerLogo.png"
             alt="RedDeer Logo"
-            className={styles['hero-logo']}
+            className={styles["hero-logo"]}
           />
         </div>
       </section>
-      <main className={styles['main-content']}>
-        <div className={styles['content-section']}>
+      <main className={styles["main-content"]}>
+        <div className={styles["content-section"]}>
           <Blur
             src="/RedDeer/RedDeerHero.png"
             alt="RedDeer Campus"
-            className={styles['main-image']}
+            className={styles["main-image"]}
           />
-          <p className={styles['description-text']}>
+          <p className={styles["description-text"]}>
             紅鹿天主教學校是一個公共資助的學校，由選舉產生理事會管理。旗下共19所學校，
             共9,200名學生，學校位於Red Deer、Sylvan Lake、Rocky Mountain
             House、Innisfail和 Olds。
@@ -46,124 +78,83 @@ export default function RedDeerPage() {
             </a>
           </p>
           <div className={styles.divider} />
-          <h2 className={styles['section-title']}>
+          <h2 className={styles["section-title"]}>
             誰適合 Red Deer Catholic International
           </h2>
-          <PeopleSuits data={peopleSuitsData} color={colorList}/>
+          <PeopleSuits data={peopleSuitsData} color={colorList} />
           <div className={styles.divider} />
-          <h2 className={styles['section-title']}>Pros and Cons</h2>
-          <div className={styles['pros-cons-row']}>
-            <div className={styles.ProsConsText} id="RD">
-              <div className={styles['pros-cons-title']}>Pros:</div>
-              <ul className={styles['pros-cons-list']}>
-                <li>
-                  體驗真正的加拿大高中生活
-                  (因為這兩間學校都是加拿大的公立高中，氛圍比較接近電視劇裡的校園生活，白人比例約
-                  60%)
-                </li>
-                <li>融入寄宿家庭（有機會遇見來自不同國家的家庭</li>
-                <li>
-                  獲得優異的在校成績有助於申請世界頂尖大學
-                  (教學進度較慢，高三程度相當於台灣高一，因此亞洲學生常能取得不錯的成績)
-                </li>
-                <li>
-                  體驗當地特色娛樂生活（滑雪、溜冰、冰上曲棍球、美式橄欖球、越野跑步）
-                </li>
-                <li>有很大機率可以看到極光</li>
-                <li>
-                  English 30-1的訓練可以很完整的培養學生以後大學的寫作能力
-                </li>
-                <li>語言能力提升快，全英語環境有助於口語和聽力</li>
-                <li>學校有很多社團活動</li>
-                <li>
-                  因學校位置較偏僻，學生可以好好專心的上學讀書、有省考，鑑別度高
-                </li>
-                <li>教育重視討論與表達，能培養批判思考</li>
-                <li>師生關係友善、互動較自由</li>
-              </ul>
-            </div>
-            <div className={styles.ProsConsText} id="RD1">
-              <div className={styles['pros-cons-title']}>Cons:</div>
-              <ul className={styles['pros-cons-list']}>
-                <li>氣候嚴寒，冬天很長，日照也短。</li>
-                <li>天氣較容易影響心情</li>
-                <li>寄宿家庭的好壞取決於運氣</li>
-                <li>不像大城市有百貨公司，只有小商場，周遭極少亞洲超市</li>
-                <li>交通不方便 (只有公車，半小時一班)</li>
-                <li>申請亞伯達省以外的大學學校較無法給學生協助</li>
-              </ul>
-            </div>
-          </div>
+          <h2 className={styles["section-title"]}>Pros and Cons</h2>
+          <ProsCons data={prosConsData} color={colorList} />
         </div>
         <div className={styles.divider} />
       </main>
-      <section className={styles['resources-section']}>
-        <h2 className={styles['section-title']}>更多資訊</h2>
+      <section className={styles["resources-section"]}>
+        <h2 className={styles["section-title"]}>更多資訊</h2>
 
         <div className={styles.resourcesGrid}>
-          <div className={styles['extra-info-row']}>
-            <div className={styles['resource-card']}>
+          <div className={styles["extra-info-row"]}>
+            <div className={styles["resource-card"]}>
               <Link href="/RedDeerApplication">
                 <img
                   src="/COC/img_application_1.png"
                   alt="Application Process"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>申請過程</h3>
+                <h3 className={styles["resource-title"]}>申請過程</h3>
               </Link>
             </div>
 
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/UMCAcademic">
                 <img
                   src="/UMC/CanadaStudy.png"
                   alt="Canada Study"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>學業、轉學相關</h3>
+                <h3 className={styles["resource-title"]}>學業、轉學相關</h3>
               </Link>
             </div>
 
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/CanadaVisa">
                 <img
                   src="/COC/img_image_10.png"
                   alt="Visa Information"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>加拿大學生簽證</h3>
+                <h3 className={styles["resource-title"]}>加拿大學生簽證</h3>
               </Link>
             </div>
           </div>
-          <div className={styles['extra-info-row']}>
-            <div className={styles['resource-card']}>
+          <div className={styles["extra-info-row"]}>
+            <div className={styles["resource-card"]}>
               <Link href="/CanadaLife">
                 <img
                   src="/UMC/CanadaLife.jpg"
                   alt="Canada Life"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>生活</h3>
+                <h3 className={styles["resource-title"]}>生活</h3>
               </Link>
             </div>
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/Seniors" state={{ openSection: "RedDeer" }}>
                 <img
                   src="/COC/seniors.jpg"
                   alt="Find Seniors"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>找學長姐</h3>
+                <h3 className={styles["resource-title"]}>找學長姐</h3>
               </Link>
             </div>
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/QandA" state={{ moveSection: "RedDeer" }}>
                 <img
                   src="/COC/img_image_12.png"
                   alt="Q&A"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>Common Q&amp;A</h3>
+                <h3 className={styles["resource-title"]}>Common Q&amp;A</h3>
               </Link>
             </div>
           </div>

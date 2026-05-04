@@ -1,36 +1,70 @@
-'use client'
+"use client";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Blur,PeopleSuits } from "../../components";
+import { Blur, PeopleSuits,ProsCons } from "../../components";
 
 export default function COCPage() {
   const peopleSuitsData = [
-    ["對航太工程領域有興趣，並計畫轉學至 UC 系統相關科系的學生", "堅定目標是赴美留學，非美國不去的學生", "有明確 UC 轉學目標的學生（如 UC Berkeley、UCLA 、UCSD等）"],
-    ["個性獨立、具有自我學習動力與時間管理能力的學生", "喜歡安靜環境、遠離城市喧囂的學生", "想要 Second Chance 的學生：\n高中 GPA 不夠漂亮，但仍渴望去美國留學\n大學新生申請未錄取理想學校，希望透過轉學重新出發"]
+    [
+      "對航太工程領域有興趣，並計畫轉學至 UC 系統相關科系的學生",
+      "堅定目標是赴美留學，非美國不去的學生",
+      "有明確 UC 轉學目標的學生（如 UC Berkeley、UCLA 、UCSD等）",
+    ],
+    [
+      "個性獨立、具有自我學習動力與時間管理能力的學生",
+      "喜歡安靜環境、遠離城市喧囂的學生",
+      "想要 Second Chance 的學生：\n高中 GPA 不夠漂亮，但仍渴望去美國留學\n大學新生申請未錄取理想學校，希望透過轉學重新出發",
+    ],
+  ];
+  const prosConsData = [
+    [
+      "學費實惠，對國際學生較具負擔能力",
+      "無需 SAT/ACT 或入學測驗，申請門檻低",
+      "教授親切、教學認真，課後也樂於協助",
+      "提供完善的轉學機會，可轉入UC/CSU等名校",
+      "小班制教學，師生互動良好",
+      "校園安全、生活環境單純，適合專注學習"
+    ],
+    [
+      {
+      title: "For specific major:",
+      items: [
+        "缺乏實用或進階內容，學習深度與挑戰性偏少",
+        "一定要再自學"
+      ]
+    },
+      "部分熱門科系轉學門檻較高",
+      "社團/活動比4年制大學少",
+      "校園與周邊娛樂選擇有限",
+      "交通不便，生活幾乎必須有車",
+      "校園文化與活動相對簡約，較少宿舍生活與社團參與的機會",
+      "轉學後勢必需要搬家與重新適應環境",
+      "難以找到學長姐提供經驗分享，轉學資源相對有限"
+    ]
   ];
   return (
     <div className={styles.COCschooWrapper}>
-      <section className={styles['hero-section']}>
-        <div className={styles['hero-content']}>
-          <div className={styles['hero-text']}>
+      <section className={styles["hero-section"]}>
+        <div className={styles["hero-content"]}>
+          <div className={styles["hero-text"]}>
             <h1>College of the Canyons</h1>
-            <p className={styles['hero-subtitle']}>美國加州峽谷社區大學</p>
+            <p className={styles["hero-subtitle"]}>美國加州峽谷社區大學</p>
           </div>
           <Blur
             src="/COC/img_coc_logo.png"
             alt="COC Logo"
-            className={styles['hero-logo']}
+            className={styles["hero-logo"]}
           />
         </div>
       </section>
-      <main className={styles['main-content']}>
-        <div className={styles['content-section']}>
+      <main className={styles["main-content"]}>
+        <div className={styles["content-section"]}>
           <Blur
             src="/COC/img_coc_main_image.png"
             alt="College of the Canyons Campus"
-            className={styles['main-image']}
+            className={styles["main-image"]}
           />
-          <p className={styles['description-text']}>
+          <p className={styles["description-text"]}>
             加州峽谷社區大學（College of the Canyons, 簡稱
             COC）隸屬於加州社區學院系統——全美規模最大的高等教育體系，擁有 116
             所經認證的學院，每年為超過 190
@@ -52,152 +86,86 @@ export default function COCPage() {
             小時車程。當地居民以學生與退休族群為主，治安良好，生活環境安靜安全，極適合專注學習。
           </p>
           <div className={styles.divider} />
-          <h2 className={styles['section-title']}>誰適合College of the Canyons</h2>
+          <h2 className={styles["section-title"]}>
+            誰適合College of the Canyons
+          </h2>
           <PeopleSuits data={peopleSuitsData} color={["#0581c4"]} />
-          <div className={styles.peopleSuitsWrapper}>
-            <div className={styles.COCpeopleSuitsGrind}>
-              <div className={styles.peopleSuitsBox} id="COC">
-                對航太工程領域有興趣，並計畫轉學至 UC 系統相關科系的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="COC">
-                堅定目標是赴美留學，非美國不去的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="COC">
-                有明確 UC 轉學目標的學生（如 UC Berkeley、UCLA 、UCSD等）
-              </div>
-            </div>
-
-            <div className={styles.COCpeopleSuitsGrind}>
-              <div className={styles.peopleSuitsBox} id="COC">
-                個性獨立、具有自我學習動力與時間管理能力的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="COC">
-                喜歡安靜環境、遠離城市喧囂的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="COC">
-                想要 Second Chance 的學生：
-                <br />
-                高中 GPA 不夠漂亮，但仍渴望去美國留學
-                <br />
-                大學新生申請未錄取理想學校，希望透過轉學重新出發
-              </div>
-            </div>
-          </div>
           <div className={styles.divider} />
-          <h2 className={styles['section-title']}>Pros and Cons</h2>
-          <div className={styles['pros-cons-row']}>
-            <div className={styles.ProsConsText} id="COC">
-              <div className={styles['pros-cons-title']}>Pros:</div>
-              <ul className={styles['pros-cons-list']}>
-                <li>學費實惠，對國際學生較具負擔能力</li>
-                <li>無需 SAT/ACT 或入學測驗，申請門檻低</li>
-                <li>教授親切、教學認真，課後也樂於協助</li>
-                <li>提供完善的轉學機會，可轉入UC/CSU等名校</li>
-                <li>小班制教學，師生互動良好</li>
-                <li>校園安全、生活環境單純，適合專心讀書</li>
-                <li>
-                  設有專業國際學生支援辦公室，提供生活、學業與簽證等多方面的專業協助
-                </li>
-                <li>提供免費完整的課業輔導與轉學諮詢資源</li>
-              </ul>
-            </div>
-            <div className={styles.ProsConsText} id="COC">
-              <div className={styles['pros-cons-title']}>Cons:</div>
-              <ul className={styles['pros-cons-list']}>
-                <li>
-                  <strong>For specific major:</strong>
-                  <ul>
-                    <li>缺乏實用或進階內容，學習深度與挑戰性偏少</li>
-                    <li>一定要再自學</li>
-                  </ul>
-                </li>
-                <li>部分熱門科系轉學門檻較高</li>
-                <li>社團/活動比4年制大學少</li>
-                <li>校園與周邊娛樂選擇有限</li>
-                <li>交通不便，生活幾乎必須有車</li>
-                <li>校園文化與活動相對簡約，較少宿舍生活與社團參與的機會</li>
-                <li>轉學後勢必需要搬家與重新適應環境</li>
-                <li>難以找到學長姐提供經驗分享，轉學資源相對有限</li>
-              </ul>
-            </div>
-          </div>
+          <h2 className={styles["section-title"]}>Pros and Cons</h2>
+          <ProsCons data={prosConsData} color={["#0581c4"]}/>
         </div>
         <div className={styles.divider} />
       </main>
-      <section className={styles['resources-section']}>
-        <h2 className={styles['section-title']}>學費差異</h2>
+      <section className={styles["resources-section"]}>
+        <h2 className={styles["section-title"]}>學費差異</h2>
         <img src="/COC/Tuitions.jpg" alt="COC Tuition Fees" id="Tuition-Fees" />
         <div className={styles.divider} />
-        <h2 className={styles['section-title']}>更多資訊</h2>
+        <h2 className={styles["section-title"]}>更多資訊</h2>
 
         <div className={styles.resourcesGrid}>
-          <div className={styles['extra-info-row']}>
-            <div className={styles['resource-card']}>
+          <div className={styles["extra-info-row"]}>
+            <div className={styles["resource-card"]}>
               <Link href="/COCApplication">
                 <img
                   src="/COC/img_application_1.png"
                   alt="Application Process"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>申請過程</h3>
+                <h3 className={styles["resource-title"]}>申請過程</h3>
               </Link>
             </div>
 
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/CocAcademic">
                 <img
                   src="/COC/img_group_1_1.png"
                   alt="Academic Transfer"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>學業、轉學相關</h3>
+                <h3 className={styles["resource-title"]}>學業、轉學相關</h3>
               </Link>
             </div>
 
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/UsVisa">
                 <img
                   src="/COC/img_image_10.png"
                   alt="Visa Information"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>美國學生簽證</h3>
+                <h3 className={styles["resource-title"]}>美國學生簽證</h3>
               </Link>
             </div>
           </div>
-          <div className={styles['extra-info-row']}>
-            <div className={styles['resource-card']}>
+          <div className={styles["extra-info-row"]}>
+            <div className={styles["resource-card"]}>
               <Link href="/CocLife">
                 <img
                   src="/COC/img_image_11.png"
                   alt="Campus Life"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>生活</h3>
+                <h3 className={styles["resource-title"]}>生活</h3>
               </Link>
             </div>
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/Seniors" state={{ openSection: "COC" }}>
                 <img
                   src="/COC/seniors.jpg"
                   alt="Find Seniors"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>找學長姐</h3>
+                <h3 className={styles["resource-title"]}>找學長姐</h3>
               </Link>
             </div>
-            <div className={styles['resource-card']}>
+            <div className={styles["resource-card"]}>
               <Link href="/QandA" state={{ moveSection: "COC" }}>
                 <img
                   src="/COC/img_image_12.png"
                   alt="Q&A"
-                  className={styles['resource-image']}
+                  className={styles["resource-image"]}
                 />
-                <h3 className={styles['resource-title']}>Common Q&amp;A</h3>
+                <h3 className={styles["resource-title"]}>Common Q&amp;A</h3>
               </Link>
             </div>
           </div>
