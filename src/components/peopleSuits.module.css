@@ -1,0 +1,53 @@
+.peopleSuitsWrapper {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.peopleSuitsGrind {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.peopleSuitsBox {
+  width: 30%;
+  aspect-ratio: 5/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 8px;
+  white-space: pre-line;
+  font-weight: 500;
+}
+
+#UMC {
+  background-color: #af292e;
+}
+
+#COC {
+  background-color: #0581c4;
+}
+
+.SchoolTheme1 {
+  background-color: var(--backgroundColor1);
+}
+
+.SchoolTheme2 {
+  background-color: var(--backgroundColor2);
+}
+
+@media (min-width: 380px) and (max-width: 590px) {
+  .peopleSuitsWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

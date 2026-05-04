@@ -1,9 +1,13 @@
 'use client'
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Blur } from "../../components";
+import { Blur,PeopleSuits } from "../../components";
 
 export default function COCPage() {
+  const peopleSuitsData = [
+    ["對航太工程領域有興趣，並計畫轉學至 UC 系統相關科系的學生", "堅定目標是赴美留學，非美國不去的學生", "有明確 UC 轉學目標的學生（如 UC Berkeley、UCLA 、UCSD等）"],
+    ["個性獨立、具有自我學習動力與時間管理能力的學生", "喜歡安靜環境、遠離城市喧囂的學生", "想要 Second Chance 的學生：\n高中 GPA 不夠漂亮，但仍渴望去美國留學\n大學新生申請未錄取理想學校，希望透過轉學重新出發"]
+  ];
   return (
     <div className={styles.COCschooWrapper}>
       <section className={styles['hero-section']}>
@@ -49,6 +53,7 @@ export default function COCPage() {
           </p>
           <div className={styles.divider} />
           <h2 className={styles['section-title']}>誰適合College of the Canyons</h2>
+          <PeopleSuits data={peopleSuitsData} color={["#0581c4"]} />
           <div className={styles.peopleSuitsWrapper}>
             <div className={styles.COCpeopleSuitsGrind}>
               <div className={styles.peopleSuitsBox} id="COC">

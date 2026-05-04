@@ -1,9 +1,15 @@
 'use client'
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Blur } from "../../components";
+import { Blur,PeopleSuits } from "../../components";
 
 export default function RedDeerPage() {
+  const peopleSuitsData = [
+    ["願意去嘗試參與各式活動的人", "大學有意願繼續留在國外（加拿大或是其他國家）就讀的人", "希望降低升學壓力、想在較輕鬆的教育環境中學習的人"],
+    ["個性獨立、具有自我學習動力與時間管理能力的學生", "喜歡安靜環境、遠離城市喧囂的學生", "具備一定抗壓性、能獨立面對孤單與文化差異的人（因為一個人在國外，氣候和環境可能會影響情緒，需要心理調適）"]
+  ];
+
+  const colorList =["#053a6d","#12874d"];
   return (
     <div className={styles.COCschooWrapper}>
       <section className={styles['hero-section']}>
@@ -43,35 +49,7 @@ export default function RedDeerPage() {
           <h2 className={styles['section-title']}>
             誰適合 Red Deer Catholic International
           </h2>
-          <div className={styles.peopleSuitsWrapper}>
-            <div className={styles.COCpeopleSuitsGrind}>
-              <div className={styles.peopleSuitsBox} id="RD">
-                願意去嘗試參與各式活動的人
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="RD1">
-                大學有意願繼續留在國外（加拿大或是其他國家）就讀的人
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="RD">
-                希望降低升學壓力、想在較輕鬆的教育環境中學習的人
-              </div>
-            </div>
-
-            <div className={styles.COCpeopleSuitsGrind}>
-              <div className={styles.peopleSuitsBox} id="RD1">
-                個性獨立、具有自我學習動力與時間管理能力的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="RD">
-                喜歡安靜環境、遠離城市喧囂的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="RD1">
-                具備一定抗壓性、能獨立面對孤單與文化差異的人（因為一個人在國外，氣候和環境可能會影響情緒，需要心理調適）
-              </div>
-            </div>
-          </div>
+          <PeopleSuits data={peopleSuitsData} color={colorList}/>
           <div className={styles.divider} />
           <h2 className={styles['section-title']}>Pros and Cons</h2>
           <div className={styles['pros-cons-row']}>

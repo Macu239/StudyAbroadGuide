@@ -9,3 +9,4 @@ export {default as ImageCarousel} from './ImageCarousel';
 export {default as SeniorsForms} from './SeniorsForms';
 export {default as Suggestions} from './SuggForm';
 export {default as Blur} from './BlurImage';
+export {default as PeopleSuits} from './peopleSuits';

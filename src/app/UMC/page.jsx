@@ -2,9 +2,13 @@
 import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Blur, BackToTopBotton } from "../../components";
+import { Blur, BackToTopBotton,PeopleSuits } from "../../components";
 
 export default function UMCPage() {
+  const peopleSuitsData = [
+    ["可以跟自己獨處的學生", "對加拿大升學有想法 / 想在加拿大工作上大學的學生", "喜歡多元文化/跟大自然相處的學生"],
+    ["有強烈上進心，想自主成長的學生", "個性獨立、具有自我學習動力與時間管理能力的學生", "喜歡發表意見、討論的學生"]
+  ]
   return (
     <div className={styles.COCschooWrapper}>
       <section className={styles['hero-section']}>
@@ -45,35 +49,7 @@ export default function UMCPage() {
           </p>
           <div className={styles.divider} />
           <h2 className={styles['section-title']}>誰適合UMC/加拿大</h2>
-          <div className={styles.peopleSuitsWrapper}>
-            <div className={styles.COCpeopleSuitsGrind}>
-              <div className={styles.peopleSuitsBox} id="UMC">
-                可以跟自己獨處的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="UMC">
-                對加拿大升學有想法 / 想在加拿大工作上大學的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="UMC">
-                喜歡多元文化/跟大自然相處的學生
-              </div>
-            </div>
-
-            <div className={styles.COCpeopleSuitsGrind}>
-              <div className={styles.peopleSuitsBox} id="UMC">
-                有強烈上進心，想自主成長的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="UMC">
-                個性獨立、具有自我學習動力與時間管理能力的學生
-              </div>
-
-              <div className={styles.peopleSuitsBox} id="UMC">
-                喜歡發表意見、討論的學生
-              </div>
-            </div>
-          </div>
+          <PeopleSuits data={peopleSuitsData} color={["#af292e"]} />
           <div className={styles.divider} />
           <h2 className={styles['section-title']}>Pros and Cons</h2>
 

@@ -7,21 +7,6 @@
   margin: 0 auto;
 }
 
-#UMC {
-  background-color: #af292e;
-}
-
-#COC {
-  background-color: #0581c4;
-}
-
-#RD {
-  background-color: #053a6d;
-}
-
-#RD1 {
-  background-color: #12874d;
-}
 
 .header {
   display: flex;
