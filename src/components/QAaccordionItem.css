@@ -1,5 +1,5 @@
 .accordion {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-3);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -9,43 +9,69 @@
 }
 
 .QAaccordionTitle {
-  color: #ffffff;
-  background-color: #565656;
-  padding: 1rem;
+  background-color: var(--color-text);
+  color: var(--color-text-inverse);
+  padding: var(--spacing-4);
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: var(--font-sans);
   font-weight: 500;
+  font-size: var(--text-sm);
   width: 100%;
-  aspect-ratio: 12.5;
+  min-height: 52px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.QAaccordionTitle:hover {
+  background-color: #2a2a2a;
+}
+
+.QAaccordionTitle h4 {
+  font-weight: 500;
+  color: var(--color-text-inverse);
+  font-size: var(--text-sm);
 }
 
 .arrow {
-  margin-left: 80px;
+  flex-shrink: 0;
+  margin-left: var(--spacing-8);
 }
+
 .QAaccordionContent {
-  margin-top: 20px;
+  margin-top: 0;
   width: 90%;
-  background-color: #d9d9d9;
-  padding: 1.5rem;
-  color: #000;
-  line-height: 2rem;
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  border-top: none;
+  padding: var(--spacing-5);
+  color: var(--color-text);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+.QAaccordionContent p {
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  max-width: 100%;
+  font-size: var(--text-sm);
 }
 
 .QAaccordionContent ul {
-  padding: 1rem;
+  padding: var(--spacing-4);
   list-style-type: disc;
 }
 
-@media screen {
-    .QAaccordionTitle h4{
-        font-weight: 500;
-    }
-    
-    .QAaccordionContent{
-        margin-top: 0.8rem;
-        padding:1rem;
-        line-height: 1.5rem;
-    }
+.accordionLink {
+  display: inline-block;
+  margin-top: var(--spacing-3);
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.accordionLink:hover {
+  color: var(--color-primary-hover);
 }

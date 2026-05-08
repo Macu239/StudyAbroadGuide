@@ -28,7 +28,7 @@ const menus = [
     ],
   },
   {
-    label: "Red Dear",
+    label: "Red Deer",
     items: [
       { href: "/RedDeer", text: "介紹網頁" },
       { href: "https://www.rdcrs.ca/", text: "School Website", external: true },
@@ -60,33 +60,34 @@ export default function Header() {
         <Link href="/" id="logoLink">
           <img className="logo" src="/globeLogo.svg" alt="Logo" />
         </Link>
-        <h1 id="Pagename">傑洛米好鬆餅</h1>
+        <h1 id="Pagename">惠文留學指南</h1>
       </div>
 
       <div className="Schools">
         {menus.map((menu) => (
           <div key={menu.label} className="dropdown">
-            <button className="button">
+            <div className="dropbtn" role="button" tabIndex={0}>
               {menu.label}
-              <div className="dropdown-content">
-                {menu.items.map((item) =>
-                  item.external ? (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      target="_blank"
-                      className="dropdown-link"
-                    >
-                      {item.text}
-                    </a>
-                  ) : (
-                    <Link key={item.href} href={item.href} className="dropdown-link">
-                      {item.text}
-                    </Link>
-                  )
-                )}
-              </div>
-            </button>
+              <span className="caret" aria-hidden="true">▾</span>
+            </div>
+            <div className="dropdown-content">
+              {menu.items.map((item) =>
+                item.external ? (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    className="dropdown-link"
+                  >
+                    {item.text}
+                  </a>
+                ) : (
+                  <Link key={item.href} href={item.href} className="dropdown-link">
+                    {item.text}
+                  </Link>
+                )
+              )}
+            </div>
           </div>
         ))}
       </div>

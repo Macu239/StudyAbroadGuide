@@ -332,126 +332,54 @@ export default function CocAcademicPage() {
         </div>
 
         <DividerContent order="六" title="轉學完整時間規劃" />
-        <div className={styles.cocAcademicTransferSchduleWrapper}>
-          <div className={styles.cocAcademicTransferContent}>
-            <div className={styles.cocAcademicTransferTag}>
-              <h3>
-                First Fall Semester
-                <br />
-              </h3>
-              <h4>高中畢業後的8月 - 12月</h4>
+        <div className={styles.timeline}>
+          {[
+            {
+              num: "01",
+              period: "高中畢業後的 8–12 月",
+              title: "First Fall Semester",
+              text: "與輔導老師（counselor）討論並規劃接下來兩年的課程安排，適應新環境，積極參加 ISP 舉辦的活動，認識來自世界各地的國際學生。參加社團活動，豐富履歷，並多方探索自己的興趣與可能性。",
+            },
+            {
+              num: "02",
+              period: "1–2 月",
+              title: "Winter Session",
+              text: "可以選擇修習線上課程並回台灣休息，或參加必須到校上課的課程以修得學分，滿足未來的先修條件（prerequisites）。這段期間也適合自學其他感興趣的領域，同時好好放鬆、充電。",
+            },
+            {
+              num: "03",
+              period: "2–6 月",
+              title: "First Spring Semester",
+              text: "專心上課、維持良好的 GPA，持續參加校內活動，開始了解 UC 轉學申請流程，並著手研究 Personal Insight Questions（個人陳述題目），為未來的申請做好準備。",
+            },
+            {
+              num: "04",
+              period: "7–11 月",
+              title: "Second Fall Semester",
+              text: "從 8 月初開始撰寫 UC 申請草稿，透過心智圖整理強項與專長，並結合活動經驗挑選最能展現特色的題目作答。一定要提早開始，9–10 月不斷請 Amy、Dr. J 及多人協助修改。同時維持良好 GPA（本學期約 12–14 學分）。P.S. 如果在這段期間你感到痛苦、焦躁，覺得自己寫得不夠好，那代表你正走在對的路上！",
+            },
+            {
+              num: "05",
+              period: "11–12 月",
+              title: "Application Deadline",
+              text: "申請截止日約在 12 月底，建議在截止日前一到兩天提交，除非最後一刻有非常重要的修改，否則不要拖到最後一刻。",
+            },
+            {
+              num: "06",
+              period: "隔年 4 月中起",
+              title: "Offer Release",
+              text: "大約從 4 月中旬開始，各校陸續發出錄取通知。根據往年經驗，UCI 通常最早發榜，UCLA 幾乎總是在最後一週公布結果。",
+            },
+          ].map((item) => (
+            <div className={styles["timeline-item"]} key={item.num}>
+              <div className={styles["timeline-dot"]}>{item.num}</div>
+              <div className={styles["timeline-body"]}>
+                <div className={styles["timeline-period"]}>{item.period}</div>
+                <div className={styles["timeline-title"]}>{item.title}</div>
+                <div className={styles["timeline-text"]}>{item.text}</div>
+              </div>
             </div>
-
-            <div className={styles.cocAcademicTransferText}>
-              與輔導老師（counselor）討論並規劃接下來兩年的課程安排，適應新環境，積極參加ISP舉辦的活動，
-              認識來自世界各地的國際學生。參加社團活動，豐富履歷，並多方探索自己的興趣與可能性。
-            </div>
-          </div>
-
-          <img
-            className={styles.cocAcademicTransferLine}
-            src="/UCtransfer/Line.png"
-            alt="Line"
-          />
-
-          <div className={styles.cocAcademicTransferContent}>
-            <div className={styles.cocAcademicTransferTag}>
-              <h3>
-                Winter Session
-                <br />
-              </h3>
-              <h4>1月 - 2月</h4>
-            </div>
-
-            <div className={styles.cocAcademicTransferText}>
-              可以選擇修習線上課程並回台灣休息，或參加必須到校上課的課程以修得學分，滿足未來的先修條件（prerequisites）。
-              這段期間也適合自學其他感興趣的領域，同時好好放鬆、充電。
-            </div>
-          </div>
-
-          <img
-            className={styles.cocAcademicTransferLine}
-            src="/UCtransfer/Line.png"
-            alt="Line"
-          />
-
-          <div className={styles.cocAcademicTransferContent}>
-            <div className={styles.cocAcademicTransferTag}>
-              <h3>
-                First Spring Semester
-                <br />
-              </h3>
-              <h4>2月 - 6月</h4>
-            </div>
-
-            <div className={styles.cocAcademicTransferText}>
-              專心上課、維持良好的GPA，持續參加校內活動，開始了解UC轉學申請流程，並著手研究Personal
-              Insight Questions（個人陳述題目）， 為未來的申請做好準備。
-            </div>
-          </div>
-
-          <img
-            className={styles.cocAcademicTransferLine}
-            src="/UCtransfer/Line.png"
-            alt="Line"
-          />
-
-          <div className={styles.cocAcademicTransferContent}>
-            <div className={styles.cocAcademicTransferTag}>
-              <h3>
-                Second Fall Semester
-                <br />
-              </h3>
-              <h4>7月 - 11月</h4>
-            </div>
-
-            <div className={styles.cocAcademicTransferText}>
-              從8月初開始撰寫UC申請的草稿，透過畫心智圖，整理自己的強項與專長，並結合過去參加活動的經驗，
-              挑選最能展現個人特色的題目來作答。一定要提早開始，9月至10月期間，不斷請Amy、Dr.
-              J，以及越多願意給意見的人協助修改與給建議。
-              同時要持續維持良好GPA（這學期的課表應該要是最輕鬆的，約12到14學分）。P.S.如果在這段期間你感到痛苦、焦躁，覺得自己寫得不夠好，那代表你正走在對的路上！
-            </div>
-          </div>
-
-          <img
-            className={styles.cocAcademicTransferLine}
-            src="/UCtransfer/Line.png"
-            alt="Line"
-          />
-
-          <div className={styles.cocAcademicTransferContent}>
-            <div className={styles.cocAcademicTransferTag}>
-              <h3>
-                Application Deadline
-                <br />
-              </h3>
-              <h4>11月/12月</h4>
-            </div>
-
-            <div className={styles.cocAcademicTransferText}>
-              申請截止日約在12月底，建議在截止日前一到兩天提交，除非最後一刻有非常重要的內容需要修改，否則不要拖到最後一刻。
-            </div>
-          </div>
-
-          <img
-            className={styles.cocAcademicTransferLine}
-            src="/UCtransfer/Line.png"
-            alt="Line"
-          />
-
-          <div className={styles.cocAcademicTransferContent}>
-            <div className={styles.cocAcademicTransferTag}>
-              <h3>
-                offer release
-                <br />
-              </h3>
-              <h4>隔年4月中開始</h4>
-            </div>
-
-            <div className={styles.cocAcademicTransferText}>
-              大約從4月中旬開始，各校會陸續發出錄取通知。根據往年經驗，UCI通常最早發榜，而UCLA幾乎總是在最後一週才公布結果。
-            </div>
-          </div>
+          ))}
         </div>
 
         <DividerContent order="七" title="很好用的資源!" />

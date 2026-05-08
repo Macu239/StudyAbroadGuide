@@ -5,8 +5,8 @@ export default function PeopleSuits({ data, color }) {
     <div
       className={styles.peopleSuitsWrapper}
       style={{
-        "--backgroundColor1": color[0],
-        "--backgroundColor2": color[1] || color[0],
+        "--accentColor1": color[0],
+        "--accentColor2": color[1] || color[0],
       }}
     >
       {data.map((group, groupindex) => (
@@ -14,10 +14,11 @@ export default function PeopleSuits({ data, color }) {
           {group.map((item, index) => (
             <div
               className={`${styles.peopleSuitsBox} ${
-                index % 2 === 0 ? styles.SchoolTheme1 : styles.SchoolTheme2
+                groupindex % 2 === 0 ? styles.SchoolTheme1 : styles.SchoolTheme2
               }`}
               key={index}
             >
+              <span className={styles.checkmark}>✓</span>
               {item}
             </div>
           ))}

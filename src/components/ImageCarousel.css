@@ -4,6 +4,7 @@
   width: var(--carousel-width);
   margin: auto;
   aspect-ratio: 16/9;
+  border-radius: var(--radius-lg);
 }
 
 .slides {
@@ -33,30 +34,35 @@
 
 .dot {
   cursor: pointer;
-  height: 12px;
+  height: 10px;
   aspect-ratio: 1;
-  margin: 0 6px;
-  background-color: #bbb;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
   display: inline-block;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
+  border-radius: var(--radius-full);
+  transition: background-color 200ms ease;
 }
 
 .dot.active {
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 
-@media (min-width: 380px) and (max-width: 590px) {
-  .dot{
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 590px) {
+  .dot {
     height: 6px;
-    margin: 0 2%;
+    margin: 0 3px;
   }
 
-  .dots{
-    bottom: 5px;
+  .dots {
+    bottom: 6px;
   }
 
-  .carousel{
+  .carousel {
     width: 100%;
+    border-radius: var(--radius-md);
   }
 }

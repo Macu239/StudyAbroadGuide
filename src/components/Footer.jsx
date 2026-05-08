@@ -7,12 +7,17 @@ export default function Footer() {
     <div className="footer">
       <div className="FooterContainer">
         <div className="footer-text">
-          <img src="/ROCflag.png" className="flags" />
-          <Link href="/CocLife">
+          <div className="flag-item">
+            <img src="/ROCflag.png" className="flags" aria-label="台灣" />
+            <span className="flag-label">台灣</span>
+          </div>
+          <Link href="/CocLife" aria-label="美國生活指南" className="flag-item">
             <img src="/USAflag.png" className="flags" />
+            <span className="flag-label">美國生活</span>
           </Link>
-          <Link href="/CanadaLife">
+          <Link href="/CanadaLife" aria-label="加拿大生活指南" className="flag-item">
             <img src="/Canadaflag.png" className="flags" />
+            <span className="flag-label">加拿大生活</span>
           </Link>
         </div>
 

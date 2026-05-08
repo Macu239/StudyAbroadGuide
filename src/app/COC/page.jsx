@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Blur, PeopleSuits,ProsCons } from "../../components";
+import { Blur, PeopleSuits, ProsCons, NavStrip } from "../../components";
 
 export default function COCPage() {
   const peopleSuitsData = [
@@ -42,11 +42,26 @@ export default function COCPage() {
       "難以找到學長姐提供經驗分享，轉學資源相對有限"
     ]
   ];
+  const navItems = [
+    { href: "/COCApplication", icon: "📋", title: "申請過程", description: "申請步驟與所需文件" },
+    { href: "/CocAcademic", icon: "🎓", title: "學業、轉學相關", description: "UC 轉學路徑與線上課程" },
+    { href: "/UsVisa", icon: "🛂", title: "美國學生簽證", description: "F-1 學生簽證申請指南" },
+    { href: "/CocLife", icon: "🏠", title: "生活", description: "住宿、飲食與南加州日常生活" },
+    { href: "/Seniors?section=COC", icon: "👥", title: "找學長姐", description: "聯絡曾就讀的學長姐取得第一手經驗" },
+    { href: "/QandA", icon: "💬", title: "Common Q&A", description: "常見問題與解答" },
+  ];
+
   return (
     <div className={styles.COCschooWrapper}>
+      <nav className="breadcrumb" aria-label="Breadcrumb" style={{ marginTop: "var(--spacing-6)", alignSelf: "flex-start" }}>
+        <Link href="/">首頁</Link>
+        <span aria-hidden="true">›</span>
+        <span className="breadcrumb-current">College of the Canyons</span>
+      </nav>
       <section className={styles["hero-section"]}>
         <div className={styles["hero-content"]}>
           <div className={styles["hero-text"]}>
+            <span className={styles["hero-eyebrow"]}>惠文合作學校</span>
             <h1>College of the Canyons</h1>
             <p className={styles["hero-subtitle"]}>美國加州峽谷社區大學</p>
           </div>
@@ -59,6 +74,12 @@ export default function COCPage() {
       </section>
       <main className={styles["main-content"]}>
         <div className={styles["content-section"]}>
+          <div className={styles["stats-callout"]}>
+            <span className={styles["stats-chip"]}>📍 加州 Santa Clarita</span>
+            <span className={styles["stats-chip"]}>🏫 社區大學（2年制）</span>
+            <span className={styles["stats-chip"]}>⏱ 留學期間：高三起 2–3 年</span>
+            <span className={styles["stats-chip"]}>💰 學費：相對實惠</span>
+          </div>
           <Blur
             src="/COC/img_coc_main_image.png"
             alt="College of the Canyons Campus"
@@ -101,75 +122,7 @@ export default function COCPage() {
         <img src="/COC/Tuitions.jpg" alt="COC Tuition Fees" id="Tuition-Fees" />
         <div className={styles.divider} />
         <h2 className={styles["section-title"]}>更多資訊</h2>
-
-        <div className={styles.resourcesGrid}>
-          <div className={styles["extra-info-row"]}>
-            <div className={styles["resource-card"]}>
-              <Link href="/COCApplication">
-                <img
-                  src="/COC/img_application_1.png"
-                  alt="Application Process"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>申請過程</h3>
-              </Link>
-            </div>
-
-            <div className={styles["resource-card"]}>
-              <Link href="/CocAcademic">
-                <img
-                  src="/COC/img_group_1_1.png"
-                  alt="Academic Transfer"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>學業、轉學相關</h3>
-              </Link>
-            </div>
-
-            <div className={styles["resource-card"]}>
-              <Link href="/UsVisa">
-                <img
-                  src="/COC/img_image_10.png"
-                  alt="Visa Information"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>美國學生簽證</h3>
-              </Link>
-            </div>
-          </div>
-          <div className={styles["extra-info-row"]}>
-            <div className={styles["resource-card"]}>
-              <Link href="/CocLife">
-                <img
-                  src="/COC/img_image_11.png"
-                  alt="Campus Life"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>生活</h3>
-              </Link>
-            </div>
-            <div className={styles["resource-card"]}>
-              <Link href="/Seniors" state={{ openSection: "COC" }}>
-                <img
-                  src="/COC/seniors.jpg"
-                  alt="Find Seniors"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>找學長姐</h3>
-              </Link>
-            </div>
-            <div className={styles["resource-card"]}>
-              <Link href="/QandA" state={{ moveSection: "COC" }}>
-                <img
-                  src="/COC/img_image_12.png"
-                  alt="Q&A"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>Common Q&amp;A</h3>
-              </Link>
-            </div>
-          </div>
-        </div>
+        <NavStrip items={navItems} />
       </section>
     </div>
   );
