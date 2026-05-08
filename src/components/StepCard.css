@@ -1,0 +1,141 @@
+.step-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--spacing-6) 0;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Vertical connector line between steps */
+.step-card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  width: 2px;
+  height: calc(100% - 40px);
+  background: var(--color-border);
+  z-index: 0;
+}
+
+.step-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  position: relative;
+  z-index: 1;
+}
+
+.step-card-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--stepAccent, var(--color-primary));
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.step-card-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+.step-card-content {
+  margin-left: calc(40px + var(--spacing-4));
+  margin-top: var(--spacing-3);
+  padding-bottom: var(--spacing-8);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+}
+
+/* Last step: no bottom padding after connector ends */
+.step-card:last-child .step-card-content {
+  padding-bottom: var(--spacing-4);
+}
+
+/* Document checklist styling */
+.step-card-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--spacing-2);
+}
+
+.step-card-content > ul > li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+}
+
+.step-card-content > ul > li:last-child {
+  border-bottom: none;
+}
+
+.step-card-content > ul > li::before {
+  content: '☐';
+  color: var(--stepAccent, var(--color-primary));
+  font-size: 1.1em;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.step-card-content > ul > li > ul {
+  padding-left: var(--spacing-4);
+  margin-top: var(--spacing-2);
+  list-style: disc;
+}
+
+.step-card-content > ul > li > ul > li {
+  display: list-item;
+  border-bottom: none;
+  padding: var(--spacing-1) 0;
+}
+
+.step-card-content > ul > li > ul > li::before {
+  display: none;
+}
+
+/* Inline spans/paragraphs */
+.step-card-content span,
+.step-card-content p {
+  display: block;
+}
+
+@media (max-width: 590px) {
+  .step-card-circle {
+    width: 32px;
+    height: 32px;
+    font-size: var(--text-xs);
+  }
+
+  .step-card:not(:last-child)::after {
+    left: 15px;
+    top: 32px;
+  }
+
+  .step-card-content {
+    margin-left: calc(32px + var(--spacing-3));
+    font-size: var(--text-sm);
+  }
+
+  .step-card-title {
+    font-size: var(--text-base);
+  }
+}

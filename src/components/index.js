@@ -11,3 +11,5 @@ export {default as Suggestions} from './SuggForm';
 export {default as Blur} from './BlurImage';
 export {default as PeopleSuits} from './peopleSuits';
 export {default as ProsCons} from './prosCons';
+export {default as NavStrip} from './NavStrip';
+export {default as StepCard} from './StepCard';

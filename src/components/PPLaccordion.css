@@ -1,5 +1,5 @@
 .accordion {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-4);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -19,46 +19,55 @@
 }
 
 .accordionTitle {
-  color: #ffffff;
-  background-color: #565656;
-  padding: 1rem;
+  background-color: var(--color-text);
+  color: var(--color-text-inverse);
+  padding: var(--spacing-4);
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
   width: 100%;
-  aspect-ratio: 12.5;
+  min-height: 52px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  cursor: pointer;
+  transition: background-color 150ms ease;
 }
 
 .accordionTitle:hover {
-  background-color: #434343;
-  cursor: pointer;
+  background-color: #2a2a2a;
 }
 
 .arrow {
-  margin-left: none;
+  flex-shrink: 0;
+  margin-left: var(--spacing-4);
 }
+
 .accordionContent {
-  font-family: "raleway", sans-serif;
+  font-family: var(--font-sans);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-top: 16px;
-  margin-bottom: 1rem;
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-4);
   width: 90%;
-  background-color: #d9d9d9;
-  padding: 1.5rem;
-  color: #000;
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
   white-space: pre-line;
 }
 
 .personalPic {
-  width: 25%;
+  width: 22%;
   aspect-ratio: 0.85;
-  background-color: #ffffff;
-  border-radius: 10px;
+  background-color: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .PplAccordionHeder {
@@ -66,12 +75,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-4);
+  gap: var(--spacing-6);
 }
 
 .PplAccordionHederLeft {
   width: auto;
-  margin-right: 1rem;
 }
 
 .PplAccordionHederRight {
@@ -79,47 +88,73 @@
 }
 
 .PPLaccordionLink {
-  font-size: 1rem;
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.PPLaccordionLink:hover {
+  color: var(--color-primary-hover);
 }
 
 .accordionText {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: var(--spacing-5);
   width: 75%;
 }
 
-.accordionText span {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  width: 100%;
-}
 .accordionText h2 {
-  line-height: 1.5;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: var(--spacing-3);
+}
+
+.accordionText h4 {
+  color: var(--color-text-secondary);
+  font-weight: 400;
 }
 
 .accordionContentWrapper #Email {
   font-weight: 500;
+  color: var(--color-text);
 }
-@media (min-width: 380px) and (max-width: 590px) {
+
+#PersonalInfo {
+  font-size: var(--text-sm);
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  max-width: 100%;
+}
+
+@media (max-width: 590px) {
   .accordion {
     width: 100%;
   }
 
   .PPLaccordionLink {
-    font-size: 0.9rem;
+    font-size: var(--text-xs);
+    word-break: break-word;
+    overflow-wrap: anywhere;
   }
 
   .accordionContent {
-    margin-bottom: 0.4rem;
-    margin-top: 0.8rem;
+    margin-bottom: var(--spacing-3);
+    margin-top: var(--spacing-3);
     flex-direction: column;
     align-items: center;
+    width: 95%;
+    padding: var(--spacing-4);
   }
 
   .PplAccordionHeder {
     flex-direction: column;
+    gap: var(--spacing-2);
   }
 
   .PplAccordionHederLeft,
@@ -128,26 +163,13 @@
   }
 
   .personalPic {
-    width: 60%;
-    margin-bottom: 1rem;
+    width: 55%;
+    margin-bottom: var(--spacing-4);
     object-fit: cover;
   }
 
   .accordionText {
     width: 100%;
     margin-left: 0;
-  }
-
-  /* Header layout: stack school/major info */
-  .PplAccordionHeder {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  /* Ensure links and emails wrap nicely */
-  .PplAccordionHederRight h4,
-  .PPLaccordionLink {
-    word-break: break-word;
-    overflow-wrap: anywhere;
   }
 }

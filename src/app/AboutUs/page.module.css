@@ -1,95 +1,137 @@
 .AboutUsWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Libre Baskerville", serif;
-  min-height: 90vh;
-  padding: 60px 0;
+  align-items: stretch;
+  font-family: var(--font-sans);
 }
 
-.AboutUsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 85%;
-  gap: 40px;
+/* ── Zone 1: Hero ── */
+.AboutUsHero {
+  background: var(--color-bg-subtle);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-20) var(--spacing-6);
 }
 
-.AboutUsTitle {
-  flex: 1 1 300px;
-  max-width: 400px;
+.AboutUsHeroInner {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.AboutUsTitle h1 {
-  font-size: 3.5rem;
+.AboutUsHero h1 {
+  font-size: var(--text-5xl);
   font-weight: 700;
-  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-6);
+  margin-top: var(--spacing-4);
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-.AboutUsTitle p {
-  font-size: 1.1rem;
+.AboutUsHero p {
+  font-size: var(--text-lg);
   line-height: 1.8;
-  font-weight: 500;
+  color: var(--color-text-secondary);
+  max-width: 68ch;
+  font-family: var(--font-body);
 }
 
-.AboutUsText {
-  flex: 2 1 500px;
+.AboutUsTags {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-6);
+}
+
+/* ── Zone 2: Credits + Form ── */
+.AboutUsBody {
+  background: var(--color-bg);
+  padding: var(--spacing-16) var(--spacing-6);
+}
+
+.AboutUsBodyInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: var(--spacing-16);
+  align-items: start;
 }
 
 .AboutUsText h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-6);
+  margin-top: 0;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-3);
 }
 
 .CreditSections {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-#Jeremy h4 {
-  font-size: 1.56rem;
-}
-
-#Jeremy p {
-  font-size: 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-4);
 }
 
 .CreditSection {
-  padding: 20px;
-  border-radius: 12px;
-  background-color: #ffffff26;
-  backdrop-filter: blur(4px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: var(--spacing-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-subtle);
+  transition: box-shadow 200ms ease, border-color 200ms ease;
 }
 
 .CreditSection:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-border-strong);
 }
 
 .CreditSection h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-3);
+  margin-top: 0;
 }
 
 .CreditSection p {
   margin: 4px 0;
-  font-size: 1rem;
+  font-size: var(--text-base);
+  color: var(--color-text);
+  font-weight: 500;
+  max-width: 100%;
 }
 
-@media (min-width: 380px) and (max-width: 590px) {
-  .AboutUsText h3{
-    margin-bottom: 0.8rem;
+/* Form panel */
+.AboutUsFormPanel {
+  position: sticky;
+  top: 80px;
+}
+
+@media (max-width: 1024px) {
+  .AboutUsBodyInner {
+    grid-template-columns: 1fr;
   }
 
-  #Jeremy h4{
-    font-size: 1.2rem !important;
+  .AboutUsFormPanel {
+    position: static;
+  }
+}
+
+@media (max-width: 590px) {
+  .AboutUsHero h1 {
+    font-size: var(--text-4xl);
   }
 
-  #Jeremy p{
-    font-size: 1rem !important;
+  .AboutUsHero {
+    padding: var(--spacing-12) var(--spacing-4);
+  }
+
+  .AboutUsBody {
+    padding: var(--spacing-10) var(--spacing-4);
   }
 }
