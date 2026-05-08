@@ -1,58 +1,63 @@
 .sectionWrapper {
   width: 100%;
+  margin-bottom: var(--spacing-8);
 }
 
 .topicbar {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: 25px;
+  margin-top: var(--spacing-6);
 }
 
 .dividerContentTitle {
   white-space: nowrap;
-  margin-right: 25px;
-  font-size: 20px;
+  margin-right: var(--spacing-6);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-sans);
 }
 
 .dividerContentDivider {
   flex-grow: 1;
-  height: 1.2px;
-  background-color: #171717;
-  opacity: 0.4;
+  height: 1px;
+  background-color: var(--color-border-strong);
 }
 
 .dividerContentText {
-  margin-top: 25px;
-  font-size: 16px;
+  margin-top: var(--spacing-5);
+  font-size: var(--text-base);
   font-weight: 400;
-  line-height:2rem;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
 }
 
 .dividerContentText ul {
-  padding-left: 1rem;
-  list-style-type: numeric;
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+  margin-top: var(--spacing-3);
 }
 
 .dividerContentText li ul {
-  padding-left: 1rem;
-  list-style-type: numeric;
+  padding-left: 1.5rem;
+  list-style-type: decimal;
 }
 
-@media (min-width: 380px) and (max-width: 590px) {
-  .topicbar{
-    margin-top: 12px;
-  }
-  .dividerContentTitle{
-    font-size:1rem ;
-    margin-right: 1rem;
+@media (max-width: 590px) {
+  .topicbar {
+    margin-top: var(--spacing-4);
   }
 
-  .dividerContentText{
-    font-size: 0.8rem;
-    margin-top: 12px;
-    line-height:1.5rem;
+  .dividerContentTitle {
+    font-size: var(--text-base);
+    margin-right: var(--spacing-4);
   }
 
-  
+  .dividerContentText {
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-3);
+    line-height: 1.6;
+  }
 }

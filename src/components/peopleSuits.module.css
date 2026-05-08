@@ -1,53 +1,65 @@
 .peopleSuitsWrapper {
-  gap: 20px;
+  gap: var(--spacing-6);
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 .peopleSuitsGrind {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: var(--spacing-3);
 }
 
 .peopleSuitsBox {
-  width: 30%;
-  aspect-ratio: 5/2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  color: #ffffff;
-  border-radius: 8px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4) var(--spacing-5);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   white-space: pre-line;
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-text);
+  font-weight: 400;
+  transition: box-shadow 150ms ease, border-color 150ms ease;
 }
 
-#UMC {
-  background-color: #af292e;
-}
-
-#COC {
-  background-color: #0581c4;
+.peopleSuitsBox:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-border-strong);
 }
 
 .SchoolTheme1 {
-  background-color: var(--backgroundColor1);
+  border-left: 4px solid var(--accentColor1);
 }
 
 .SchoolTheme2 {
-  background-color: var(--backgroundColor2);
+  border-left: 4px solid var(--accentColor2);
 }
 
-@media (min-width: 380px) and (max-width: 590px) {
-  .peopleSuitsWrapper {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 12px;
+.checkmark {
+  color: var(--accentColor1);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  flex-shrink: 0;
+  margin-top: 1px;
+  line-height: 1.4;
+}
+
+.SchoolTheme2 .checkmark {
+  color: var(--accentColor2);
+}
+
+@media (max-width: 590px) {
+  .peopleSuitsBox {
+    padding: var(--spacing-3) var(--spacing-4);
+    font-size: var(--text-xs);
   }
 }

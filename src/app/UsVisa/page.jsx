@@ -1,6 +1,6 @@
 'use client'
 import styles from "./page.module.css";
-import { DividerContent, Blur } from "../../components";
+import { StepCard, Blur } from "../../components";
 import { usaVisaApplication } from "../../components/applicationsData.jsx";
 
 export default function UsVisaPage() {
@@ -22,14 +22,17 @@ export default function UsVisaPage() {
       </div>
 
       <div className={styles.UsVisaText}>
-        {usaVisaApplication.map((item, index) => (
-          <DividerContent
-            key={index}
-            order={item.order}
-            title={item.title}
-            content={item.content}
-          />
-        ))}
+        <div className="step-list">
+          {usaVisaApplication.map((item, index) => (
+            <StepCard
+              key={index}
+              order={item.order}
+              title={item.title}
+              content={item.content}
+              accent="#0581c4"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

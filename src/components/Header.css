@@ -1,64 +1,81 @@
-body {
-  line-height: 1.6;
-}
-
 .title_bar {
-  background-color: #171717;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 0.4rem;
-  color: white;
+  padding: 0 var(--spacing-6);
+  font-family: var(--font-sans);
   width: 100%;
+  gap: var(--spacing-8);
 }
 
 .websiteHeader {
-  width: 17%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: var(--spacing-3);
+  flex-shrink: 0;
 }
 
 #Pagename {
-  width: 75%;
-  font-family: Libre Baskerville;
-  font-weight: bold;
+  font-size: var(--text-base);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-text);
+  white-space: nowrap;
+  margin: 0;
 }
 
 #logoLink {
-  width: 20%;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .logo {
-  width: 100%;
-  margin: auto 0;
-  aspect-ratio: 1;
+  width: 32px;
+  height: 32px;
 }
+
 .Schools {
-  width: 75%;
-  margin-right: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  gap: 3%;
+  align-items: center;
+  gap: var(--spacing-1);
+  flex: 1;
 }
-.button {
-  font-weight: bold;
-  font-family: Libre Baskerville;
+
+.dropbtn {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: var(--text-sm);
   background: none;
   border: none;
-  color: inherit;
-  padding: 10px 10px;
+  color: var(--color-text-secondary);
+  padding: var(--spacing-2) var(--spacing-3);
   cursor: pointer;
-  font-size: 1.2rem;
-  gap: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  transition: color 150ms ease;
+  white-space: nowrap;
+  min-height: 44px;
 }
+
+.button:hover {
+  color: var(--color-primary);
+}
+
 .dropdown {
-  max-width: 20%;
   position: relative;
   display: inline-block;
 }
@@ -66,66 +83,80 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(255, 255, 255);
-  margin-top: 10px;
+  top: 60px;
+  left: 0;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  margin-top: 0;
   text-align: left;
   width: max-content;
-  z-index: 10;
+  z-index: 200;
+  overflow: hidden;
 }
 
 .dropdown-link {
-  padding: 10px 16px;
+  padding: var(--spacing-2) var(--spacing-4);
   width: 100%;
   display: block;
-  font-family: Libre Baskerville;
-  font-weight: normal;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 400;
   text-decoration: none;
-  font-size: 1.2rem;
-  color: black;
-  font-weight: 500;
+  color: var(--color-text);
+  transition: background 150ms ease, color 150ms ease;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
+
 .dropdown-link:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  text-decoration: none;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Small phones (0 - 380px) */
-@media (min-width: 380px) and (max-width: 590px) {
+.caret {
+  font-size: 0.65em;
+  opacity: 0.55;
+  margin-left: 3px;
+}
+
+@media (max-width: 768px) {
   .title_bar {
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.5rem;
-    gap: 0.5rem;
+    padding: var(--spacing-3) var(--spacing-4);
+    gap: var(--spacing-2);
   }
 
   .websiteHeader {
     width: 100%;
-    justify-content: flex-start;
   }
 
-  #logoLink {
-    width: 12%;
+  #Pagename {
+    font-size: var(--text-sm);
   }
 
   .Schools {
     width: 100%;
-    flex-direction: column;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: var(--spacing-1);
   }
 
-  .button {
-    font-size: 1rem;
-    padding: 10px 8px;
+  .dropbtn {
+    height: auto;
+    padding: var(--spacing-2) var(--spacing-3);
+    font-size: var(--text-sm);
   }
 
   .dropdown {
     max-width: 100%;
-
-    .dropdown-link {
-      font-size: 1rem;
-    }
   }
 }

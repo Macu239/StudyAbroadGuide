@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Blur, PeopleSuits, ProsCons } from "../../components";
+import { Blur, PeopleSuits, ProsCons, NavStrip } from "../../components";
 
 export default function RedDeerPage() {
   const peopleSuitsData = [
@@ -42,11 +42,26 @@ export default function RedDeerPage() {
     ],
   ];
   const colorList = ["#053a6d", "#12874d"];
+  const navItems = [
+    { href: "/RedDeerApplication", icon: "📋", title: "申請過程", description: "申請步驟與所需文件" },
+    { href: "/UMCAcademic", icon: "🎓", title: "學業、轉學相關", description: "加拿大大學申請與升學規劃" },
+    { href: "/CanadaVisa", icon: "🛂", title: "加拿大學生簽證", description: "加拿大學生許可申請指南" },
+    { href: "/CanadaLife", icon: "🏠", title: "生活", description: "住宿、飲食與加拿大日常生活" },
+    { href: "/Seniors?section=RedDeer", icon: "👥", title: "找學長姐", description: "聯絡曾就讀的學長姐取得第一手經驗" },
+    { href: "/QandA", icon: "💬", title: "Common Q&A", description: "常見問題與解答" },
+  ];
+
   return (
     <div className={styles.COCschooWrapper}>
+      <nav className="breadcrumb" aria-label="Breadcrumb" style={{ marginTop: "var(--spacing-6)", alignSelf: "flex-start" }}>
+        <Link href="/">首頁</Link>
+        <span aria-hidden="true">›</span>
+        <span className="breadcrumb-current">Red Deer Catholic International</span>
+      </nav>
       <section className={styles["hero-section"]}>
         <div className={styles["hero-content"]}>
           <div className={styles["hero-text"]}>
+            <span className={styles["hero-eyebrow"]}>惠文合作學校</span>
             <h2>Red Deer Catholic International</h2>
             <p className={styles["hero-subtitle"]}>加拿大紅鹿國際高中</p>
           </div>
@@ -59,6 +74,12 @@ export default function RedDeerPage() {
       </section>
       <main className={styles["main-content"]}>
         <div className={styles["content-section"]}>
+          <div className={styles["stats-callout"]}>
+            <span className={styles["stats-chip"]}>📍 加拿大 亞伯達省</span>
+            <span className={styles["stats-chip"]}>🏫 公立天主教高中</span>
+            <span className={styles["stats-chip"]}>⏱ 留學期間：高三 1 年</span>
+            <span className={styles["stats-chip"]}>❄️ 氣候：四季分明，冬季降雪</span>
+          </div>
           <Blur
             src="/RedDeer/RedDeerHero.png"
             alt="RedDeer Campus"
@@ -90,75 +111,7 @@ export default function RedDeerPage() {
       </main>
       <section className={styles["resources-section"]}>
         <h2 className={styles["section-title"]}>更多資訊</h2>
-
-        <div className={styles.resourcesGrid}>
-          <div className={styles["extra-info-row"]}>
-            <div className={styles["resource-card"]}>
-              <Link href="/RedDeerApplication">
-                <img
-                  src="/COC/img_application_1.png"
-                  alt="Application Process"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>申請過程</h3>
-              </Link>
-            </div>
-
-            <div className={styles["resource-card"]}>
-              <Link href="/UMCAcademic">
-                <img
-                  src="/UMC/CanadaStudy.png"
-                  alt="Canada Study"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>學業、轉學相關</h3>
-              </Link>
-            </div>
-
-            <div className={styles["resource-card"]}>
-              <Link href="/CanadaVisa">
-                <img
-                  src="/COC/img_image_10.png"
-                  alt="Visa Information"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>加拿大學生簽證</h3>
-              </Link>
-            </div>
-          </div>
-          <div className={styles["extra-info-row"]}>
-            <div className={styles["resource-card"]}>
-              <Link href="/CanadaLife">
-                <img
-                  src="/UMC/CanadaLife.jpg"
-                  alt="Canada Life"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>生活</h3>
-              </Link>
-            </div>
-            <div className={styles["resource-card"]}>
-              <Link href="/Seniors" state={{ openSection: "RedDeer" }}>
-                <img
-                  src="/COC/seniors.jpg"
-                  alt="Find Seniors"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>找學長姐</h3>
-              </Link>
-            </div>
-            <div className={styles["resource-card"]}>
-              <Link href="/QandA" state={{ moveSection: "RedDeer" }}>
-                <img
-                  src="/COC/img_image_12.png"
-                  alt="Q&A"
-                  className={styles["resource-image"]}
-                />
-                <h3 className={styles["resource-title"]}>Common Q&amp;A</h3>
-              </Link>
-            </div>
-          </div>
-        </div>
+        <NavStrip items={navItems} />
       </section>
     </div>
   );

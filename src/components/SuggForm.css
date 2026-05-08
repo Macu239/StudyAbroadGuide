@@ -4,18 +4,29 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: var(--formWidth);
-  font-size: 18px;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
   font-weight: 500;
-  padding: 1rem;
+  padding: var(--spacing-6);
   background-color: var(--formColor);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   align-self: flex-end;
-  margin: 2% 7.5% 0 0; /* top right bottom left */
+  margin: var(--spacing-6) 7.5% 0 0;
 }
 
 .SuggestionForm h3 {
   align-self: center;
-  margin-bottom: 20px;
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-5);
+  margin-top: 0;
+  color: var(--color-text);
+}
+
+.SuggestionForm label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin-bottom: var(--spacing-1);
+  color: var(--color-text-secondary);
 }
 
 .SuggestionForm textarea {
@@ -27,50 +38,58 @@
 .SuggestionForm select,
 .SuggestionForm textarea {
   width: 100%;
-  padding: 10px;
+  padding: var(--spacing-3) var(--spacing-4);
   border: none;
-  border-bottom: 1px solid #00000070;
-  color: #fff;
+  border-bottom: 1.5px solid var(--color-border-strong);
+  color: var(--color-text);
   outline: none;
-  background: inherit;
-  font-size: 18px;
-  margin-bottom: 12px;
+  background: transparent;
+  font-size: var(--text-base);
+  font-family: var(--font-sans);
+  margin-bottom: var(--spacing-4);
+  border-radius: 0;
+  min-height: 44px;
 }
 
 .SuggestionForm input:focus,
 .SuggestionForm textarea:focus {
   background-color: inherit;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--color-primary);
+  box-shadow: none;
 }
 
 .SuggestionForm select {
-  border: 1px solid #00000070;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-sm);
 }
 
 .SuggestionForm input[type="submit"] {
   width: 50%;
-  border: none;
+  border: 1.5px solid var(--color-border-strong);
   align-self: center;
-  border-radius: 8px;
-  background-color: #ffffff26;
-  color: #fff;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-muted);
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 200ms ease, box-shadow 200ms ease, color 200ms ease;
 }
 
 .SuggestionForm input[type="submit"]:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: #000;
-  box-shadow: 0 4px 10px #ecf7ff66;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
 }
 
-.SuggestionForm input[type="submit"]:active{
-    transform: scale(0.98);
+.SuggestionForm input[type="submit"]:active {
+  transform: scale(0.98);
 }
 
-@media (min-width: 380px) and (max-width: 590px) {
-  .SuggestionForm{
-    font-size: 0.9rem;
+@media (max-width: 590px) {
+  .SuggestionForm {
+    font-size: var(--text-sm);
     width: 90%;
-    margin: 0.8rem auto;
+    margin: var(--spacing-4) auto;
   }
 }

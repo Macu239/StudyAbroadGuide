@@ -1,6 +1,6 @@
 'use client'
 import styles from "./page.module.css";
-import { DividerContent, Blur } from "../../components";
+import { StepCard, Blur } from "../../components";
 import { canadaVisaApplication } from "../../components/applicationsData.jsx";
 
 export default function CanadaVisaPage() {
@@ -13,14 +13,17 @@ export default function CanadaVisaPage() {
       </div>
 
       <div className={styles.UsVisaText}>
-        {canadaVisaApplication.map((item, index) => (
-          <DividerContent
-            key={index}
-            order={item.order}
-            title={item.title}
-            content={item.content}
-          />
-        ))}
+        <div className="step-list">
+          {canadaVisaApplication.map((item, index) => (
+            <StepCard
+              key={index}
+              order={item.order}
+              title={item.title}
+              content={item.content}
+              accent="#053a6d"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -4,18 +4,13 @@
   flex-direction: column;
 }
 
-.photo {
-  display: block;
-  margin: 10px auto;
-  z-index: 0;
-}
-
 .mainPageContent {
   display: flex;
   align-items: center;
   flex-direction: column;
-  grid-area: main;
   width: 85%;
+  max-width: 1280px;
+  padding: var(--spacing-8) var(--spacing-6);
 }
 
 .mainIntro {
@@ -24,80 +19,140 @@
   justify-content: space-between;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  gap: 40px;
+  gap: var(--spacing-10);
 }
 
 #introText {
-  font-family: "Libre Baskerville";
+  font-family: var(--font-body);
   width: 45%;
 }
 
-.mainPagedivider {
-  width: 110%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-top: 3px solid #8c8a8a;
+#introText h2 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: var(--spacing-4);
 }
+
+#introText p {
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  max-width: 100%;
+  margin-bottom: var(--spacing-2);
+}
+
+.mainPagedivider {
+  width: 100%;
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+  border-top: 1px solid var(--color-border);
+}
+
 .schoolBoxes {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Libre Baskerville";
-  margin-bottom: 2.5rem;
+  font-family: var(--font-sans);
+  margin-bottom: var(--spacing-10);
+  gap: var(--spacing-6);
 }
+
 .box {
-  width: 32%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0.8rem;
-  border-radius: 10px;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  transition: box-shadow 200ms ease, border-color 200ms ease, transform 200ms ease;
 }
-.box h3,
+
+.box:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-strong);
+  transform: translateY(-2px);
+}
+
+.box:hover .school_cta {
+  text-decoration: underline;
+}
+
+.box h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 0;
+  margin-bottom: var(--spacing-1);
+}
+
 .box h4 {
-  margin-bottom: 2%;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--spacing-4);
 }
 
 .school_page_link {
   text-decoration: none;
-  color: black;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.school_page_link:hover {
+  text-decoration: none;
 }
 
 .school_pic {
   width: 100%;
   aspect-ratio: 1.67;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.school_tagline {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-4);
+  max-width: 100%;
+}
+
+.school_cta {
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-top: var(--spacing-3);
 }
 
 .boxLine {
-  height: 40vh;
-  width: 2px;
-  background-color: #8c8a8a;
+  display: none;
 }
 
-@media (min-width: 380px) and (max-width: 590px) {
+@media (max-width: 768px) {
   .schoolBoxes {
-    margin-bottom: 0px;
     flex-direction: column;
+    margin-bottom: var(--spacing-6);
   }
 
   .box {
-    width: 80%;
-    margin-bottom: 0.7rem;
-    padding: 0;
-  }
-
-  .boxLine {
-    width: 80%;
-    height: 2px;
+    width: 100%;
+    padding: var(--spacing-4);
   }
 
   .mainIntro {
-    width: 100%;
     flex-direction: column-reverse;
+    gap: var(--spacing-6);
   }
 
   #introText {
