@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 import { Blur, PeopleSuits, ProsCons, NavStrip } from "../../components";
+import { ClipboardList, GraduationCap, ShieldCheck, Home, Users, MessageCircle, Snowflake } from "lucide-react";
 
 export default function RedDeerPage() {
   const peopleSuitsData = [
@@ -43,12 +44,12 @@ export default function RedDeerPage() {
   ];
   const colorList = ["#053a6d", "#12874d"];
   const navItems = [
-    { href: "/RedDeerApplication", icon: "📋", title: "申請過程", description: "申請步驟與所需文件" },
-    { href: "/UMCAcademic", icon: "🎓", title: "學業、轉學相關", description: "加拿大大學申請與升學規劃" },
-    { href: "/CanadaVisa", icon: "🛂", title: "加拿大學生簽證", description: "加拿大學生許可申請指南" },
-    { href: "/CanadaLife", icon: "🏠", title: "生活", description: "住宿、飲食與加拿大日常生活" },
-    { href: "/Seniors?section=RedDeer", icon: "👥", title: "找學長姐", description: "聯絡曾就讀的學長姐取得第一手經驗" },
-    { href: "/QandA", icon: "💬", title: "Common Q&A", description: "常見問題與解答" },
+    { href: "/RedDeerApplication", icon: <ClipboardList size={16} strokeWidth={2} />, title: "申請過程", description: "申請步驟與所需文件" },
+    { href: "/UMCAcademic", icon: <GraduationCap size={16} strokeWidth={2} />, title: "學業、轉學相關", description: "加拿大大學申請與升學規劃" },
+    { href: "/CanadaVisa", icon: <ShieldCheck size={16} strokeWidth={2} />, title: "加拿大學生簽證", description: "加拿大學生許可申請指南" },
+    { href: "/CanadaLife", icon: <Home size={16} strokeWidth={2} />, title: "生活", description: "住宿、飲食與加拿大日常生活" },
+    { href: "/Seniors?section=RedDeer", icon: <Users size={16} strokeWidth={2} />, title: "找學長姐", description: "聯絡曾就讀的學長姐取得第一手經驗" },
+    { href: "/QandA", icon: <MessageCircle size={16} strokeWidth={2} />, title: "Common Q&A", description: "常見問題與解答" },
   ];
 
   return (
@@ -75,10 +76,10 @@ export default function RedDeerPage() {
       <main className={styles["main-content"]}>
         <div className={styles["content-section"]}>
           <div className={styles["stats-callout"]}>
-            <span className={styles["stats-chip"]}>📍 加拿大 亞伯達省</span>
-            <span className={styles["stats-chip"]}>🏫 公立天主教高中</span>
-            <span className={styles["stats-chip"]}>⏱ 留學期間：高三 1 年</span>
-            <span className={styles["stats-chip"]}>❄️ 氣候：四季分明，冬季降雪</span>
+            <span className={styles["stats-chip"]}>加拿大 亞伯達省</span>
+            <span className={styles["stats-chip"]}>公立天主教高中</span>
+            <span className={styles["stats-chip"]}>留學期間：高三 1 年</span>
+            <span className={styles["stats-chip"]}>氣候：四季分明，冬季降雪</span>
           </div>
           <Blur
             src="/RedDeer/RedDeerHero.png"

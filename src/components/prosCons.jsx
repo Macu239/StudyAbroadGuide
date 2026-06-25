@@ -6,7 +6,7 @@ export default function ProsCons({ data, color }) {
       {data.map((row, index) => (
         <div className={styles.ProsConsText} key={index}>
           <div className={styles["pros-cons-header"]}>
-            {index % 2 === 0 ? "✅ Pros" : "⚠️ Cons"}
+            {index % 2 === 0 ? "Pros" : "Cons"}
           </div>
           <ul className={styles["pros-cons-list"]}>
             {row.map((item, idx) => {

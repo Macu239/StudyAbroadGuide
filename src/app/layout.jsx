@@ -1,4 +1,5 @@
 import "../Global.css";
+import 'flag-icons/css/flag-icons.min.css';
 import { Header, Footer, ScrollToTop } from "../components";
 
 export const metadata = {

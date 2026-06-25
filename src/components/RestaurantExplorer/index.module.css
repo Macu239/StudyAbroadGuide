@@ -1,0 +1,435 @@
+/* ============================================================
+   RestaurantExplorer
+   ============================================================ */
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ---- Tab bar ---- */
+.tabBar {
+  display: inline-flex;
+  gap: var(--spacing-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-1);
+  background: var(--color-bg-subtle);
+  align-self: flex-start;
+  margin-bottom: var(--spacing-5);
+}
+
+.tab {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-full);
+  border: none;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease;
+  white-space: nowrap;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tab:hover {
+  background: var(--color-bg-muted);
+  color: var(--color-text);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.tabActive,
+.tabActive:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* ---- Tip banner ---- */
+.tipBanner {
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-primary-light);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--spacing-3) var(--spacing-5);
+  margin-bottom: var(--spacing-5);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  width: 100%;
+}
+
+/* ---- Desc row ---- */
+.descRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-5);
+  flex-wrap: wrap;
+}
+
+.desc {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  flex: 1;
+  min-width: 0;
+}
+
+/* ---- Filter pills ---- */
+.filterPills {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.filterPill {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  height: 28px;
+  padding: 0 var(--spacing-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+  white-space: nowrap;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.filterPill:hover {
+  background: var(--color-bg-muted);
+  color: var(--color-text);
+}
+
+.filterPill:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.filterPillActive,
+.filterPillActive:hover {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+/* ---- Card grid ---- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+/* ---- Restaurant card ---- */
+.card {
+  position: relative;
+  background: #111;
+  border-radius: var(--radius-lg);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.cardImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardImagePlaceholder {
+  position: absolute;
+  inset: 0;
+  background: var(--color-bg-subtle);
+}
+
+.cardGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cardMeta {
+  position: absolute;
+  bottom: var(--spacing-3);
+  left: var(--spacing-3);
+  right: var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  pointer-events: none;
+}
+
+.cardTag {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.cardName {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+/* Primary at 75% opacity — hardcoded so it reads on dark images */
+.cardPrice {
+  position: absolute;
+  top: var(--spacing-2);
+  right: var(--spacing-2);
+  background: rgba(17, 109, 255, 0.75);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  padding: 2px var(--spacing-2);
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* ---- Modal backdrop ---- */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 var(--spacing-4);
+  overscroll-behavior: contain;
+}
+
+/* ---- Modal sheet ---- */
+.sheet {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-bottom: none;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  animation: sheetSlideUp 0.28s cubic-bezier(0.32, 1, 0.4, 1) forwards;
+  overscroll-behavior: contain;
+}
+
+@keyframes sheetSlideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: var(--spacing-3);
+  right: var(--spacing-3);
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 150ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.closeBtn:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.closeBtn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.sheetHero {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--color-bg-muted);
+}
+
+.sheetHeroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sheetHeroPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg-muted);
+}
+
+.sheetHeroGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.sheetHeroMeta {
+  position: absolute;
+  bottom: var(--spacing-4);
+  left: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sheetTag {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+}
+
+.sheetName {
+  font-family: var(--font-sans);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.sheetBody {
+  padding: var(--spacing-4) var(--spacing-5) var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.dragHandle {
+  width: 36px;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--color-border-strong);
+  margin: 0 auto var(--spacing-1);
+  flex-shrink: 0;
+}
+
+.sheetPrice {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  border: 1px solid var(--color-border);
+  padding: 2px var(--spacing-3);
+  border-radius: var(--radius-md);
+  align-self: flex-start;
+}
+
+.sheetLabel {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  margin-bottom: calc(-1 * var(--spacing-2));
+}
+
+.sheetDesc {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+.recPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.recPill {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 3px var(--spacing-3);
+  white-space: nowrap;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 480px) {
+  .tabBar {
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: var(--radius-lg);
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+  }
+
+  .descRow {
+    flex-direction: column;
+  }
+
+  .filterPills {
+    width: 100%;
+  }
+}

@@ -2,6 +2,162 @@
 import styles from "./page.module.css";
 import { BackToTopBotton } from "../../components";
 import { useRef } from "react";
+import RestaurantExplorer from "../../components/RestaurantExplorer";
+import EntertainmentExplorer from "../../components/EntertainmentExplorer";
+
+const US_LOCATIONS = [
+  {
+    id: "santa-clarita",
+    label: "Santa Clarita",
+    desc: "南加州飲食選擇豐富，速食與特色餐廳並存。依預算和心情篩選。",
+    showFilter: true,
+    tipBanner:
+      "省錢 Tips：各家速食店都有 App，一定要下載，常常給折價券和各式優惠",
+    items: [
+      {
+        tag: "速食",
+        name: "In N Out",
+        price: "$10–20",
+        img: "/USLife/food/in-n-out.jpg",
+        alt: "In N Out",
+        desc: "($10 - 20)大推Protein Style(以美生菜替代外層的麵包)的Cheese Bruger、 Double Double Cheese Bruger、Animal Style Fries",
+        recs: ["Protein Style", "Double Double", "Animal Style Fries", "Neapolitan Shake"],
+        cat: "fast",
+      },
+      {
+        tag: "速食",
+        name: "Panda Express",
+        price: "$12–20",
+        img: "/USLife/food/panda-express.jpg",
+        alt: "Panda Express",
+        desc: "($12 - 20)經典美式中餐，有名的有Orange Chicken(就是很甜的糖醋排骨換成雞肉)， 主餐推炒麵，別點炒飯很濕",
+        recs: ["Teriyaki Chicken", "Beijing Beef", "Chow Mein"],
+        cat: "fast",
+      },
+      {
+        tag: "速食",
+        name: "Wendy's",
+        price: "$9–15",
+        img: "/USLife/food/wendys.jpg",
+        alt: "Wendy's",
+        desc: "漢堡品質在速食中偏上，肉排新鮮不冷凍。4 for $5 / $6 Meal Deal 超划算。",
+        recs: ["4 for $5 Deal", "Frosty", "Spicy Chicken Sandwich"],
+        cat: "fast",
+      },
+      {
+        tag: "速食",
+        name: "Chick-fil-A",
+        price: "$10–18",
+        img: "/USLife/food/chick-fil-a.jpg",
+        alt: "Chick-fil-A",
+        desc: "美國最受歡迎炸雞三明治連鎖，Sauce 特色甜甜鹹鹹，炸雞多汁不乾。注意週日公休。",
+        recs: ["Original Chicken Sandwich", "Waffle Fries", "Chick-fil-A Sauce"],
+        cat: "fast",
+      },
+      {
+        tag: "韓國餐廳",
+        name: "Jin Cook",
+        price: "$30–45",
+        img: "/USLife/food/jin-cook.jpg",
+        alt: "Jin Cook",
+        desc: "9/10 最熱門是石鍋拌飯、部隊鍋和辣炒年糕，有韓式烤肉和小菜可以無限續，適合跟朋友聚餐。",
+        recs: ["石鍋拌飯", "部隊鍋", "辣炒年糕", "韓式烤肉"],
+        cat: "sit",
+      },
+      {
+        tag: "日式燒肉",
+        name: "牛角 Gyu Kaku",
+        price: "$50+",
+        img: "/USLife/food/gyu-kaku.jpg",
+        alt: "Gyu Kaku",
+        desc: "8/10 跟台灣的差不多，就是日式燒肉。Happy Hour 非常划算，Around $20–30 可以吃到不錯的肉。",
+        recs: ["Happy Hour 套餐", "和牛牛舌", "牛角燒肉拼盤"],
+        cat: "sit",
+      },
+      {
+        tag: "印度菜",
+        name: "Royal Tandoor",
+        price: "$15–22",
+        img: "/USLife/food/royal-tandoor.jpg",
+        alt: "Royal Tandoor",
+        desc: "8/10 Butter Chicken 香濃不辣，Tandoori Chicken 烤得入味，配烤餅一流。CP 值高。",
+        recs: ["Butter Chicken", "Tandoori Chicken", "Garlic Naan", "Mango Lassi"],
+        cat: "sit",
+      },
+      {
+        tag: "韓式燒肉吃到飽",
+        name: "Gogi House",
+        price: "$55+",
+        img: "/USLife/food/gogi-house.jpg",
+        alt: "Gogi House",
+        desc: "6/10 肉質中偏下，但有炸蝦、小菜，份量多。朋友聚餐還可以，別期望太高。",
+        recs: ["燒肉拼盤", "炸蝦", "無限小菜"],
+        cat: "sit",
+      },
+      {
+        tag: "壽司",
+        name: "I Love SuShi",
+        price: "$12–35",
+        img: "/USLife/food/i-love-sushi.jpg",
+        alt: "I Love SuShi",
+        desc: "7/10 烏龍麵不錯，可以幫你解決亞洲胃。壽司品質一般，但在 Santa Clarita 已算不錯選擇。",
+        recs: ["烏龍麵", "鮭魚握壽司", "天婦羅"],
+        cat: "sit",
+      },
+      {
+        tag: "美式家庭餐廳",
+        name: "The Cheesecake Factory",
+        price: "$20–35",
+        img: "/USLife/food/cheesecake-factory.jpg",
+        alt: "The Cheesecake Factory",
+        desc: "7/10 選擇非常多，菜單厚得像書。招牌起司蛋糕必點，草莓甘藍沙拉很特別，義大利麵和牛排也不錯。",
+        recs: ["起司蛋糕", "Strawberry Shortcake", "Pasta Carbonara", "Fish & Chips"],
+        cat: "sit",
+      },
+    ],
+  },
+];
+
+const US_ENTERTAINMENT = [
+  {
+    id: "santa-clarita",
+    title: "Santa Clarita",
+    items: [
+      { label: "大型遊樂園", name: "Six Flags", img: "/USLife/SixFlag.jpg", alt: "Six Flags", href: "https://www.sixflags.com/magicmountain/things-to-do" },
+      { label: "保齡球館", name: "Valencia Lanes", img: "/USLife/ValenciaLanes.jpg", alt: "ValenciaLanes", href: "https://www.bowlvalencialanes.com/" },
+      { label: "溜冰場", name: "The Cube", img: "/USLife/CubeIce.jpg", alt: "CubeIce", href: "https://www.thecubesantaclarita.com/" },
+      { label: "電影院", name: "Regal Valencia", img: "/USLife/RegalValencia.jpg", alt: "RegalValencia", href: "https://maps.app.goo.gl/ERnYa2jsTeiHLJ427" },
+      { label: "購物商場", name: "Town Center", img: "/USLife/ValenciaTownCenter.jpg", alt: "ValenciaTownCenter", href: "https://www.valenciatowncenter.com/directory" },
+    ],
+  },
+  {
+    id: "santa-monica",
+    title: "Santa Monica",
+    items: [
+      { label: "Santa Monica", name: "66號公路", img: "/USLife/SantaMonica66.jpg", alt: "SantaMonica66", href: "https://maps.app.goo.gl/6JCm2MhDqW2S9XAg7" },
+      { label: "海邊遊樂園", name: "Santa Monica Pier", img: "/USLife/SantaMonicaPier.jpg", alt: "SantaMonicaPier", href: "https://maps.app.goo.gl/JXUgZgFYtWiArPKb6" },
+      { label: "Santa Monica", name: "海灘", img: "/USLife/SantaMonicaBeach.jpg", alt: "SantaMonicaBeach", href: "https://maps.app.goo.gl/tCUNAD6yYQ4MmN4JA" },
+    ],
+  },
+  {
+    id: "downtown-la",
+    title: "Down Town LA",
+    items: [
+      { label: "小東京", name: "Small Tokyo", img: "/USLife/SmallTokyoLA.jpg", alt: "SmallTokyoLA", href: "https://maps.app.goo.gl/dbjDGRACxCuaptnY7" },
+      { label: "韓國城", name: "Korea Town", img: "/USLife/KtownLA.jpg", alt: "KtownLA", href: "https://maps.app.goo.gl/LRuNfDRVTn5kY5ED6" },
+      { label: "唐人街", name: "China Town", img: "/USLife/ChinatownLA.jpg", alt: "ChinatownLA", href: "https://maps.app.goo.gl/8rBhQADsNxDmrE5n7" },
+    ],
+  },
+  {
+    id: "other-cities",
+    title: "Other Cities",
+    items: [
+      { label: "戶外購物中心", name: "The Americana", img: "/USLife/Americana.jpg", alt: "Americana", href: "https://maps.app.goo.gl/Ac9RC9bJvCwedpvG7" },
+      { label: "文創歷史城區", name: "Pasadena", img: "/USLife/Pasadena.jpg", alt: "Pasadena", href: "https://maps.app.goo.gl/8ecNq4c4jy57Ax6Q9" },
+      { label: "戶外購物中心", name: "Westfield Century City", img: "/USLife/westfieldCenturyCity.jpg", alt: "WestfieldCenturyCity", href: "https://maps.app.goo.gl/Uuv9SEc7UK8vnEF17" },
+    ],
+  },
+];
 
 export default function CocLifePage() {
   const cocLifeRef = useRef(null);
@@ -359,238 +515,8 @@ export default function CocLifePage() {
               <br />
               外食方面，餐廳價格普遍偏高，平均每餐約在 $12 至 $30
               之間，此外還需加收約 15% 起跳的小費與 9.5% 的稅金。
-              <br />
-              <strong>
-                省錢Tips:各家速食店都有Apps，一定要下載很常給折價券和各式優惠
-              </strong>
             </h4>
-            <div className={styles.cocLifeRestaurantsSection}>
-              {/*速食*/}
-              <div className={styles.cocLifeRestaurantsLeft}>
-                <h3>速食連鎖店</h3>
-                <div className={styles.cocLifeRestaurantsCards}>
-                  {/*In N Out*/}
-                  <div className={styles.cocLifeRestaurantsCard}>
-                    <a href="https://www.in-n-out.com/" target="_Blank">
-                      <img
-                        src="/USLife/InNout.jpg"
-                        alt="In N Out"
-                        className={styles.cocLifeRestaurantsImage}
-                      />
-                      <h4>加州超好吃的漢堡店</h4>
-                      <h4>
-                        <en>In N Out</en>
-                      </h4>
-                      <div className={styles.cocLifeRestaurantsCardText}>
-                        ($10 - 20)大推Protein
-                        Style(以美生菜替代外層的麵包)的Cheese Bruger、 Double
-                        Double Cheese Bruger、Animal Style Fries
-                      </div>
-                    </a>
-                  </div>
-                  {/*Panda Express*/}
-                  <div className={styles.cocLifeRestaurantsCard}>
-                    <a href="https://www.pandaexpress.com/" target="_Blank">
-                      <img
-                        src="/USLife/PandaExpress.jpg"
-                        alt="Panda Express"
-                        className={styles.cocLifeRestaurantsImage}
-                      />
-                      <h4>美式中餐</h4>
-                      <h4>
-                        <en>Panda Express</en>
-                      </h4>
-                      <div className={styles.cocLifeRestaurantsCardText}>
-                        ($12 - 20)經典美式中餐，有名的有Orange
-                        Chicken(就是很甜的糖醋排骨換成雞肉)，
-                        主餐推炒麵，別點炒飯很濕
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div className={styles.cocLifeRestaurantsCards}>
-                  {/*Wendys */}
-                  <div className={styles.cocLifeRestaurantsCard}>
-                    <a href="https://www.wendys.com/" target="_Blank">
-                      <img
-                        src="/USLife/Wendys.jpg"
-                        alt="Wendys"
-                        className={styles.cocLifeRestaurantsImage}
-                      />
-                      <h4>速食店</h4>
-                      <h4>
-                        <en>Wendys</en>
-                      </h4>
-                      <div className={styles.cocLifeRestaurantsCardText}>
-                        ($9-15)美式速食連鎖，大推各種漢堡。 推薦點 4 for $5 / $6
-                        Meal Deal，小份炸雞塊、薯條、飲料加漢堡超划算。
-                      </div>
-                    </a>
-                  </div>
-                  {/*Chick fill a*/}
-                  <div className={styles.cocLifeRestaurantsCard}>
-                    <a href="https://www.chick-fil-a.com/" target="_Blank">
-                      <img
-                        src="/USLife/ChickFilla.jpg"
-                        alt="Popeyes"
-                        className={styles.cocLifeRestaurantsImage}
-                      />
-                      <h4>美式炸雞三明治店</h4>
-                      <h4>
-                        <en>Chick-fil-A</en>
-                      </h4>
-                      <div className={styles.cocLifeRestaurantsCardText}>
-                        ($10–18):速食連鎖店，推 Original Chicken
-                        Sandwich，就是炸雞排加醃黃瓜。 Chick-fil-A
-                        Sauce是特色甜甜鹹鹹很好吃。炸雞相關都好吃
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/*餐廳*/}
-              <div className={styles.cocLifeRestaurantsRight}>
-                <h3>附近好吃的餐廳</h3>
-                <div className={styles.cocLifeRestaurantsCardsWrapper}>
-                  <div className={styles.cocLifeRestaurantsCards}>
-                    {/*JinCook*/}
-                    <div className={styles.cocLifeRestaurantsCard}>
-                      <a
-                        href="https://maps.app.goo.gl/75rcHTHTaRB7DgoG9"
-                        target="_Blank"
-                        draggable="false"
-                      >
-                        <img
-                          src="/USLife/JinCook.jpg"
-                          alt="Jin Cook"
-                          className={styles.cocLifeRestaurantsImage}
-                        />
-                        <h4>韓國餐廳</h4>
-                        <h4>
-                          <en>Jin Cook</en>
-                        </h4>
-                        <div className={styles.cocLifeRestaurantsCardText}>
-                          ($30–45)9/10
-                          最熱門的是石鍋拌飯、部隊鍋和辣炒年糕，也有韓式烤肉和小菜可以無限續，適合跟朋友聚餐
-                        </div>
-                      </a>
-                    </div>
-                    {/*牛角*/}
-                    <div className={styles.cocLifeRestaurantsCard}>
-                      <a
-                        href="https://maps.app.goo.gl/FdfwMDm1paRMSBSK6"
-                        target="_Blank"
-                        draggable="false"
-                      >
-                        <img
-                          src="/USLife/GyuKaku.jpg"
-                          alt="牛角"
-                          className={styles.cocLifeRestaurantsImage}
-                        />
-                        <h4>日式燒肉</h4>
-                        <h4>
-                          <en>牛角(Gyu Kaku)</en>
-                        </h4>
-                        <div className={styles.cocLifeRestaurantsCardText}>
-                          ($50up)8/10跟台灣的差不多，就是日式燒肉，推中午Happy
-                          Hour打折很划算(Around$20 - 30)
-                        </div>
-                      </a>
-                    </div>
-                    {/*Royal Tandoor*/}
-                    <div className={styles.cocLifeRestaurantsCard}>
-                      <a
-                        href="https://maps.app.goo.gl/ejq5AQzbB7Y8Uj787"
-                        target="_Blank"
-                        draggable="false"
-                      >
-                        <img
-                          src="/USLife/RoyalTandoor.jpg"
-                          alt="Royal Tandoor"
-                          className={styles.cocLifeRestaurantsImage}
-                        />
-                        <h4>印度菜</h4>
-                        <h4>
-                          <en>Royal Tandoor</en>
-                        </h4>
-                        <div className={styles.cocLifeRestaurantsCardText}>
-                          ($15–22)8/10 特色是豐富的香料口味、咖哩、印度菜
-                          包括 Butter Chicken、Tandoori Chicken與烤餅
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className={styles.cocLifeRestaurantsCards}>
-                    {/*Gogi House*/}
-                    <div className={styles.cocLifeRestaurantsCard}>
-                      <a
-                        href="https://maps.app.goo.gl/sgwc5iuUKGhusFLq7"
-                        target="_Blank"
-                        draggable="false"
-                      >
-                        <img
-                          src="/USLife/GogiHouse.jpg"
-                          alt="Gogi House"
-                          className={styles.cocLifeRestaurantsImage}
-                        />
-                        <h4>韓式燒肉吃到飽</h4>
-                        <h4>
-                          <en>Gogi House</en>
-                        </h4>
-                        <div className={styles.cocLifeRestaurantsCardText}>
-                          ($55up)6/10有點貴，肉質中偏下除了肉還有炸蝦、小菜，跟朋友聚餐不錯
-                        </div>
-                      </a>
-                    </div>
-                    {/*I Love SuShi*/}
-                    <div className={styles.cocLifeRestaurantsCard}>
-                      <a
-                        href="https://maps.app.goo.gl/eBddZP5vKL3fHBVb6"
-                        target="_Blank"
-                      >
-                        <img
-                          src="/USLife/ILoveSuShi.jpg"
-                          alt="ILoveSuShi"
-                          className={styles.cocLifeRestaurantsImage}
-                        />
-                        <h4>壽司店</h4>
-                        <h4>
-                          <en>I Love SuShi</en>
-                        </h4>
-                        <div className={styles.cocLifeRestaurantsCardText}>
-                          ($12–35)7/10烏龍麵不錯，可以幫助你解決亞洲胃
-                        </div>
-                      </a>
-                    </div>
-                    {/*The Cheese Cake Factory*/}
-                    <div className={styles.cocLifeRestaurantsCard}>
-                      <a
-                        href="https://www.thecheesecakefactory.com/"
-                        target="_Blank"
-                        draggable="false"
-                      >
-                        <img
-                          src="/USLife/CheeseCakeFactory.jpg"
-                          alt="The Cheese Cake Factory"
-                          className={styles.cocLifeRestaurantsImage}
-                        />
-                        <h4>美式連鎖家庭餐廳</h4>
-                        <h4>
-                          <en>The Cheese Cake Factory</en>
-                        </h4>
-                        <div className={styles.cocLifeRestaurantsCardText}>
-                          ($20-35)7/10
-                          選擇很多，
-                          招牌是起司蛋糕，推烤球甘藍、達文西義大利麵、牛排
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <RestaurantExplorer locations={US_LOCATIONS} />
           </div>
           {/*Entertainment*/}
           <div className={styles.cocLifeText}>
@@ -598,214 +524,7 @@ export default function CocLifePage() {
               <h2>娛樂/景點</h2>
             </div>
             <div className={styles.cocLifeDivider}></div>
-            <div className={styles.cocLifeEntertainmentsection}>
-              <h3>Around Santa Clarita</h3>
-              <div className={styles.cocLifeEntertainmentCardsWrapper}>
-                <div className={styles.cocLifeEntertainmentCard}>
-                  <a
-                    href="https://www.sixflags.com/magicmountain/things-to-do"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/USLife/SixFlag.jpg"
-                      alt="Six Flags"
-                      className={styles.cocLifeEntertainmentImage}
-                    />
-                    <h4>大型遊樂園</h4>
-                    <h4>
-                      <en>Six Flags</en>
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.cocLifeEntertainmentCard}>
-                  <a href="https://www.bowlvalencialanes.com/" target="_Blank">
-                    <img
-                      src="/USLife/ValenciaLanes.jpg"
-                      alt="ValenciaLanes"
-                      className={styles.cocLifeEntertainmentImage}
-                    />
-                    <h4>保齡球館</h4>
-                    <h4>
-                      <en>Valencia Lanes</en>
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.cocLifeEntertainmentCard}>
-                  <a
-                    href="https://www.thecubesantaclarita.com/"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/USLife/CubeIce.jpg"
-                      alt="CubeIce"
-                      className={styles.cocLifeEntertainmentImage}
-                    />
-                    <h4>溜冰場</h4>
-                    <h4>
-                      <en>The Cube</en>
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.cocLifeEntertainmentCard}>
-                  <a
-                    href="https://maps.app.goo.gl/ERnYa2jsTeiHLJ427"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/USLife/RegalValencia.jpg"
-                      alt="RegalValencia"
-                      className={styles.cocLifeEntertainmentImage}
-                    />
-                    <h4>電影院</h4>
-                    <h4>
-                      <en>Regal Valencia</en>
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.cocLifeEntertainmentCard}>
-                  <a
-                    href="https://www.valenciatowncenter.com/directory"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/USLife/ValenciaTownCenter.jpg"
-                      alt="ValenciaTownCenter"
-                      className={styles.cocLifeEntertainmentImage}
-                    />
-                    <h4>購物商場</h4>
-                    <h4>
-                      <en>Town Center</en>
-                    </h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.cocLifeEntertainmentsection}>
-              <h3>Near Cities</h3>
-              <div
-                className={styles.cocLifeEntertainmentCardsWrapper}
-                id="otherCities"
-              >
-                {/*Santa Monica*/}
-                <div className={`${styles.cocLifeEntertainmentCard} ${styles.cocLifeEntertainmentOtherCity}`}>
-                  <span className={styles.cocLifeEntertainmentTitle}>
-                    Santa Monica
-                  </span>
-                  <div className={styles.cocLifeEntertainmentSpotsWrapper}>
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/SantaMonica66.jpg"
-                        alt="SantaMonica66"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>Santa Monica</h4>
-                      <h4>66號公路</h4>
-                    </div>
-
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/SantaMonicaPier.jpg"
-                        alt="SantaMonicaPier"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>海邊遊樂園</h4>
-                      <h4>Santa Monica Pier</h4>
-                    </div>
-
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/SantaMonicaBeach.jpg"
-                        alt="SantaMonicaBeach"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>Santa Monica</h4>
-                      <h4>海灘</h4>
-                    </div>
-                  </div>
-                </div>
-                {/*Los Angeles*/}
-                <div className={`${styles.cocLifeEntertainmentCard} ${styles.cocLifeEntertainmentOtherCity}`}>
-                  <span className={styles.cocLifeEntertainmentTitle}>
-                    Down Town LA
-                  </span>
-                  <div className={styles.cocLifeEntertainmentSpotsWrapper}>
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/SmallTokyoLA.jpg"
-                        alt="SmallTokyoLA"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>小東京</h4>
-                      <h4>Small Tokyo</h4>
-                    </div>
-
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/KtownLA.jpg"
-                        alt="KtownLA"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>韓國城</h4>
-                      <h4>Korea Town</h4>
-                    </div>
-
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/ChinatownLA.jpg"
-                        alt="ChinatownLA"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>唐人街</h4>
-                      <h4>China Town</h4>
-                    </div>
-                  </div>
-                </div>
-                {/*Other Cities*/}
-                <div className={`${styles.cocLifeEntertainmentCard} ${styles.cocLifeEntertainmentOtherCity}`}>
-                  <span className={styles.cocLifeEntertainmentTitle}>
-                    Other Cities
-                  </span>
-                  <div className={styles.cocLifeEntertainmentSpotsWrapper}>
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/Americana.jpg"
-                        alt="Americana"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>戶外購物中心</h4>
-                      <h4>
-                        The Americana <p className="inv">at Brand</p>
-                      </h4>
-                    </div>
-
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/Pasadena.jpg"
-                        alt="Pasadena"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>文創歷史城區</h4>
-                      <h4>Pasadena</h4>
-                    </div>
-
-                    <div className={styles.cocLifeEntertainmentSpot}>
-                      <img
-                        src="/USLife/westfieldCenturyCity.jpg"
-                        alt="WestfieldCenturyCity"
-                        className={styles.cocLifeEntertainmentImage}
-                      />
-                      <h4>戶外購物中心</h4>
-                      <h4>Westfield Century City</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <EntertainmentExplorer sections={US_ENTERTAINMENT} />
           </div>
         </div>
       </div>

@@ -9,9 +9,9 @@ export default function AboutUs() {
       <div className={styles.AboutUsHero}>
         <div className={styles.AboutUsHeroInner}>
           <div className={styles.AboutUsTags}>
-            <span className="tag">🇹🇼 惠文高中</span>
-            <span className="tag">🇺🇸 美國留學</span>
-            <span className="tag">🇨🇦 加拿大留學</span>
+            <span className="tag"><span className="fi fi-tw" style={{ marginRight: '6px', borderRadius: '2px' }}></span>惠文高中</span>
+            <span className="tag"><span className="fi fi-us" style={{ marginRight: '6px', borderRadius: '2px' }}></span>美國留學</span>
+            <span className="tag"><span className="fi fi-ca" style={{ marginRight: '6px', borderRadius: '2px' }}></span>加拿大留學</span>
           </div>
           <h1>About Us</h1>
           <p>

@@ -1,4 +1,5 @@
 import styles from "./peopleSuits.module.css";
+import { Check } from 'lucide-react';
 
 export default function PeopleSuits({ data, color }) {
   return (
@@ -18,7 +19,7 @@ export default function PeopleSuits({ data, color }) {
               }`}
               key={index}
             >
-              <span className={styles.checkmark}>✓</span>
+              <Check size={14} strokeWidth={2.5} className={styles.checkmark} />
               {item}
             </div>
           ))}

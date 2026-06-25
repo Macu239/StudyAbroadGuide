@@ -97,12 +97,12 @@
 
 .cocLifeText h4 ul {
   padding-left: 1.5rem;
-  list-style-type: decimal;
+  list-style-type: disc;
 }
 
 .cocLifeText h4 li ul {
   padding-left: 1.5rem;
-  list-style-type: decimal;
+  list-style-type: circle;
 }
 
 .cocLifeDivider {
@@ -207,11 +207,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #87cde1;
-}
-
-.cocLifeRestaurantsLeft .cocLifeRestaurantsCard {
-  width: 46%;
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-border);
 }
 
 .cocLifeRestaurantsRight {
@@ -223,11 +220,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #87cde1;
-}
-
-.cocLifeRestaurantsRight .cocLifeRestaurantsCard {
-  width: 31%;
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-border);
 }
 
 .cocLifeRestaurantsSection h3 {
@@ -236,22 +230,30 @@
   margin-top: 0;
 }
 
-.cocLifeRestaurantsCards {
+.cocLifeRestaurantsGrid {
+  display: grid;
+  gap: var(--spacing-3);
+  align-items: start;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.cocLifeRestaurantsLeft .cocLifeRestaurantsGrid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cocLifeRestaurantsRight .cocLifeRestaurantsGrid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .cocLifeRestaurantsCard {
   font-weight: 500;
   overflow: hidden;
-  background-color: #b7e6f3;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
   padding: var(--spacing-3);
   border-radius: var(--radius-md);
   z-index: 1;
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
 }
 
 .cocLifeRestaurantsImage {
@@ -284,101 +286,6 @@
   width: 100%;
 }
 
-/* Entertainment section */
-.cocLifeEntertainmentsection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: #87cde1;
-  color: var(--color-text);
-  border-radius: var(--radius-lg);
-  margin-top: var(--spacing-5);
-  padding: var(--spacing-3) var(--spacing-5) var(--spacing-5);
-}
-
-.cocLifeEntertainmentsection h3 {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  margin-top: 0;
-}
-
-.cocLifeEntertainmentCardsWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.cocLifeEntertainmentCard {
-  font-weight: 500;
-  width: 19%;
-  background-color: #b7e6f3;
-  padding: var(--spacing-3);
-  border-radius: var(--radius-md);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cocLifeEntertainmentImage {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-sm);
-  aspect-ratio: 15/10;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.cocLifeEntertainmentCard a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: 500;
-  gap: var(--spacing-2);
-}
-
-.cocLifeEntertainmentOtherCity {
-  width: 32%;
-  padding: 4px;
-}
-
-.cocLifeEntertainmentTitle {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  color: var(--color-text);
-  text-align: center;
-}
-
-.cocLifeEntertainmentSpotsWrapper {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-2);
-  padding: 4px;
-}
-
-.cocLifeEntertainmentSpot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 31%;
-  background-color: #e6f8fd;
-  padding: 4px;
-  border-radius: var(--radius-md);
-}
-
-.cocLifeEntertainmentSpot h4 {
-  margin-top: 5%;
-  font-weight: 500;
-  font-size: var(--text-xs);
-  line-height: 1.4;
-  color: var(--color-text);
-}
 
 @media (hover: hover) {
   .cocLifeSideBar > ul li:hover {
@@ -387,19 +294,14 @@
   }
 
   .cocLifeRestaurantsCard:hover {
-    transform: scale(2.5);
-    cursor: default;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-border-strong);
+    cursor: pointer;
     z-index: 2;
   }
 
-  .cocLifeEntertainmentOtherCity:hover {
-    transform: scale(2.2) !important;
-  }
 
-  .cocLifeEntertainmentCard:hover {
-    transform: scale(1.5);
-    cursor: default;
-  }
 }
 
 @media (max-width: 768px) {
@@ -466,62 +368,15 @@
     gap: var(--spacing-2);
   }
 
-  .cocLifeRestaurantsRight .cocLifeRestaurantsCards {
-    flex-direction: column;
+  .cocLifeRestaurantsLeft .cocLifeRestaurantsGrid,
+  .cocLifeRestaurantsRight .cocLifeRestaurantsGrid {
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-2);
-  }
-
-  .cocLifeRestaurantsCardsWrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .cocLifeRestaurantsRight .cocLifeRestaurantsCard {
-    width: 95%;
-    aspect-ratio: 0.62;
   }
 
   .cocLifeRestaurantsCardText {
     font-size: var(--text-xs);
   }
 
-  .cocLifeEntertainmentsection {
-    padding: var(--spacing-2) var(--spacing-3) var(--spacing-3);
-  }
 
-  .cocLifeEntertainmentCardsWrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-3);
-  }
-
-  .cocLifeEntertainmentCard a {
-    gap: var(--spacing-1);
-  }
-
-  #otherCities {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cocLifeEntertainmentOtherCity {
-    width: 100% !important;
-  }
-
-  .cocLifeEntertainmentSpotsWrapper {
-    padding: 0;
-  }
-
-  .cocLifeEntertainmentSpot {
-    width: 32%;
-  }
-
-  .cocLifeEntertainmentCard {
-    width: 100%;
-    padding: var(--spacing-2);
-  }
-
-  .inv {
-    display: none;
-  }
 }

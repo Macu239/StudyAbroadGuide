@@ -98,9 +98,9 @@
 
 #TransDivider {
   width: 80%;
-  height: 2px;
+  height: 1px;
   margin: var(--spacing-4) auto;
-  background-color: #224291;
+  background-color: var(--color-border);
 }
 
 .CaLifeFoodsection h4 {
@@ -112,12 +112,12 @@
 
 .cocLifeText h4 ul {
   padding-left: 1.5rem;
-  list-style-type: decimal;
+  list-style-type: disc;
 }
 
 .cocLifeText h4 li ul {
   padding-left: 1.5rem;
-  list-style-type: decimal;
+  list-style-type: circle;
 }
 
 #UMCTransportation {
@@ -208,8 +208,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: #87cde1;
-  color: #fff;
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
   border-radius: var(--radius-lg);
   margin-top: var(--spacing-5);
   padding: var(--spacing-3) var(--spacing-5) var(--spacing-5);
@@ -222,33 +223,37 @@
 
 .CaLifeEntertainmentCardsWrapper {
   margin-top: var(--spacing-3);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-3);
+  align-items: start;
   width: 100%;
 }
 
 .CaLifeEntertainmentCard {
-  width: 19%;
-  background-color: #0E5AA4;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
   padding: var(--spacing-3);
   border-radius: var(--radius-md);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
 }
 
 #TorontoFood {
-  background-color: #af292e;
-  color: #fff;
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
 }
 
 #TorontoFood .CaLifeEntertainmentCard {
-  background-color: #CD494C;
+  background-color: var(--color-bg);
 }
 
 .CaLifeEntertainmentCard:hover {
-  transform: scale(1.5);
-  cursor: default;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-strong);
+  cursor: pointer;
+  z-index: 2;
 }
 
 .CaLifeEntertainmentImage {
@@ -276,7 +281,8 @@
 }
 
 .CaLifeEntertainmentOtherCity:hover {
-  transform: scale(2.5);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
 .CaLifeEntertainmentTitle {
@@ -301,7 +307,8 @@
   flex-direction: column;
   align-items: center;
   width: 31%;
-  background-color: #e6f8fd;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
   padding: 4px;
   border-radius: var(--radius-md);
 }

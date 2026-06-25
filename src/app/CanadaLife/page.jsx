@@ -2,6 +2,132 @@
 import styles from "./page.module.css";
 import { BackToTopBotton } from "../../components";
 import { useRef } from "react";
+import RestaurantExplorer from "../../components/RestaurantExplorer";
+
+const CANADA_LOCATIONS = [
+  {
+    id: "red-deer",
+    label: "Red Deer",
+    desc: "在 Red Deer，可以下廚，但需依寄宿家庭的規定而定。當地主要是美式飲食，中式餐廳非常少且味道不太道地。不過，也能找到不錯的日本料理與炸豬排。",
+    items: [
+      {
+        tag: "美式速食",
+        name: "Five Guys",
+        price: "$10–20",
+        img: "/CALife/food/five-guys.jpg",
+        alt: "Five Guys",
+        desc: "加州風格漢堡，食材每日新鮮配送，份量大，薯條現炸超酥脆。在 Red Deer 算品質穩定的選擇。",
+        recs: ["Bacon Cheeseburger", "Cajun Style Fries", "Milkshake"],
+      },
+      {
+        tag: "美式速食",
+        name: "Dairy Queen",
+        price: "$8–15",
+        img: "/CALife/food/dairy-queen.jpg",
+        alt: "Dairy Queen",
+        desc: "招牌冰淇淋與 Blizzard，夏天必訪。也有漢堡與熱食，適合輕食一餐或甜點收尾。",
+        recs: ["Blizzard", "DQ Burger", "Poutine"],
+      },
+      {
+        tag: "美式速食",
+        name: "A&W",
+        price: "$8–14",
+        img: "/CALife/food/aw.jpg",
+        alt: "A&W",
+        desc: "加拿大在地連鎖，Root Beer 是招牌飲料，搭配炸雞或漢堡是標準組合。",
+        recs: ["Root Beer Float", "Teen Burger", "Onion Rings"],
+      },
+      {
+        tag: "美式速食",
+        name: "Jollibee",
+        price: "$10–16",
+        img: "/CALife/food/Jollibee.jpg",
+        alt: "Jollibee",
+        desc: "菲律賓速食品牌在加拿大快速展店，炸雞偏甜口味，搭米飯是特色吃法。",
+        recs: ["Chickenjoy", "Jolly Spaghetti", "Yumburger"],
+      },
+      {
+        tag: "美式速食",
+        name: "Wendy's",
+        price: "$9–15",
+        img: "/CALife/food/wendys.jpg",
+        alt: "Wendy's",
+        desc: "漢堡品質在速食中偏上，肉排新鮮不冷凍。4 for $5 Meal Deal 超划算。",
+        recs: ["4 for $5 Deal", "Frosty", "Spicy Chicken Sandwich"],
+      },
+      {
+        tag: "日式料理",
+        name: "Shiso",
+        price: "$15–30",
+        img: "/CALife/food/shiso.jpg",
+        alt: "Shiso",
+        desc: "Red Deer 難得一見的日式料理，食材新鮮，在當地算水準之上。有壽司與熱食選擇。",
+        recs: ["握壽司", "味噌湯", "唐揚炸雞"],
+      },
+      {
+        tag: "炸豬排",
+        name: "Wow Store",
+        price: "$14–25",
+        img: "/CALife/food/wow-store.webp",
+        alt: "Wow Store",
+        desc: "炸豬排口感不錯，當地少見的亞式選擇，搭配白飯與味噌湯，對思念台灣味的人是安慰。",
+        recs: ["炸豬排定食", "咖哩豬排", "味噌湯"],
+      },
+    ],
+  },
+  {
+    id: "toronto",
+    label: "多倫多 UMC",
+    desc: "多倫多食物便宜、各種類多，尤其還有唐人街、韓國城，亞洲餐廳豐富，不會讓你餓到。",
+    items: [
+      {
+        tag: "拉麵",
+        name: "Ikkousha Ramen Toronto",
+        price: "$16–24",
+        img: "/CALife/food/ikkousha.jpeg",
+        alt: "Ikkousha Ramen",
+        desc: "濃郁豚骨湯底，份量紮實，是多倫多評價最高的拉麵之一。麵條彈牙，叉燒入味，值得排隊。",
+        recs: ["豚骨拉麵", "味玉加點", "炸雞塊"],
+      },
+      {
+        tag: "柚子拉麵",
+        name: "Afuri Ramen",
+        price: "$17–26",
+        img: "/CALife/food/afuri.jpg",
+        alt: "Afuri Ramen",
+        desc: "來自日本的人氣品牌，柚子鹽湯底清爽迷人，與台灣常見的濃郁口味截然不同，很值得一試。",
+        recs: ["柚子鹽拉麵", "雞白湯拉麵", "追加叉燒"],
+      },
+      {
+        tag: "包子・中餐",
+        name: "老娘水煎包",
+        price: "$8–15",
+        img: "/CALife/food/laoniang.jpg",
+        alt: "老娘水煎包",
+        desc: "平價台式水煎包，皮薄餡多，底部煎得焦脆，唐人街人氣排隊店。思鄉首選。",
+        recs: ["高麗菜水煎包", "韭菜水煎包", "豆漿"],
+      },
+      {
+        tag: "韓式餐廳",
+        name: "Jin Dal Lae",
+        price: "$18–28",
+        img: "/CALife/food/jin-dal-lae.jpg",
+        alt: "Jin Dal Lae",
+        desc: "韓國城在地口味，部隊鍋與烤肉是招牌，份量大且適合多人聚餐分享。",
+        recs: ["部隊鍋", "韓式烤肉", "石鍋拌飯"],
+      },
+      {
+        tag: "泰式餐廳",
+        name: "Koh Lipe Thai Kitchen",
+        price: "$15–25",
+        img: "/CALife/food/koh-lipe.jpeg",
+        alt: "Koh Lipe Thai Kitchen",
+        desc: "正統泰式料理，咖哩與炒河粉評價佳，辣度可以調整，環境輕鬆舒適。",
+        recs: ["綠咖哩", "Pad Thai", "打拋豬"],
+      },
+    ],
+  },
+];
 
 export default function CanadaLifePage() {
   const cocLifeRef = useRef(null);
@@ -479,7 +605,7 @@ export default function CanadaLifePage() {
                 />
 
                 <div className={styles.CaLifeShoppingText}>
-                  <h3>Trader Joe's</h3>
+                  <h3>T&T Supermarket / 大統華</h3>
                   大統華 (T&T Supermarket)
                   是加拿大最大的亞洲超市，紅鹿附近只有calgary/
                   edmonton有開，多倫多在UofT附近和Downtown各有一間
@@ -508,191 +634,7 @@ export default function CanadaLifePage() {
               <h2>餐廳/飲食</h2>
             </div>
             <div className={styles.CaLifeDivider}></div>
-            <div className={styles.CaLifeFoodsection} id="RD">
-              <h3>Around Red Deer</h3>
-              <h4>
-                在 Red
-                Deer，可以下廚，但需依寄宿家庭的規定而定。當地主要是美式飲食，常見的有
-                Five Guys、DQ、A&W、Jollibee、Wendy's
-                等；中式餐廳非常少，而且味道不太道地。不過，也能找到不錯的日本料理與炸豬排店，如
-                Shiso 和 Wow Store。
-              </h4>
-              <div className={styles.CaLifeEntertainmentCardsWrapper}>
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://www.sixflags.com/magicmountain/things-to-do"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/fiveGuys.jpg"
-                      alt="Five Guys"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>美式速食店</h4>
-                    <h4>
-                       Five Guys 
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a href="https://www.bowlvalencialanes.com/" target="_Blank">
-                    <img
-                      src="/CALife/DQ.jpg"
-                      alt="Dairy Queen"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>美式速食店</h4>
-                    <h4>
-                       Dairy Queen 
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://www.thecubesantaclarita.com/"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/A&W.jpg"
-                      alt="A&W"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>美式速食店</h4>
-                    <h4>
-                       A&W 
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://maps.app.goo.gl/d3vbfGo5M3fxrmri8"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/Shiso.jpg"
-                      alt="Shiso"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>日式料理</h4>
-                    <h4>
-                       Shiso  
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://maps.app.goo.gl/Tr6nCGt47h56BRPn8"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/wowStore.webp"
-                      alt="wowStore"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>炸豬排</h4>
-                    <h4>
-                       Wow Store 
-                    </h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className={styles.CaLifeFoodsection} id="TorontoFood">
-              <h3>Around UMC/ Toronto</h3>
-              <h4>
-                多倫多食物便宜各種種類多由尤其還有唐人街、韓國城，亞洲餐廳豐富，不會讓你餓到
-              </h4>
-              <div className={styles.CaLifeEntertainmentCardsWrapper}>
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://www.sixflags.com/magicmountain/things-to-do"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/ikkoushaRamen.jpeg"
-                      alt="Five Guys"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>拉麵</h4>
-                    <h4>
-                       Ikkousha Ramen Toronto 
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://maps.app.goo.gl/SeBJ6jLCwDCKmtD97"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/Afuri.jpg"
-                      alt="Afuri"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>柚子拉麵</h4>
-                    <h4>
-                       Afuri Ramen 
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://maps.app.goo.gl/fESW9o1qdRZ3KXSj6"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/momsPanFriedBun.jpg"
-                      alt="老娘水煎包"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>包子、中餐館</h4>
-                    <h4>
-                       老娘水煎包 
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://maps.app.goo.gl/GkjbLAdmmd7bsdAQ9"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/jinDalLae.jpg"
-                      alt="Jin Dal Lae"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>韓式餐廳</h4>
-                    <h4>
-                       Jin Dal Lae 
-                    </h4>
-                  </a>
-                </div>
-
-                <div className={styles.CaLifeEntertainmentCard}>
-                  <a
-                    href="https://maps.app.goo.gl/chctPN1pka95zSov9"
-                    target="_Blank"
-                  >
-                    <img
-                      src="/CALife/KohLipe.jpeg"
-                      alt="Koh Lipe Thai Kitchen"
-                      className={styles.CaLifeEntertainmentImage}
-                    />
-                    <h4>泰式餐廳</h4>
-                    <h4>
-                       Koh Lipe Thai Kitchen 
-                    </h4>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <RestaurantExplorer locations={CANADA_LOCATIONS} />
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 'use client'
 import styles from "./page.module.css";
 import Link from "next/link";
+import { ArrowRight } from 'lucide-react';
 import { ImageCarousel, Blur } from "../components";
 import { MainPageImgs } from "../components/CarouselImages";
 
@@ -25,7 +26,7 @@ export default function Home() {
         <div className={styles.schoolBoxes}>
           <div className={styles.box}>
             <Link href="/COC" className={styles.school_page_link}>
-              <span className="tag" style={{ marginBottom: "var(--spacing-2)" }}>🇺🇸 美國 · 加州</span>
+              <span className="tag" style={{ marginBottom: "var(--spacing-2)" }}><span className="fi fi-us" style={{ marginRight: '6px', borderRadius: '2px' }}></span>美國 · 加州</span>
               <h3>College of the Canyons</h3>
               <h4>美國加州峽谷社區大學</h4>
               <p className={styles.school_tagline}>社區大學路徑，兩年後轉入 UC / CSU 頂尖大學</p>
@@ -34,24 +35,24 @@ export default function Home() {
                 alt="COC"
                 className={styles.school_pic}
               />
-              <span className={styles.school_cta}>了解更多 →</span>
+              <span className={styles.school_cta}>了解更多 <ArrowRight size={14} strokeWidth={2} /></span>
             </Link>
           </div>
           <div className={styles.boxLine} />
           <div className={styles.box}>
             <Link href="/UMC" className={styles.school_page_link}>
-              <span className="tag" style={{ marginBottom: "var(--spacing-2)" }}>🇨🇦 加拿大 · 多倫多</span>
+              <span className="tag" style={{ marginBottom: "var(--spacing-2)" }}><span className="fi fi-ca" style={{ marginRight: '6px', borderRadius: '2px' }}></span>加拿大 · 多倫多</span>
               <h3>UMC HighSchool</h3>
               <h4>加拿大UMC高中</h4>
               <p className={styles.school_tagline}>取得 OSSD 文憑，以本地生資格申請加拿大大學</p>
               <Blur src="/Mainpage/UMC.jpg" alt="UMC" className={styles.school_pic} />
-              <span className={styles.school_cta}>了解更多 →</span>
+              <span className={styles.school_cta}>了解更多 <ArrowRight size={14} strokeWidth={2} /></span>
             </Link>
           </div>
           <div className={styles.boxLine} />
           <div className={styles.box}>
             <Link href="/RedDeer" className={styles.school_page_link}>
-              <span className="tag" style={{ marginBottom: "var(--spacing-2)" }}>🇨🇦 加拿大 · 亞伯達</span>
+              <span className="tag" style={{ marginBottom: "var(--spacing-2)" }}><span className="fi fi-ca" style={{ marginRight: '6px', borderRadius: '2px' }}></span>加拿大 · 亞伯達</span>
               <h3>Red Deer Catholic International</h3>
               <h4>加拿大紅鹿國際高中</h4>
               <p className={styles.school_tagline}>體驗真實加拿大高中生活，融入公立學校環境</p>
@@ -60,7 +61,7 @@ export default function Home() {
                 alt="Reddeer"
                 className={styles.school_pic}
               />
-              <span className={styles.school_cta}>了解更多 →</span>
+              <span className={styles.school_cta}>了解更多 <ArrowRight size={14} strokeWidth={2} /></span>
             </Link>
           </div>
         </div>

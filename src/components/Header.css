@@ -122,9 +122,10 @@
 }
 
 .caret {
-  font-size: 0.65em;
   opacity: 0.55;
   margin-left: 3px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {

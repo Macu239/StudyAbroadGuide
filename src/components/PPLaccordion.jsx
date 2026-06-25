@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
+import { ChevronUp, ChevronDown } from "lucide-react";
 import "./PPLaccordion.css";
 
 function PPLaccordionItem({ School, people, isExpanded, width = "875px" }) {
@@ -21,7 +22,7 @@ function PPLaccordionItem({ School, people, isExpanded, width = "875px" }) {
     >
       <div className="accordionTitle" onClick={handleToggle}>
         <span>{School}</span>
-        <span className="arrow">{isOpen ? "▲" : "▼"}</span>
+        <span className="arrow">{isOpen ? <ChevronUp size={14} strokeWidth={2.5} /> : <ChevronDown size={14} strokeWidth={2.5} />}</span>
       </div>
 
       {/*contents section below*/}

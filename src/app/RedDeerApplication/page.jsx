@@ -23,13 +23,13 @@ export default function RedDeerApplicationPage() {
         </div>
       </div>
       <div className={styles.appSummaryBar}>
-        <span className={styles.appSummaryItem}>📋 申請步驟</span>
+        <span className={styles.appSummaryItem}>申請步驟</span>
         <span className={styles.appSummaryDot} aria-hidden="true">·</span>
-        <span className={styles.appSummaryItem}>📁 所需文件</span>
+        <span className={styles.appSummaryItem}>所需文件</span>
         <span className={styles.appSummaryDot} aria-hidden="true">·</span>
-        <span className={styles.appSummaryItem}>📅 重要截止日</span>
+        <span className={styles.appSummaryItem}>重要截止日</span>
         <span className={styles.appSummaryDot} aria-hidden="true">·</span>
-        <span className={styles.appSummaryItem}>⚠️ 注意事項</span>
+        <span className={styles.appSummaryItem}>注意事項</span>
       </div>
       <div className={styles.cocAppText}>
         <div className="step-list">

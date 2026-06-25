@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
+import { ChevronUp, ChevronDown } from 'lucide-react';
 import './QAaccordionItem.css';
 
 function AccordionItem({ title, content, isExpanded,link,linkText }) {
@@ -20,7 +21,7 @@ function AccordionItem({ title, content, isExpanded,link,linkText }) {
             onClick={handleToggle}
             >
                 <h4>{title}</h4>
-                <span className='arrow'>{isOpen? '▲' : '▼'}</span>
+                <span className='arrow'>{isOpen ? <ChevronUp size={14} strokeWidth={2.5} /> : <ChevronDown size={14} strokeWidth={2.5} />}</span>
             </div>
             {isOpen && (
             <div className='QAaccordionContent'>

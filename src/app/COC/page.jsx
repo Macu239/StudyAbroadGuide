@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 import { Blur, PeopleSuits, ProsCons, NavStrip } from "../../components";
+import { ClipboardList, GraduationCap, ShieldCheck, Home, Users, MessageCircle } from "lucide-react";
 
 export default function COCPage() {
   const peopleSuitsData = [
@@ -43,12 +44,12 @@ export default function COCPage() {
     ]
   ];
   const navItems = [
-    { href: "/COCApplication", icon: "📋", title: "申請過程", description: "申請步驟與所需文件" },
-    { href: "/CocAcademic", icon: "🎓", title: "學業、轉學相關", description: "UC 轉學路徑與線上課程" },
-    { href: "/UsVisa", icon: "🛂", title: "美國學生簽證", description: "F-1 學生簽證申請指南" },
-    { href: "/CocLife", icon: "🏠", title: "生活", description: "住宿、飲食與南加州日常生活" },
-    { href: "/Seniors?section=COC", icon: "👥", title: "找學長姐", description: "聯絡曾就讀的學長姐取得第一手經驗" },
-    { href: "/QandA", icon: "💬", title: "Common Q&A", description: "常見問題與解答" },
+    { href: "/COCApplication", icon: <ClipboardList size={16} strokeWidth={2} />, title: "申請過程", description: "申請步驟與所需文件" },
+    { href: "/CocAcademic", icon: <GraduationCap size={16} strokeWidth={2} />, title: "學業、轉學相關", description: "UC 轉學路徑與線上課程" },
+    { href: "/UsVisa", icon: <ShieldCheck size={16} strokeWidth={2} />, title: "美國學生簽證", description: "F-1 學生簽證申請指南" },
+    { href: "/CocLife", icon: <Home size={16} strokeWidth={2} />, title: "生活", description: "住宿、飲食與南加州日常生活" },
+    { href: "/Seniors?section=COC", icon: <Users size={16} strokeWidth={2} />, title: "找學長姐", description: "聯絡曾就讀的學長姐取得第一手經驗" },
+    { href: "/QandA", icon: <MessageCircle size={16} strokeWidth={2} />, title: "Common Q&A", description: "常見問題與解答" },
   ];
 
   return (
@@ -75,10 +76,10 @@ export default function COCPage() {
       <main className={styles["main-content"]}>
         <div className={styles["content-section"]}>
           <div className={styles["stats-callout"]}>
-            <span className={styles["stats-chip"]}>📍 加州 Santa Clarita</span>
-            <span className={styles["stats-chip"]}>🏫 社區大學（2年制）</span>
-            <span className={styles["stats-chip"]}>⏱ 留學期間：高三起 2–3 年</span>
-            <span className={styles["stats-chip"]}>💰 學費：相對實惠</span>
+            <span className={styles["stats-chip"]}>加州 Santa Clarita</span>
+            <span className={styles["stats-chip"]}>社區大學（2年制）</span>
+            <span className={styles["stats-chip"]}>留學期間：高三起 2–3 年</span>
+            <span className={styles["stats-chip"]}>學費：相對實惠</span>
           </div>
           <Blur
             src="/COC/img_coc_main_image.png"

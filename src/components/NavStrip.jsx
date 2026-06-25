@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from 'lucide-react';
 import "./NavStrip.css";
 
 export default function NavStrip({ items }) {
@@ -18,7 +19,7 @@ export default function NavStrip({ items }) {
               <span className="nav-strip-title">{item.title}</span>
               <span className="nav-strip-desc">{item.description}</span>
             </span>
-            <span className="nav-strip-arrow">→</span>
+            <ArrowRight size={14} strokeWidth={2} className="nav-strip-arrow" />
           </a>
         ) : (
           <Link key={item.href} href={item.href} className="nav-strip-card">
@@ -27,7 +28,7 @@ export default function NavStrip({ items }) {
               <span className="nav-strip-title">{item.title}</span>
               <span className="nav-strip-desc">{item.description}</span>
             </span>
-            <span className="nav-strip-arrow">→</span>
+            <ArrowRight size={14} strokeWidth={2} className="nav-strip-arrow" />
           </Link>
         )
       )}

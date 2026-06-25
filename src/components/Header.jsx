@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link";
+import { ChevronDown } from 'lucide-react';
 import "./Header.css";
 
 const menus = [
@@ -68,7 +69,7 @@ export default function Header() {
           <div key={menu.label} className="dropdown">
             <div className="dropbtn" role="button" tabIndex={0}>
               {menu.label}
-              <span className="caret" aria-hidden="true">▾</span>
+              <ChevronDown size={12} strokeWidth={2.5} className="caret" aria-hidden="true" />
             </div>
             <div className="dropdown-content">
               {menu.items.map((item) =>
