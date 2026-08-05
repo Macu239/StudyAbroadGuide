@@ -47,6 +47,6 @@ jobs:
                     docker pull jeremymacu/sag:latest
                     docker stop sag-app || true
                     docker rm sag-app || true
-                    docker run -d --name sag-app -p 3000:3000 --restart unless-stopped jeremymacu/sag:latest
+                    docker run -d --name sag-app -p 3000:3000 --restart unless-stopped --memory=256m jeremymacu/sag:latest
                     docker image prune -f
 
