@@ -34,4 +34,19 @@ jobs:
                     jeremymacu/sag:${{ github.sha }}
                 cache-from: type=gha
                 cache-to: type=gha,mode=max
+    deploy:
+        needs: build-and-push
+        runs-on: ubuntu-latest
+        steps:
+            - uses: appleboy/ssh-action@v1
+              with:
+                host: ${{ secrets.EC2_HOST }}
+                username: ${{ secrets.EC2_USERNAME }}
+                key: ${{ secrets.EC2_SSH_KEY }}
+                script: |
+                    docker pull jeremymacu/sag:latest
+                    docker stop sag-app || true
+                    docker rm sag-app || true
+                    docker run -d --name sag-app -p 3000:3000 --restart unless-stopped jeremymacu/sag:latest
+                    docker image prune -f
 
