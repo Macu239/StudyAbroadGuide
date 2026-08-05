@@ -1,7 +1,8 @@
 > HWSH Study Abroad Guide
 
-A responsive and user-friendly website designed to help HWSH students explore and plan their study abroad opportunities.
-Built with React, HTML, and CSS, and deployed via Render, this project focuses on usability, scalability, and accessibility across devices.
+[中文版本](README.zh.md)
+
+A website built specifically for students from Hui-Wen High School to explore study abroad options, featuring experiences shared by seniors, living tips, and networking resources.
 
 > Overview
 
@@ -12,6 +13,10 @@ It was developed in collaboration with alumni and school officials to ensure acc
 
 Many HWSH students were uncertain about study abroad procedures and university options. This project was created to centralize reliable information, improve accessibility, and make the process less intimidating.
 
->Live Demo
+> Tech Stack
 
-Deployed on Render: https://hwshstudyabroadguide.onrender.com/
+Built with Next.js and React, deployed on Vercel.
+
+> Live Demo
+
+https://study-abroad-guide.vercel.app/
